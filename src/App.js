@@ -7,11 +7,12 @@ import {
   Route,
 } from "react-router-dom";
 import './Assets/css/styles.css';
-import './Assets/css/stylev.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Home from '../src/Components/Home'
-import Dashboard from './Components/Innerpages/Dashboard';
+import Treatments from './Components/Innerpages/Treatments';
+import Treatmentquery from './Components/Innerpages/Treatmentquery';
+
 import TableView from './Components/Innerpages/TableView';
 
 
@@ -37,9 +38,10 @@ function App() {
       <div></div></div>}>
        <Routes>
        <Route path="/"  element={<Home /> } />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/treatments" element={<Treatments />} />
+          <Route path="/treatmentquery" element={<Treatmentquery />} />
+
           <Route path='/tableview' element={<TableView />} />
-          
  
 
 

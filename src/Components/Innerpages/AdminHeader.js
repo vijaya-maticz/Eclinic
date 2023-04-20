@@ -3,7 +3,6 @@ import React,{useState} from 'react';
 import {Dropdown,Button} from 'react-bootstrap'
 import logo from '../../Assets/Images/logo.png'
 import prof from '../../Assets/Images/prof1.jpg'
-import bar from '../../Assets/Images/menu.png'
 
 const AdminHeader = () =>{
     const sidetoggle = () =>{
@@ -19,12 +18,9 @@ const AdminHeader = () =>{
     }
     return(
         <>
-            <div className='d-flex jc-between w-full'>
-               <div className='d-flex align-items-center'>
-               <div> <Button onClick={() => sidetoggle()}  variant="link" className='me-2 text-dark mobiletog ps-0'>
-               <img src={bar}  className="menuopen"/>
-                </Button></div>
-                <img src={logo} className="adminlogo"/> </div>  <Dropdown className="admin-prof">
+            <div className='d-flex jc-end w-full'>
+              
+                 <Dropdown className="admin-prof">
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                      Hi, John   <img src={prof} className="ms-3"/>
                     </Dropdown.Toggle>

@@ -18,17 +18,18 @@ const HomeHeader = () => {
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className='mx-auto'>
             <Link className='nav-link link_mr' to="/">Home</Link>     
-            <Link className='nav-link link_mr' to="/dashboard">About eClinic</Link>
-            <Link className='nav-link link_mr link_cont_no_after' to="/dashboard">Contacts</Link>          
+            <Link className='nav-link link_mr' to="/treatments">About eClinic</Link>
+            <Link className='nav-link link_mr link_cont_no_after' to="/treatments">Contacts</Link>          
           
-
+            <Link className='nav-link link_mr d-none-inner-menu' to="/treatments">Treatments</Link>
+            <Link className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/treatments">Certificate</Link>          
           
           </Nav>
 
           <Nav>
           
-            <Link to="/dashboard" className='btn btn-grey me-3'>Login</Link>
-            <Link to="/dashboard" className='btn btn-purple'>Get Started</Link>
+            <Link to="/treatments" className='btn btn-grey me-3'>Login</Link>
+            <Link to="/treatments" className='btn btn-purple'>Get Started</Link>
 
           
           </Nav>

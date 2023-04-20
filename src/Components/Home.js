@@ -228,7 +228,9 @@ const Home = () => {
     <div id='home'>
       
        <div className='banner'>
+        <div className="home_only_head">
        <HomeHeader />
+       </div>
        <div className='banner_contn'>
             <div className='container'>
                 <div className='row'>
@@ -706,7 +708,7 @@ const Home = () => {
                 <div className='row'>
                     <div className='col-12 col-md-8 col-lg-7 col-xl-5 mx-auto'>
                     <div className='text-center py-5'>
-                <Link to="/dashboard" className='btn btn-purple'>Get Started</Link>
+                <Link to="/treatments" className='btn btn-purple'>Get Started</Link>
                 <p class="banner_lit_font">Lorem Ipsum is simply dummy text of the printing and typese Lorem Ipsum has been the industry'</p>
                 </div>
           

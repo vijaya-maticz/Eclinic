@@ -10,7 +10,7 @@ const Header = (props) =>{
 
         
         
-        <div id="footer2" className='py-3'>
+        <div id="footer2" className='py-2'>
         <p className='footer_text text-center mb-0'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
         </div>
