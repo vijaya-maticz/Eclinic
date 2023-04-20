@@ -1,0 +1,15 @@
+[
+    { "quest" : "What kind of place will you host?"},
+    { "quest" : "Which of these best describes your place?"},
+    { "quest" : "What kind of space will guests have?"},
+    { "quest" : "Where's your place located?"},
+    { "quest" : "How many guests would you like to welcome?"},
+    { "quest" : "Let guests know what your place has to offer"},
+    { "quest" : "Next, let's add some photos of your place"},
+    { "quest" : "Let's give your place a name"},
+    { "quest" : "Now, let's describe your place"},
+    { "quest" : "Now for the fun part – set your price"},
+    { "quest" : "Just a few last questions..."},
+    { "quest" : "Check out your listing!"},
+    { "quest" : "Check out your listing!"}
+ ]

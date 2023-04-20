@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+
+   
+    <title>eClinic</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/10aaa69ed0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+   
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>    
+    
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+ 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script> -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js" ></script>
+    
+    
+    
+
+    <!-- <script>
+    
+      
+     var bigimage = $("#big");
+     var thumbs = $("#thumbs");
+     //var totalslides = 10;
+     var syncedSecondary = true;
+   
+     $("#big").owlCarousel({
+       items: 1,
+       slideSpeed: 2000,
+       nav: true,
+       autoplay: true,
+       dots: false,
+       loop: true,
+       responsiveRefreshRate: 200,
+       navText: [
+         '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+         '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+       ]
+     })
+       .on("changed.owl.carousel", syncPosition);
+   
+     thumbs
+       .on("initialized.owl.carousel", function() {
+       thumbs
+         .find(".owl-item")
+         .eq(0)
+         .addClass("current");
+     })
+       .owlCarousel({
+       items: 4,
+       dots: true,
+       nav: true,
+       navText: [
+         '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+         '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+       ],
+       smartSpeed: 200,
+       slideSpeed: 500,
+       slideBy: 4,
+       responsiveRefreshRate: 100
+     })
+       .on("changed.owl.carousel", syncPosition2);
+   
+     function syncPosition(el) {
+       //if loop is set to false, then you have to uncomment the next line
+       //var current = el.item.index;
+   
+       //to disable loop, comment this block
+       var count = el.item.count - 1;
+       var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+   
+       if (current < 0) {
+         current = count;
+       }
+       if (current > count) {
+         current = 0;
+       }
+       //to this
+       thumbs
+         .find(".owl-item")
+         .removeClass("current")
+         .eq(current)
+         .addClass("current");
+       var onscreen = thumbs.find(".owl-item.active").length - 1;
+       var start = thumbs
+       .find(".owl-item.active")
+       .first()
+       .index();
+       var end = thumbs
+       .find(".owl-item.active")
+       .last()
+       .index();
+   
+       if (current > end) {
+         thumbs.data("owl.carousel").to(current, 100, true);
+       }
+       if (current < start) {
+         thumbs.data("owl.carousel").to(current - onscreen, 100, true);
+       }
+     }
+   
+     function syncPosition2(el) {
+       if (syncedSecondary) {
+         var number = el.item.index;
+         bigimage.data("owl.carousel").to(number, 100, true);
+       }
+     }
+   
+     thumbs.on("click", ".owl-item", function(e) {
+       e.preventDefault();
+       var number = $(this).index();
+       bigimage.data("owl.carousel").to(number, 300, true);
+     });
+
+   
+  </script> -->
+
+  </body>
+</html>
