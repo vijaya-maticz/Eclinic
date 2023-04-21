@@ -13,6 +13,13 @@ import Home from '../src/Components/Home'
 import Treatments from './Components/Innerpages/Treatments';
 import Treatmentquery from './Components/Innerpages/Treatmentquery';
 
+
+import Dashboard from './Components/Innerpages/Dashboard';
+
+import Myaccount from './Components/Innerpages/Myaccount';
+
+
+
 import TableView from './Components/Innerpages/TableView';
 
 
@@ -40,6 +47,10 @@ function App() {
        <Route path="/"  element={<Home /> } />
           <Route path="/treatments" element={<Treatments />} />
           <Route path="/treatmentquery" element={<Treatmentquery />} />
+
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/myaccount" element={<Myaccount />} />
+
 
           <Route path='/tableview' element={<TableView />} />
  

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {Navbar,NavDropdown,Container,Nav} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import logo from '../Assets/Images/logo.png'
 
 
@@ -17,19 +17,25 @@ const HomeHeader = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className='mx-auto'>
-            <Link className='nav-link link_mr' to="/">Home</Link>     
-            <Link className='nav-link link_mr' to="/treatments">About eClinic</Link>
-            <Link className='nav-link link_mr link_cont_no_after' to="/treatments">Contacts</Link>          
+            <NavLink className='nav-link link_mr' to="/">Home</NavLink>     
+            <NavLink className='nav-link link_mr' to="/treatments">About eClinic</NavLink>
+            <NavLink className='nav-link link_mr link_cont_no_after' to="/">Contacts</NavLink>          
           
-            <Link className='nav-link link_mr d-none-inner-menu' to="/treatments">Treatments</Link>
-            <Link className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/treatments">Certificate</Link>          
+            <NavLink className='nav-link link_mr d-none-inner-menu' to="/">Treatments</NavLink>
+            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/">Certificate</NavLink>  
+
+              <NavLink className='nav-link link_mr d-none-inner-menu' to="/dashboard">Dashboard</NavLink>
+            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/myaccount">My Account</NavLink>          
+
+              <NavLink className='nav-link link_mr d-none-inner-menu' to="/">Records</NavLink>
+            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/">Transaction</NavLink>                  
           
           </Nav>
 
           <Nav>
           
-            <Link to="/treatments" className='btn btn-grey me-3'>Login</Link>
-            <Link to="/treatments" className='btn btn-purple'>Get Started</Link>
+            <Link to="/" className='btn btn-grey me-3'>Login</Link>
+            <Link to="/" className='btn btn-purple'>Get Started</Link>
 
           
           </Nav>

@@ -6,6 +6,10 @@ import bar from '../../Assets/Images/menu.png'
 
 import ceti from '../../Assets/Images/ceti.png'
 import treat from '../../Assets/Images/treat.png'
+import dash from '../../Assets/Images/dash.png'
+import myacc from '../../Assets/Images/myacc.png'
+import trans from '../../Assets/Images/trans.png'
+
 
 import img_ad from '../../Assets/Images/img_ad.png'
 
@@ -62,6 +66,34 @@ const Sidebar = () =>{
                <NavLink to="/admin/tableview"  className="nounder">
                 <img src={ceti} className="active"/>
                Certificate</NavLink>
+                
+            </div>
+
+            <div className='menus'>
+               <NavLink to="/dashboard"  className="nounder">
+                <img src={dash} className="active"/>
+               Dashboard</NavLink>
+                
+            </div>
+
+            <div className='menus'>
+               <NavLink to="/myaccount"  className="nounder">
+                <img src={myacc} className="active"/>
+               My Account</NavLink>
+                
+            </div>
+
+            <div className='menus'>
+               <NavLink to="/admin/tableview"  className="nounder">
+                <img src={treat} className="active"/>
+               Records</NavLink>
+                
+            </div>
+
+            <div className='menus'>
+               <NavLink to="/admin/tableview"  className="nounder">
+                <img src={trans} className="active"/>
+               Transaction</NavLink>
                 
             </div>
          
