@@ -12,7 +12,6 @@
   src: local("Helvetica"),
     url("../fonts/Helvetica.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "HelveticaBold";   /*Can be any text*/
   src: local("Helvetica"),
@@ -2352,9 +2351,10 @@ font-size: 18px;
 .card_text_white_big_new
 {
   color: #fff;
-    font-size: 20px !important;
-    font-family: "HelveticaBold";
-    line-height: 1.5 !important;
+  /* font-size: 20px !important; viji */
+  font-size: 27px !important;
+  font-family: "HelveticaBold";
+  line-height: 1.5 !important;
 }
 .steps_badge
 {

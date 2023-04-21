@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, createContext} from 'react';
 import {Link} from 'react-router-dom';
 
 import HomeHeader from '../HomeHeader';
@@ -11,16 +11,119 @@ import disease3 from '../../Assets/Images/disease3.png'
 import disease4 from '../../Assets/Images/disease4.png'
 import disease5 from '../../Assets/Images/disease5.png'
 import disease6 from '../../Assets/Images/disease6.png'
+import diseaseimg from '../../Assets/Images/user.png'
+
+import TreatmentOff from '../Offcanvas/TreatmentOff';
 
 
-
-
+export const TreatContext = createContext()
 const Treatments = () =>{
+    const[show, setShow] = useState(false)
+    const[sendIndex, setSendIndex] = useState(0)
   
-
+    const treatments = [
+        {
+            title:"Patient - Weight Loss Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"25",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Contraceptive Pill Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jhon",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"28",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Bacterial Vaginosis Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"26",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Astma Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"20",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Migraine Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"15",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Acne Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"35",
+            diseaseimg:diseaseimg
+        },
+    ]
+    const carddata = [
+        {
+            treat:"Weight loss",
+            details:"Contrary to popular belief, Lorem Ipsum is not simply random",
+            img:disease1
+        },
+        {
+            treat:"Contraceptive Pill",
+            details:"Contrary to popular belief, Lorem Ipsum is not simply random",
+            img:disease2
+        },
+        {
+            treat:"Bacterial Vaginosis",
+            details:"Contrary to popular belief, Lorem Ipsum is not simply random",
+            img:disease3
+        },
+        {
+            treat:"Astma",
+            details:"Contrary to popular belief, Lorem Ipsum is not simply random",
+            img:disease4
+        },
+        {
+            treat:"Migraine",
+            details:"Contrary to popular belief, Lorem Ipsum is not simply random",
+            img:disease5
+        },
+        {
+            treat:"Acne",
+            details:"Contrary to popular belief, Lorem Ipsum is not simply random",
+            img:disease6
+        }
+    ]
+  
     return(
         <>
+        
         <div id="dashboard" className='showsidebar'>
+            <TreatContext.Provider  value={treatments[sendIndex]}> 
+
+                {show && <TreatmentOff onDismiss={() => setShow(false)} />}
+            </TreatContext.Provider>
             <div id='sidebar'>
                 <Sidebar/>
             </div>
@@ -29,6 +132,8 @@ const Treatments = () =>{
                 {/* <AdminHeader /> */}
                 <HomeHeader />
                 </div> 
+                
+           
                <div className='cont p-sm-5 p-4 cont_padding'>
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
@@ -57,121 +162,30 @@ const Treatments = () =>{
 
                 <p className='dash_head_blk mt-5'>Loruem ipsumof senu</p>
                 <div className='row'>
-                    <div className='col-12 col-md-6 col-xl-4 mt-4'>
+                    {carddata.map((i,index) =>{
+                        return(
+                             <div className='col-12 col-md-6 col-xl-4 mt-4'>
                         <div className='card card_dise'>
                             <div className='card-body ps-0'>
                                 <div className='flex_img_div'>
-                                    <img src={disease1} className='img-fluid dise_img' />
+                                    <img src={carddata[index].img} className='img-fluid dise_img' />
                                     <div>
-                                        <p className='disease_head mt-2'>Weigth Loss</p>
-                                        <p className='disease_desc'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
+                                        <p className='disease_head mt-2'>{carddata[index].treat}</p>
+                                        <p className='disease_desc'>{carddata[index].details}</p>
                                       <div className='text-right'>
-                                        <Link to="/" className="btn btn_round_purple ms-auto mt-3">
-                                        <i class="fa fa-arrow-right"></i>
-                                        </Link>
+                                             <button onClick={() => {setShow(true);setSendIndex(index)}} className="btn btn_round_purple ms-auto mt-3"> <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                        )
+                    })}
+                   
 
-                
 
-                    <div className='col-12 col-md-6 col-xl-4 mt-4'>
-                        <div className='card card_dise'>
-                            <div className='card-body ps-0'>
-                                <div className='flex_img_div'>
-                                    <img src={disease2} className='img-fluid dise_img' />
-                                    <div>
-                                        <p className='disease_head mt-2'>Contraceptive Pill</p>
-                                        <p className='disease_desc'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                      <div className='text-right'>
-                                        <Link to="/" className="btn btn_round_purple ms-auto mt-3">
-                                        <i class="fa fa-arrow-right"></i>
-                                        </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-12 col-md-6 col-xl-4 mt-4'>
-                        <div className='card card_dise'>
-                            <div className='card-body ps-0'>
-                                <div className='flex_img_div'>
-                                    <img src={disease3} className='img-fluid dise_img' />
-                                    <div>
-                                        <p className='disease_head mt-2'>Bacterial Vaginosis</p>
-                                        <p className='disease_desc'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                      <div className='text-right'>
-                                        <Link to="/" className="btn btn_round_purple ms-auto mt-3">
-                                        <i class="fa fa-arrow-right"></i>
-                                        </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-12 col-md-6 col-xl-4 mt-4'>
-                        <div className='card card_dise'>
-                            <div className='card-body ps-0'>
-                                <div className='flex_img_div'>
-                                    <img src={disease4} className='img-fluid dise_img' />
-                                    <div>
-                                        <p className='disease_head mt-2'>Astma</p>
-                                        <p className='disease_desc'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                      <div className='text-right'>
-                                        <Link to="/" className="btn btn_round_purple ms-auto mt-3">
-                                        <i class="fa fa-arrow-right"></i>
-                                        </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-12 col-md-6 col-xl-4 mt-4'>
-                        <div className='card card_dise'>
-                            <div className='card-body ps-0'>
-                                <div className='flex_img_div'>
-                                    <img src={disease5} className='img-fluid dise_img' />
-                                    <div>
-                                        <p className='disease_head mt-2'>Migraine</p>
-                                        <p className='disease_desc'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                      <div className='text-right'>
-                                        <Link to="/" className="btn btn_round_purple ms-auto mt-3">
-                                        <i class="fa fa-arrow-right"></i>
-                                        </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-12 col-md-6 col-xl-4 mt-4'>
-                        <div className='card card_dise'>
-                            <div className='card-body ps-0'>
-                                <div className='flex_img_div'>
-                                    <img src={disease6} className='img-fluid dise_img' />
-                                    <div>
-                                        <p className='disease_head mt-2'>Acne</p>
-                                        <p className='disease_desc'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                      <div className='text-right'>
-                                        <Link to="/" className="btn btn_round_purple ms-auto mt-3">
-                                        <i class="fa fa-arrow-right"></i>
-                                        </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                </div> 
             </div>
@@ -183,6 +197,7 @@ const Treatments = () =>{
 <Footer />
 </div>
 </div>
+
 </>
     )
 }

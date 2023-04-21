@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import './Assets/css/styles.css';
+import './Assets/css/stylev.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Home from '../src/Components/Home'
