@@ -166,11 +166,11 @@ const Treatments = () =>{
                         return(
                              <div className='col-12 col-md-6 col-xl-4 mt-4'>
                         <div className='card card_dise'>
-                            <div className='card-body ps-0'>
+                            <div className='card-body ps-3 pt-0'>
                                 <div className='flex_img_div'>
                                     <img src={carddata[index].img} className='img-fluid dise_img' />
-                                    <div>
-                                        <p className='disease_head mt-2'>{carddata[index].treat}</p>
+                                    <div className='ms-3'>
+                                        <p className='disease_head mt-4'>{carddata[index].treat}</p>
                                         <p className='disease_desc'>{carddata[index].details}</p>
                                       <div className='text-right'>
                                              <button onClick={() => {setShow(true);setSendIndex(index)}} className="btn btn_round_purple ms-auto mt-3"> <i class="fa fa-arrow-right"></i></button>
@@ -183,9 +183,6 @@ const Treatments = () =>{
                         )
                     })}
                    
-
-
-                    
                 </div>
                </div> 
             </div>
