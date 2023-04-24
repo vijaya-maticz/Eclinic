@@ -76,7 +76,7 @@ const[register, setRegister] = useState(false)
         {login && <LoginOff onDismiss={() => {setLogin(false);Navigate("/treatments")}}/>}
         {register && <RegisterOff onDismiss={() => setRegister(false)}/>}
         <TreatContext.Provider value={location.state}>
-           {show && <RequestLoginOff  logindismiss={() => {setShow(false);setLogin(true)}} signindismiss={() => {setShow(false);setRegister(true)}}/>} 
+           {show && <RequestLoginOff onDismiss={() => setShow(false)}  logindismiss={() => {setShow(false);setLogin(true)}} signindismiss={() => {setShow(false);setRegister(true)}}/>} 
        </TreatContext.Provider>
        
 

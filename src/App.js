@@ -21,6 +21,9 @@ import Myaccount from './Components/Innerpages/Myaccount';
 
 
 
+
+import OrderNow from './Components/Innerpages/OrderNow';
+
 import Records from './Components/Innerpages/Records';
 import Transaction from './Components/Innerpages/Transaction';
 
@@ -55,6 +58,10 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/myaccount" element={<Myaccount />} />
 
+
+
+      
+          <Route path='/ordernow' element={<OrderNow />} />
 
           <Route path='/records' element={<Records />} />
           <Route path='/transaction' element={<Transaction />} />

@@ -5,8 +5,17 @@
 .puprletxt{
     color:var(--themeclr) !important
 }
+.themeclr{
+  color: var(--themeclr) !important;
+}
 .f-16{
   font-size: 16px;
+}
+.w-full{
+  width: 100%;
+}
+.aqua{
+  color: #19C5B8;
 }
 /* bootstrap */
 .align-center{
@@ -14,6 +23,9 @@
 }
 .jc-between{
   justify-content: space-between;
+}
+.jc-center{
+  justify-content: center;
 }
 
 .offcanvas-bottom{
@@ -49,7 +61,7 @@
 }
 .offcanvas {
     background-color: #f9efff;
-    border-radius: 50px 50px 0 0;
+    border-radius: 30px 30px 0 0;
 }
 .treat-det {
     background: #E7DCF3B0;
@@ -104,11 +116,10 @@
     height: calc(100% + 23px);
     bottom: 0;
     position: relative;
-    top: -22px;
   }
-  .querylist {
+  .querylist, .whitebox {
     box-shadow: 0px 3px 6px #00000029;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     background: #fff;
     margin-bottom: 10px;
@@ -185,6 +196,7 @@
     border-left: 0;
     border-radius: 0;
     padding-left: 0;
+    appearance: auto;
   }
   .queries{
     display: flex;
@@ -245,12 +257,44 @@
   border-radius: 50%;
 }
 .borderinput {
-  border-style: dashed;
+  border: 1px dashed #adadad;
   background: transparent;
-  border-color: #adadad;
   appearance: auto;
   height: 45px;
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+.borderinput.input-group input,.borderinput.input-group span {
+  background: transparent;
 }
 input::-webkit-datetime-edit {
   opacity: 0;
 }
+.paywith .whitebox .d-flex > *:last-child, .paynow  .whitebox .d-flex > *:last-child,
+.paywith table tr th:last-child, .paywith table tr td:last-child {
+  text-align: right;
+}
+.paywith .whitebox .d-flex > *:nth-child(2) , .paynow .whitebox .d-flex > *:nth-child(2){
+  text-align: center;
+}
+.paywith table tr th:first-child, .paywith table tr td:first-child  {
+  text-align: left;
+}
+tbody,.paywith tbody tr td {
+  border: 0 !important;
+
+}
+.paywith tbody tr td ,.paywith tr th {
+padding-left: 0;
+padding-right: 0;
+}
+.paywith table tr td:first-child ,.paywith .flex-1 > *:first-child,
+.paynow .flex-1 > *:first-child{
+  font-size: 14px;
+}
+
+.bordered {
+  border: 0.1px dashed #b7b7b7 !important;
+  background: transparent;
+}
+
