@@ -26,6 +26,7 @@ import OrderNow from './Components/Innerpages/OrderNow';
 
 import Records from './Components/Innerpages/Records';
 import Transaction from './Components/Innerpages/Transaction';
+import AdminDashboard from './Components/AdminPanel/Dashboard';
 
 
 
@@ -54,18 +55,15 @@ function App() {
        <Route path="/"  element={<Home /> } />
           <Route path="/treatments" element={<Treatments />} />
           <Route path="/treatmentquery" element={<Treatmentquery />} />
-
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/myaccount" element={<Myaccount />} />
-
-
-
-      
           <Route path='/ordernow' element={<OrderNow />} />
-
           <Route path='/records' element={<Records />} />
           <Route path='/transaction' element={<Transaction />} />
- 
+
+
+{/* Admin */}
+<Route path="/adminDashboard" element={<AdminDashboard />} /> 
 
           
         </Routes>

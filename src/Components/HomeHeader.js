@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
-import {Navbar,NavDropdown,Container,Nav} from 'react-bootstrap'
+import {Navbar,NavDropdown,Container,Nav,Dropdown} from 'react-bootstrap'
 import {Link, NavLink} from 'react-router-dom'
 import logo from '../Assets/Images/logo.png'
 import user from "../Assets/Images/user.png"
+import prof from "../Assets/Images/user.png"
 import Cart from './Offcanvas/CartOff';
 
 
@@ -43,7 +44,15 @@ const HomeHeader = () => {
               </button>
               <span>1</span>
            </div> 
-          
+           <Dropdown className="admin-prof me-3">
+                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='p-0'>
+                      <img src={prof} className=""/>
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">Logout</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
            <div> <Link to="/" className='btn btn-grey me-3'>Login</Link></div>
            <div> <Link to="/" className='btn btn-purple'>Get Started</Link></div>
 
