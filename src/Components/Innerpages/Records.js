@@ -11,30 +11,30 @@ import AddToken from '../Modals/AddToken';
 const Records = () =>{
     const columns = [
         {
-          name: "s.No",
-           selector: (vals) => vals.time,
-          sortable: true
+          name: "ID",
+           selector: (vals) => vals.id,
+          sortable: false
         },
      
           {
-            name: "Token Symbols",
-            selector: (vals) => vals.count,
-            sortable: true
+            name: "Treatment",
+            selector: (vals) => vals.treatment,
+            sortable: false
           },
           {
-            name: "Token address",
-            selector: (vals) => vals.token,
-            sortable: true
+            name: "Response",
+            selector: (vals) => vals.response,
+            sortable: false
           },
           {
-            name: "Asset image",
-            selector: (vals) => vals.img,
-            sortable: true
+            name: "Prescription",
+            selector: (vals) => vals.prescription,
+            sortable: false
           },
           {
-            name: "Action",
-            selector: (vals) => vals.btn,
-            sortable: true
+            name: "Status",
+            selector: (vals) => vals.status,
+            sortable: false
           }
           
        
@@ -42,153 +42,178 @@ const Records = () =>{
     const data = [
   
       {
-        time: "1",
-        token: "USDC",
-        count: "0x547x......x154xc1781",
-        img: <img src={asset1} />,
-        btn: <button className='btn btn-theme'>Edit</button>,
+        id: "001",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
       {
-        time: "2",
-        token: "BUSD",
-        count: "+53.4684$",
-        img: <img src={asset2} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "002",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
       },
+
       {
-        time: "3",
-        token: "TMC",
-        count: "+53.4684$",
-        img: <img src={asset3} />,
-        btn: <button className='btn btn-theme'>Edit</button>
-      },
-      {
-        time: "1",
-        token: "USDC",
-        count: "0x547x......x154xc1781",
-        img: <img src={asset1} />,
-        btn: <button className='btn btn-theme'>Edit</button>,
+        id: "003",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
       {
-        time: "2",
-        token: "BUSD",
-        count: "+53.4684$",
-        img: <img src={asset2} />,
-        btn: <button className='btn btn-theme'>Edit</button>
-      },
-      {
-        time: "3",
-        token: "TMC",
-        count: "+53.4684$",
-        img: <img src={asset3} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "004",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
       },
     
+
       {
-        time: "1",
-        token: "USDC",
-        count: "0x547x......x154xc1781",
-        img: <img src={asset1} />,
-        btn: <button className='btn btn-theme'>Edit</button>,
+        id: "005",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
       {
-        time: "2",
-        token: "BUSD",
-        count: "+53.4684$",
-        img: <img src={asset2} />,
-        btn: <button className='btn btn-theme'>Edit</button>
-      },
-      {
-        time: "3",
-        token: "TMC",
-        count: "+53.4684$",
-        img: <img src={asset3} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "006",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
       },
     
+
       {
-        time: "1",
-        token: "USDC",
-        count: "0x547x......x154xc1781",
-        img: <img src={asset1} />,
-        btn: <button className='btn btn-theme'>Edit</button>,
+        id: "007",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
       {
-        time: "2",
-        token: "BUSD",
-        count: "+53.4684$",
-        img: <img src={asset2} />,
-        btn: <button className='btn btn-theme'>Edit</button>
-      },
-      {
-        time: "3",
-        token: "TMC",
-        count: "+53.4684$",
-        img: <img src={asset3} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "008",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
       },
     
+
       {
-        time: "1",
-        token: "USDC",
-        count: "0x547x......x154xc1781",
-        img: <img src={asset1} />,
-        btn: <button className='btn btn-theme'>Edit</button>,
+        id: "009",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
       {
-        time: "2",
-        token: "BUSD",
-        count: "+53.4684$",
-        img: <img src={asset2} />,
-        btn: <button className='btn btn-theme'>Edit</button>
-      },
-      {
-        time: "3",
-        token: "TMC",
-        count: "+53.4684$",
-        img: <img src={asset3} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "010",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
       },
     
+
       {
-        time: "1",
-        token: "USDC",
-        count: "0x547x......x154xc1781",
-        img: <img src={asset1} />,
-        btn: <button className='btn btn-theme'>Edit</button>,
+        id: "011",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
       {
-        time: "2",
-        token: "BUSD",
-        count: "+53.4684$",
-        img: <img src={asset2} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "012",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
+      },
+    
+
+      {
+        id: "013",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
+       
       },
       {
-        time: "3",
-        token: "TMC",
-        count: "+53.4684$",
-        img: <img src={asset3} />,
-        btn: <button className='btn btn-theme'>Edit</button>
+        id: "014",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
       },
+    
+
+      {
+        id: "015",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
+       
+      },
+      {
+        id: "016",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
+      },
+    
+
+      {
+        id: "017",
+        treatment: "Astma - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-pending'>Pending</badge>,
+       
+      },
+      {
+        id: "018",
+        treatment: "Acne - treatment",
+        response: <button className='btn btn-grey-dark'>View</button>,
+        prescription: <button className='btn btn-grey-dark'>View</button>,
+        status: <badge className='btn btn-approve'>Approved</badge>,
+       
+      },
+    
     
     
     ]
   
   
 
-const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
 const[token, setToken] = useState(false)
+const[checked, setChecked] = useState(false)
+
 
 
     return(
-        <div id="dashboard" className='tableview showsidebar'>
+        <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <Sidebar/>
@@ -196,21 +221,22 @@ const[token, setToken] = useState(false)
             <div className='headandcont'>
                <div className="adminheader"><HomeHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
-              <div className='d-flex jc-between'> 
-              <h3 className='dash_head_blk'>Records</h3>
-              <div className='d-flex align-items-center'>
-              <div className='switch_div mx-auto switch_div_length'>
-                        <p className='pe-2'>Prescription</p>
+              <div className='d-flex jc-between pad_sec_head align-items-center flex_wrap_npb'> 
+              <h3 className='dash_head_blk mb-0'>Records</h3>
+              <div className='d-flex align-items-center flex_wrap_npb'>
+              <div className={checked?'switch_div mx-auto switch_div_length switch_div_1 active_check':'switch_div mx-auto switch_div_length switch_div_1'}>
+                        <p className='pe-2 first_check'>Prescription</p>
                        
                     <label className="switch mx-auto">
-                    <input type="checkbox"  />
+                    <input type="checkbox" onChange={(e)=>{console.log(e.target.checked);setChecked(e.target.checked)}}/>
                     <span className="slider round"></span>
                     </label>
-                        <p className='ps-2'>Certificate</p>
+                    
+                        <p className='ps-2 second_check'>Certificate</p>
 
                         </div>
 
-                        <div class="input-group input_grp_search ms-2">
+                        <div class="input-group input_grp_search ms-3">
                         <input type="text" placeholder='Search' className='form-control ms-2 search_input_style'/>
 
   <span class="input-group-text" id="basic-addon2">
@@ -224,8 +250,8 @@ const[token, setToken] = useState(false)
               </div>
              </div> 
               
-                <div className='tablesec shadowbox '>
-                    <div className='mt-5 responsive br-30' >
+                <div className='tablesec '>
+                    <div className='mt-2 responsive shadowbox_tabe br-30' >
                     <DataTable striped responsive={true} pagination
                         data={data}
                         columns={columns}
