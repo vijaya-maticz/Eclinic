@@ -20,6 +20,8 @@ export const TreatContext = createContext()
 const Treatments = () =>{
     const[show, setShow] = useState(false)
     const[sendIndex, setSendIndex] = useState(0)
+    const[checked, setChecked] = useState(false)
+
   
     const treatments = [
         {
@@ -141,16 +143,19 @@ const Treatments = () =>{
                     <div className='col-12 col-md-7 col-lg-6'>
                         <div className='p-4 p-lg-5'>
                         <p className='card_text_white_big'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                       <div className='switch_div mt-4'>
-                        <p>Male</p>
+                    
+                        <div className={checked?'switch_div mt-4 switch_div_2 active_check':'switch_div mt-4 switch_div_2'}>
+                        <p className='pe-2 first_check'>Male</p>
                        
-                    <label className="switch">
-                    <input type="checkbox"  />
+                    <label className="switch mx-auto">
+                    <input type="checkbox" onChange={(e)=>{console.log(e.target.checked);setChecked(e.target.checked)}}/>
                     <span className="slider round"></span>
                     </label>
-                        <p>Female</p>
+                    
+                        <p className='ps-2 second_check'>Female</p>
 
                         </div>
+
                         </div>
                     </div>
                     <div className='col-12 col-md-5 col-lg-5 offset-lg-1 sec_img_dots'>

@@ -24,6 +24,8 @@ import SecurityControl from '../Offcanvas/SecurityControl';
 
 
 const Myaccount = () =>{
+  
+    const[checked, setChecked] = useState(false)
  const Navigate = useNavigate()
  const[edit, setEdit] = useState(false)
  const[password, setPassword] = useState(false)
@@ -150,14 +152,15 @@ const Myaccount = () =>{
                     <p className="dash_head_blk mt-4 text-center">Contrary to popular belief, Lorem Ipsum is not simply random</p>
                             </div>
                         </div>
-                    <div className='switch_div mt-4 mx-auto'>
-                        <p>Male</p>
+                        <div className={checked?'switch_div mx-auto switch_div_1 active_check':'switch_div mx-auto switch_div_1'}>
+                        <p className='pe-2 first_check'>Male</p>
                        
                     <label className="switch mx-auto">
-                    <input type="checkbox"  />
+                    <input type="checkbox" onChange={(e)=>{console.log(e.target.checked);setChecked(e.target.checked)}}/>
                     <span className="slider round"></span>
                     </label>
-                        <p>Female</p>
+                    
+                        <p className='ps-2 second_check'>Female</p>
 
                         </div>
                     </div>

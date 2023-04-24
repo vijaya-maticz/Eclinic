@@ -91,7 +91,7 @@ const Sidebar = () =>{
             </div>
 
             <div className='menus'>
-               <NavLink activeClassName="active" to="/admin/tableview"  className="nounder">
+               <NavLink activeClassName="active" to="/transaction"  className="nounder">
                 <img src={trans} className="active"/>
                Transaction</NavLink>
                 

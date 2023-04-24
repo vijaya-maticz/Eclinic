@@ -25,6 +25,9 @@ import Myaccount from './Components/Innerpages/Myaccount';
 import OrderNow from './Components/Innerpages/OrderNow';
 
 import Records from './Components/Innerpages/Records';
+import Transaction from './Components/Innerpages/Transaction';
+
+
 
 
 // const Land = React.lazy(() => import('./Components/Landing/Land'));
@@ -61,9 +64,10 @@ function App() {
           <Route path='/ordernow' element={<OrderNow />} />
 
           <Route path='/records' element={<Records />} />
+          <Route path='/transaction' element={<Transaction />} />
  
 
-
+          
         </Routes>
       </Suspense>
       </BrowserRouter>
