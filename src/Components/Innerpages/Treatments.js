@@ -172,7 +172,7 @@ const Treatments = () =>{
                                     <div className='ms-3'>
                                         <p className='disease_head mt-4'>{carddata[index].treat}</p>
                                         <p className='disease_desc'>{carddata[index].details}</p>
-                                      <div className='text-right'>
+                                      <div className='text-right button_pos_round'>
                                              <button onClick={() => {setShow(true);setSendIndex(index)}} className="btn btn_round_purple ms-auto mt-3"> <i class="fa fa-arrow-right"></i></button>
                                         </div>
                                     </div>

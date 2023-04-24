@@ -55,7 +55,7 @@ const Sidebar = () =>{
                 </div> 
           
           <div className='sidelist'>
-          <div className='menus active'>
+          <div className='menus'>
                <NavLink activeClassName="active" to="/treatments"  className="nounder">
                 <img src={treat} className="active" />
                 Treatments</NavLink>
@@ -63,35 +63,35 @@ const Sidebar = () =>{
             </div>
      
             <div className='menus'>
-               <NavLink to="/admin/tableview"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/tableview"  className="nounder">
                 <img src={ceti} className="active"/>
                Certificate</NavLink>
                 
             </div>
 
             <div className='menus'>
-               <NavLink to="/dashboard"  className="nounder">
+               <NavLink activeClassName="active" to="/dashboard"  className="nounder">
                 <img src={dash} className="active"/>
                Dashboard</NavLink>
                 
             </div>
 
             <div className='menus'>
-               <NavLink to="/myaccount"  className="nounder">
+               <NavLink activeClassName="active" to="/myaccount"  className="nounder">
                 <img src={myacc} className="active"/>
                My Account</NavLink>
                 
             </div>
 
             <div className='menus'>
-               <NavLink to="/admin/tableview"  className="nounder">
+               <NavLink activeClassName="active" to="/records"  className="nounder">
                 <img src={treat} className="active"/>
                Records</NavLink>
                 
             </div>
 
             <div className='menus'>
-               <NavLink to="/admin/tableview"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/tableview"  className="nounder">
                 <img src={trans} className="active"/>
                Transaction</NavLink>
                 

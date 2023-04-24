@@ -1,5 +1,5 @@
 import React,{useState , Fragment} from 'react';
-import AdminHeader from './AdminHeader';
+import HomeHeader from '../HomeHeader';
 import Sidebar from './Sidebar';
 import "react-datepicker/dist/react-datepicker.css";
 import DataTable from 'react-data-table-component';
@@ -8,7 +8,7 @@ import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
-const TableView = () =>{
+const Records = () =>{
     const columns = [
         {
           name: "s.No",
@@ -194,12 +194,34 @@ const[token, setToken] = useState(false)
                 <Sidebar/>
             </div>
             <div className='headandcont'>
-               <div className="adminheader"><AdminHeader /></div> 
-               <div className='cont p-sm-5 p-4'>
+               <div className="adminheader"><HomeHeader /></div> 
+               <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className='d-flex jc-between'> 
-              <h3 className='fw-600 '>View Contacts</h3>
-              <button className='btn btn-theme' onClick={() => setToken(true)}>Add</button>
-                
+              <h3 className='dash_head_blk'>Records</h3>
+              <div className='d-flex align-items-center'>
+              <div className='switch_div mx-auto switch_div_length'>
+                        <p className='pe-2'>Prescription</p>
+                       
+                    <label className="switch mx-auto">
+                    <input type="checkbox"  />
+                    <span className="slider round"></span>
+                    </label>
+                        <p className='ps-2'>Certificate</p>
+
+                        </div>
+
+                        <div class="input-group input_grp_search ms-2">
+                        <input type="text" placeholder='Search' className='form-control ms-2 search_input_style'/>
+
+  <span class="input-group-text" id="basic-addon2">
+  <i className="fa fa-search"></i>
+
+  </span>
+</div>
+
+           <div className=''>
+           </div>
+              </div>
              </div> 
               
                 <div className='tablesec shadowbox '>
@@ -216,4 +238,4 @@ const[token, setToken] = useState(false)
     )
 }
 
-export default TableView
+export default Records

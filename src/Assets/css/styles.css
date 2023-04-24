@@ -996,8 +996,16 @@ div#header .hamcomp:after {
 }
 @media(max-width:575px){
 
-
-
+.img_purpl_care
+{
+  max-width: 50px !important;
+}
+.div_acc_sec
+{
+  position: relative !important;
+  bottom:0px !important;
+  padding-bottom: 30px !important;
+}
   .form_contact
   {
     margin-top: 30px;
@@ -1435,6 +1443,12 @@ color:#fefefe !important;
 
 @media only screen and (min-width:576px) and (max-width:767px)
 {
+  .div_acc_sec
+{
+  position: relative !important;
+  bottom:0px !important;
+  padding-bottom: 30px !important;
+}
   .card_upper
   {
     margin-top: 0px!important;
@@ -2151,7 +2165,7 @@ align-items: center;
 
 input:checked + .slider {
   background-color: #fff;
-  box-shadow: inset 0px 3px 6px #00000096;
+  box-shadow: inset 0px 3px 7px #00000096;
 
 }
 
@@ -2232,11 +2246,16 @@ input:checked + .slider:before {
 {
   max-width: 80px;
 }
+.img_purpl_care
+{
+  max-width: 55px;
+}
 .card_dise
 {
   box-shadow: 0px 3px 26px #0000006B;
   border-radius: 15px;
   border:none;
+  height: 100%;
 }
 .btn_round_purple
 {
@@ -2547,6 +2566,9 @@ color:#000;
 .img_profile_edit
 {
   position: relative;
+  max-width: 90px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn_edit
 {
@@ -2560,7 +2582,7 @@ color:#000;
   width: 25px;
   height: 25px;
   position: absolute;
-    right: 48px;
+    right: -15px;
     bottom: 15px;
 }
 .btn_edit:hover
@@ -2606,5 +2628,101 @@ color:#000;
   border-radius: 10px;
   border:2px solid #FFFFFF;
   padding: 5px 20px;
+}
+.acc_secu_text
+{
+  color:#fff;
+  font-size: 14px !important;
+  font-family: "HelveticaBold";
+}
+.pencil_div_circle
+{
+  background-color: #B7A058;
+  color:#111111;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.btn_edit_yellow
+{
+  background-color: #F1D477;
+  color:#131314;
+  font-size: 12px;
+  border-radius: 12px;
+  font-family: "HelveticaBold";
+  border:2px solid #F1D477;
+}
+.btn_edit_yellow:hover
+{
+  background-color: transparent !important;
+  color:#F1D477;
+}
+.disease_desc_grey
+{
+  color: #989595;
+    font-size: 11px;
+}
+.btn-purple.btn-purple-sm
+{
+  padding: 5px 7px !important;
+    min-width: 85px !important;
+}
+.div_acc_sec
+{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+    right: 50%;
+    transform: translate(-50%,0%);
+    min-width: 85%;
+}
+.flex_img_div_med.flex_img_div
+{
+  justify-content: space-between;
+}
+.button_pos_round
+{
+  padding-bottom: 45px;
+}
+.button_pos_round .btn_round_purple 
+{
+position: absolute;
+right: 20px;
+}
+.switch_div_length
+{
+  min-width: 195px;
+}
+.search_input_style
+{
+  border-color: #707070 !important;
+  color:#989595 !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  padding: 8px 15px !important;
+  background-color: transparent !important;
+  margin-left: 0px !important;
+  height: unset !important;
+}
+.search_input_style::placeholder
+{
+  color:#989595;
+  font-size: 12px !important;
+  
+}
+.input_grp_search
+{
+  background-color: transparent !important;
+  border: 1px solid #707070 !important;
+  height: 40px !important;
+  border-radius: 10px !important;
+}
+.input_grp_search .input-group-text
+{
+background-color: transparent !important;
 }
 /* END NEW CSS */
