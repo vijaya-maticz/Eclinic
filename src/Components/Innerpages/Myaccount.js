@@ -14,6 +14,9 @@ import disease6 from '../../Assets/Images/disease6.png'
 import profile from '../../Assets/Images/profile.png'
 
 import doc from '../../Assets/Images/doc.png'
+import Editdetails from '../Offcanvas/EditDetailsOff';
+import ChangePass from '../Offcanvas/ChangePassword';
+import SecurityControl from '../Offcanvas/SecurityControl';
 
 
 
@@ -24,9 +27,15 @@ const Myaccount = () =>{
   
     const[checked, setChecked] = useState(false)
  const Navigate = useNavigate()
+ const[edit, setEdit] = useState(false)
+ const[password, setPassword] = useState(false)
+ const[security, setSecurity] = useState(false)
 
     return(
         <>
+        {edit && <Editdetails onDismiss={() => setEdit(false)} />}
+        {password && <ChangePass onDismiss={() => setPassword(false)} changepass={() =>{setPassword(false); setSecurity(true)} }/>}
+        {security && <SecurityControl onDismiss={() => setSecurity(false)} />}
         <div id="dashboard" className='showsidebar'>
             <div id='sidebar'>
                 <Sidebar/>
@@ -38,6 +47,7 @@ const Myaccount = () =>{
                 </div> 
                <div className='cont p-sm-5 p-4 cont_padding'>
             <button onClick={() => Navigate("/ordernow")}>Order now</button>
+          
 
                 <div className='row'>
                     <div className='col-12 col-md-4 col-xl-3'>
@@ -72,14 +82,12 @@ const Myaccount = () =>{
                         <a href="javascript:void(0)" className='profile_page_link'>Manage personal data</a>
                     </p>
                     <div className='text-center mt-3'>
-                        <button className='btn btn_edit_white'>
-                            Edit
-                        </button>
+                        <button className='btn btn_edit_white' onClick={() => setEdit(!edit)}>Edit</button>
                     </div>
 
                     <div className='text-center mt-3 div_acc_sec'>
                         <p className='acc_secu_text'>Account Security</p>
-                        <button className='btn btn_edit_yellow mt-3'>
+                        <button className='btn btn_edit_yellow mt-3' onClick={() => setPassword(!password)}>
                             <span className='pencil_div_circle me-1'>
                             <i className="fa fa-pencil"></i>
                             </span>
