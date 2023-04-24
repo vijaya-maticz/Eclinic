@@ -21,7 +21,7 @@ import Myaccount from './Components/Innerpages/Myaccount';
 
 
 
-import TableView from './Components/Innerpages/TableView';
+import Records from './Components/Innerpages/Records';
 
 
 // const Land = React.lazy(() => import('./Components/Landing/Land'));
@@ -53,7 +53,7 @@ function App() {
           <Route path="/myaccount" element={<Myaccount />} />
 
 
-          <Route path='/tableview' element={<TableView />} />
+          <Route path='/records' element={<Records />} />
  
 
 
