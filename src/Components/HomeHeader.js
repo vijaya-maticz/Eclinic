@@ -31,8 +31,8 @@ const HomeHeader = () => {
               <NavLink className='nav-link link_mr d-none-inner-menu' to="/dashboard">Dashboard</NavLink>
             <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/myaccount">My Account</NavLink>          
 
-              <NavLink className='nav-link link_mr d-none-inner-menu' to="/">Records</NavLink>
-            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/">Transaction</NavLink>                  
+              <NavLink className='nav-link link_mr d-none-inner-menu' to="/records">Records</NavLink>
+            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/transaction">Transaction</NavLink>                  
           
           </Nav>
           

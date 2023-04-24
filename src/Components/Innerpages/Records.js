@@ -1,6 +1,8 @@
 import React,{useState , Fragment} from 'react';
 import HomeHeader from '../HomeHeader';
 import Sidebar from './Sidebar';
+import Footer from '../Footer';
+
 import "react-datepicker/dist/react-datepicker.css";
 import DataTable from 'react-data-table-component';
 import asset1 from '../../Assets/Images/asset1.png'
@@ -213,6 +215,7 @@ const[checked, setChecked] = useState(false)
 
 
     return(
+      <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
@@ -261,6 +264,13 @@ const[checked, setChecked] = useState(false)
                </div> 
             </div>
         </div>
+
+<div className='footer_sec'>
+<div className='container'>
+<Footer />
+</div>
+</div>
+</>
     )
 }
 
