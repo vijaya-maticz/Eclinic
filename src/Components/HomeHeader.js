@@ -2,15 +2,18 @@ import React,{useState} from 'react';
 import {Navbar,NavDropdown,Container,Nav} from 'react-bootstrap'
 import {Link, NavLink} from 'react-router-dom'
 import logo from '../Assets/Images/logo.png'
+import user from "../Assets/Images/user.png"
+import Cart from './Offcanvas/CartOff';
 
 
 
 const HomeHeader = () => {  
 
-
+  const[cart, setCart] = useState(false)
 
     return(
         <div id="homeheader">
+          {cart && <Cart onDismiss={() => setCart(false)} />}
             <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#home"><img src={logo} className="logo"/> </Navbar.Brand>
@@ -31,11 +34,18 @@ const HomeHeader = () => {
             <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/">Transaction</NavLink>                  
           
           </Nav>
-
-          <Nav>
           
-            <Link to="/" className='btn btn-grey me-3'>Login</Link>
-            <Link to="/" className='btn btn-purple'>Get Started</Link>
+
+          <Nav className='align-items-center'>
+          <div className='cart me-3'> 
+             <button className='btn btn-link p-0' onClick={() => setCart(!cart)}>
+               <img src={user} />
+              </button>
+              <span>1</span>
+           </div> 
+          
+           <div> <Link to="/" className='btn btn-grey me-3'>Login</Link></div>
+           <div> <Link to="/" className='btn btn-purple'>Get Started</Link></div>
 
           
           </Nav>
