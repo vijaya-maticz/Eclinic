@@ -22,6 +22,7 @@ import Myaccount from './Components/Innerpages/Myaccount';
 
 
 import TableView from './Components/Innerpages/TableView';
+import OrderNow from './Components/Innerpages/OrderNow';
 
 
 // const Land = React.lazy(() => import('./Components/Landing/Land'));
@@ -54,6 +55,7 @@ function App() {
 
 
           <Route path='/tableview' element={<TableView />} />
+          <Route path='/ordernow' element={<OrderNow />} />
  
 
 

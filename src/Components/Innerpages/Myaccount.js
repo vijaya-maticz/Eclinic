@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 import HomeHeader from '../HomeHeader';
 import Footer from '../Footer';
@@ -18,7 +18,7 @@ import profile from '../../Assets/Images/profile.png'
 
 
 const Myaccount = () =>{
-  
+ const Navigate = useNavigate()
 
     return(
         <>
@@ -32,7 +32,7 @@ const Myaccount = () =>{
                 <HomeHeader />
                 </div> 
                <div className='cont p-sm-5 p-4 cont_padding'>
-            
+            <button onClick={() => Navigate("/ordernow")}>Order now</button>
 
                 <div className='row'>
                     <div className='col-12 col-md-4 col-xl-3'>
