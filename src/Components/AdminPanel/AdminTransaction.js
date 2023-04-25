@@ -8,7 +8,7 @@ import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
-const Transaction = () =>{
+const AdminTransaction = () =>{
     const columns = [
         {
           name: "No.",
@@ -140,4 +140,4 @@ const[checked, setChecked] = useState(false)
     )
 }
 
-export default Transaction
+export default AdminTransaction

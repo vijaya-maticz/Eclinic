@@ -56,44 +56,47 @@ const Sidebar = () =>{
           
           <div className='sidelist'>
           <div className='menus'>
-               <NavLink activeClassName="active" to="/treatments"  className="nounder">
+               <NavLink activeClassName="active" to="/admin"  className="nounder">
                 <img src={treat} className="active" />
-                Treatments</NavLink>
+                Dashboard</NavLink>
                 
             </div>
      
             <div className='menus'>
-               <NavLink activeClassName="active" to="/admin/tableview"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/users"  className="nounder">
                 <img src={ceti} className="active"/>
-               Certificate</NavLink>
+               User</NavLink>
                 
             </div>
 
             <div className='menus'>
-               <NavLink activeClassName="active" to="/dashboard"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/doctor"  className="nounder">
                 <img src={dash} className="active"/>
-               Dashboard</NavLink>
+               Doctor</NavLink>
                 
             </div>
-
             <div className='menus'>
-               <NavLink activeClassName="active" to="/myaccount"  className="nounder">
-                <img src={myacc} className="active"/>
-               My Account</NavLink>
-                
-            </div>
-
-            <div className='menus'>
-               <NavLink activeClassName="active" to="/records"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/records"  className="nounder">
                 <img src={treat} className="active"/>
                Records</NavLink>
                 
             </div>
 
             <div className='menus'>
-               <NavLink activeClassName="active" to="/transaction"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/transaction"  className="nounder">
                 <img src={trans} className="active"/>
                Transaction</NavLink>
+                
+            </div>
+            <div className='menus'>
+               <NavLink activeClassName="active" to="/admin/setting"  className="nounder">
+                <img src={myacc} className="active"/>
+              Settings</NavLink>
+            </div>
+            <div className='menus'>
+               <NavLink activeClassName="active" to="/admin/cms"  className="nounder">
+                <img src={myacc} className="active"/>
+               CMS</NavLink>
                 
             </div>
          
