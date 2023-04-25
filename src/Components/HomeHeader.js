@@ -17,7 +17,7 @@ const HomeHeader = () => {
           {cart && <Cart onDismiss={() => setCart(false)} />}
             <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home"><img src={logo} className="logo"/> </Navbar.Brand>
+        <NavLink to="/"><Navbar.Brand><img src={logo} className="logo"/> </Navbar.Brand></NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className='mx-auto'>
@@ -37,7 +37,7 @@ const HomeHeader = () => {
           </Nav>
           
 
-          <Nav className='align-items-center'>
+          <Nav className='align-items-center menu_mobilalign'>
           <div className='cartmenu me-3'> 
              <button className='btn btn-link p-0' onClick={() => setCart(!cart)}>
                <img src={user} />
