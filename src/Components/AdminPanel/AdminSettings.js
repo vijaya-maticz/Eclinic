@@ -7,6 +7,7 @@ import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import dummyimg from '../../Assets/Images/eclinic-img/dummyimg.png'
 import dummyimgbig from '../../Assets/Images/eclinic-img/dummyimgbig.png'
+import qr from '../../Assets/Images/eclinic-img/qr.png'
 import { Tabs, Tab} from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
@@ -173,10 +174,10 @@ const imgName = document.querySelector('.filename')
                                 
                           </div>
                           <div className='row'>
-                          <div className='col-md-6'>
+                          <div className='col-xl-6'>
                               <div className='borderedinputbox mb-4'>
-                                        <div className='d-flex jc-between align-items-center'>
-                                          <div className='d-flex align-items-center gap-2'>
+                                        <div className='d-flex jc-between align-items-center flex-column flex-sm-row gap-2 text-center text-sm-start'>
+                                          <div className='d-flex align-items-center flex-column flex-sm-row gap-2 text-center text-sm-start'>
                                             <div className='browseimg'><img className='img' src={dummyimg} />
                                               </div> 
                                               <div>
@@ -191,22 +192,22 @@ const imgName = document.querySelector('.filename')
                                         </div>
                                     </div>
                               </div>
-                              <div className="col-md-6">
-                            <div class="form-floating mb-3">
+                            <div className="col-xl-6">
+                               <div class="form-floating mb-3">
                                   <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                                   <label for="floatingInput">Twitter Link</label>
-                              </div>
+                                </div>
                             
                               </div>
                           </div>
                           <div className='row'>
-                          <div className='col-md-6'>
+                          <div className='col-xl-6'>
                             <div class="form-floating mb-3">
                                   <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                                   <label for="floatingInput">Facebook Link</label>
                               </div>
                               </div>
-                              <div className='text-end col-md-6'>
+                              <div className='text-end col-xl-6'>
                                   <button className='themebtn-bordered big'>Confirm</button>
                               
                           </div>
@@ -221,10 +222,10 @@ const imgName = document.querySelector('.filename')
                   <div className='  pad_sec_head mt-4'>
                       
                       <div className='row mt-4'>
-                          <div className='col-md-3'>
+                          <div className='col-xl-3'>
                           <div className='borderedinputbox text-center mb-4 py-3'>
-                                        <div className='d-flex jc-between align-items-center flex-column'>
-                                          <div className='d-flex align-items-center gap-2 flex-column'>
+                                        <div className='d-flex jc-between align-items-center flex-xl-column flex-sm-row flex-column'>
+                                          <div className='d-flex align-items-center gap-2 flex-xl-column flex-sm-row flex-column'>
                                             <div className='browseimg'><img className='img' src={dummyimgbig} />
                                               </div> 
                                               <div className='my-4'>
@@ -240,7 +241,7 @@ const imgName = document.querySelector('.filename')
                                     </div>
                           </div>
                           
-                          <div className='col-md-9'>
+                          <div className='col-xl-9'>
                           <div class="form-floating mb-3">
                               <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                               <label for="floatingInput">Name</label>
@@ -285,10 +286,17 @@ const imgName = document.querySelector('.filename')
                   <Tab eventKey="googleauth" title="Google Authentication">
                       <div className='  pad_sec_head mt-4'>
                       
-                      <div className='row mt-4'>
-                          <div className='col-md-4'></div>
+                      <div className='row mt-4 align-items-center'>
+                          <div className='col-xl-3'>
+                            <div className='borderedinputbox text-center mb-4 p-xl-4 p-3'>
+                                <div className='qrcode text-center p-xl-3 p-sm-5 p-2'>
+                                   <img src={qr}/>
+                                </div>
+                            </div>
+
+                          </div>
                           
-                          <div className='col-md-8'>
+                          <div className='col-xl-9'>
                           <div class="form-floating mb-3">
                               <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                               <label for="floatingInput">32 digit sercurity code</label>
@@ -310,7 +318,7 @@ const imgName = document.querySelector('.filename')
                               
                           </div>
                         </div>
-                        </div>
+                      </div>
                     
                       
                       

@@ -450,10 +450,20 @@ input {
 }
 .profile .browseimg img,.profile .browseimg {
   width: 150px;
-  height: 100px;
+  height: 112px;
+  border-radius: 8px;
+  object-fit: contain;
 }
-
-
+.qrcode {
+  background: #f2f2f2;
+  padding: 16px;
+  border-radius: 15px;
+}
+.qrcode img {
+  aspect-ratio: 1/1;
+  max-width: 170px;
+  width: 100%;
+}
 
 /* 
 @media(max-width:1400px){
