@@ -2969,4 +2969,7 @@ color:#fff !important;
 {
 min-width: 130px !important;
 }
+.apexcharts-bar-series.apexcharts-plot-series  .apexcharts-series path {
+  clip-path: inset(0% 0% -11% 0% round 8px);
+}
 /* END NEW CSS */
