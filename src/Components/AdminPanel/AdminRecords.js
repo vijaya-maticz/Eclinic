@@ -8,7 +8,7 @@ import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
-const Records = () =>{
+const AdminRecords = () =>{
     const columns = [
         {
           name: "ID",
@@ -264,4 +264,4 @@ const[checked, setChecked] = useState(false)
     )
 }
 
-export default Records
+export default AdminRecords

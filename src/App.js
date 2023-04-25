@@ -27,6 +27,12 @@ import OrderNow from './Components/Innerpages/OrderNow';
 import Records from './Components/Innerpages/Records';
 import Transaction from './Components/Innerpages/Transaction';
 import AdminDashboard from './Components/AdminPanel/Dashboard';
+import AdminRecords from './Components/AdminPanel/AdminRecords';
+import AdminTransaction from './Components/AdminPanel/AdminTransaction';
+import AdminUsers from './Components/AdminPanel/AdminUsers';
+import AdminDoctor from './Components/AdminPanel/AdminDoctor';
+import AdminCms from './Components/AdminPanel/AdminCms';
+import AdminSettings from './Components/AdminPanel/AdminSettings';
 
 
 
@@ -63,7 +69,13 @@ function App() {
 
 
 {/* Admin */}
-<Route path="/adminDashboard" element={<AdminDashboard />} /> 
+<Route path="/admin" element={<AdminDashboard />} /> 
+<Route path='/admin/records' element={<AdminRecords />} />
+          <Route path='/admin/transaction' element={<AdminTransaction />} />
+          <Route path='/admin/users' element={<AdminUsers />} />
+          <Route path='/admin/doctor' element={<AdminDoctor/>} />
+          <Route path='/admin/cms' element={<AdminCms/>} />
+          <Route path='/admin/setting' element={<AdminSettings/>} />
 
           
         </Routes>
