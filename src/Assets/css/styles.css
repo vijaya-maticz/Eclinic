@@ -7,24 +7,7 @@
   --graybg: #f2f2f2;
 }
 
-@font-face {
-  font-family: "HelveticaLight";   /*Can be any text*/
-  src: local("Helvetica"),
-    url("../fonts/Helvetica.ttf") format("truetype");
-}
-@font-face {
-  font-family: "HelveticaBold";   /*Can be any text*/
-  src: local("Helvetica"),
-    url("../fonts/Helvetica-Bold.ttf") format("truetype");
-}
 
-
-
-@font-face {
-  font-family: "HelveticaBoldOblique";   /*Can be any text*/
-  src: local("Helvetica"),
-    url("../fonts/Helvetica-BoldOblique.ttf") format("truetype");
-}
 
 
 .shadowbox{
@@ -35,9 +18,8 @@
     margin: 0;
   }
   body{
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     background-color: #fff;
-    font-family: "HelveticaLight";
   }
   li{
     list-style-type: none;
@@ -1139,7 +1121,7 @@ font-weight: 500 !important;
   font-size: 35px;
   /* font-weight: 700; */
   text-align: center;
-  font-family: "HelveticaBold";
+  
 }
 .banner_thick_font span
 {
@@ -1540,7 +1522,6 @@ margin-bottom: 20px !important;
 /* NEW CSS */
 .navbar-light .navbar-nav .nav-link
 {
-  font-family: "HelveticaBold" !important;
   color: #707070;
   font-size: 12px;
   padding-right: 40px;
@@ -1573,7 +1554,7 @@ content: none !important;
   border-radius: 10px;
   color:#635F5F;
   font-size: 13px;
-  font-family: "HelveticaLight";
+  
   padding:5px 13px !important;
    border:2px solid #E2E0E0;
    letter-spacing: 0.19px;
@@ -1591,7 +1572,7 @@ content: none !important;
   border-radius: 10px;
   color:#fff;
   font-size: 13px;
-  font-family: "HelveticaLight";
+  
   padding:5px 13px !important;
    border:2px solid #989595;
    letter-spacing: 0.19px;
@@ -1610,7 +1591,7 @@ content: none !important;
   border-radius: 10px;
   color:#7D620C !important;
   font-size: 13px;
-  font-family: "HelveticaLight";
+  
   padding:5px 13px !important;
    border:2px solid #F1D477;
    letter-spacing: 0.19px;
@@ -1622,7 +1603,7 @@ content: none !important;
   border-radius: 10px;
   color:#FFFFFF !important;
   font-size: 13px;
-  font-family: "HelveticaLight";
+  
   padding:5px 13px !important;
    border:2px solid #19C5B8;
    letter-spacing: 0.19px;
@@ -1641,7 +1622,7 @@ content: none !important;
   border-radius: 10px;
   color:#571E92;
   font-size: 13px;
-  font-family: "HelveticaLight";
+  
   padding:5px 13px !important;
    border:2px solid #571E92;
    letter-spacing: 0.19px;
@@ -1660,7 +1641,7 @@ content: none !important;
   border-radius: 10px;
   color:#fff;
   font-size: 13px;
-  font-family: "HelveticaLight";
+  
   padding:5px 13px !important;
    border:2px solid #571E92;
    letter-spacing: 0.19px;
@@ -1750,7 +1731,7 @@ content: none !important;
 {
   color:#635F5F;
   font-size: 11px;
-  font-family: "HelveticaBold";
+  
 
 }
 .card_icon_purple
@@ -1761,7 +1742,7 @@ content: none !important;
 {
   color:#635F5F;
   font-size: 16px;
-  font-family: "HelveticaBold";
+  
 }
 
 
@@ -2175,7 +2156,7 @@ align-items: center;
 {
   color:#fff;
   font-size: 16px !important;
-  font-family: "HelveticaBold";
+  
   line-height: 1.5 !important;
 }
 
@@ -2325,13 +2306,13 @@ input:checked + .slider:before {
 {
   color:#474545;
   font-size: 18px;
-  font-family: "HelveticaBold";
+  
 }
 .disease_head
 {
   color:#635F5F;
   font-size: 14px;
-  font-family: "HelveticaBold";
+  
 
 }
 .disease_desc
@@ -2445,7 +2426,7 @@ input:checked + .slider:before {
   color:#FFFFFF;
   font-size: 15px;
     line-height: 1.1;
-    font-family: "HelveticaBold";
+    
 }
 .desc_ad_over
 {
@@ -2453,7 +2434,6 @@ input:checked + .slider:before {
   font-size: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
-  /* font-family:"HelveticaBold"; */
 }
 .btn-yellow-fill
 {
@@ -2466,7 +2446,7 @@ input:checked + .slider:before {
   border-radius: 7px;
   color:#fff;
   font-size: 10px;
-  font-family: "HelveticaLight";
+  
   padding:1px 13px !important;
    border:2px solid #F1D477;
    letter-spacing: 0.19px;
@@ -2498,7 +2478,7 @@ font-size: 18px;
   color: #fff;
   /* font-size: 20px !important; viji */
   font-size: 27px !important;
-  font-family: "HelveticaBold";
+  
   line-height: 1.5 !important;
 }
 .steps_badge
@@ -2533,7 +2513,7 @@ color:#BE93E9;
 .white_text_count
 {
   color:#fff !important;
-  font-family: "HelveticaBold";
+  
   font-size: 16px !important;
 }
 .flex_chart_icon
@@ -2583,7 +2563,7 @@ color:#BE93E9;
 {
   color:#635F5F;
   font-size: 12px;
-  font-family: "HelveticaBold";
+  
 }
 .dashboard_count_grey span
 {
@@ -2697,7 +2677,7 @@ color:#000;
 {
   color:#fff;
   font-size: 16px;
-  font-family: "HelveticaBold";
+  
 }
 .profile_address_desc
 {
@@ -2736,7 +2716,7 @@ color:#000;
 {
   color:#fff;
   font-size: 14px !important;
-  font-family: "HelveticaBold";
+  
 }
 .pencil_div_circle
 {
@@ -2756,7 +2736,7 @@ color:#000;
   color:#131314;
   font-size: 12px;
   border-radius: 12px;
-  font-family: "HelveticaBold";
+  
   border:2px solid #F1D477;
 }
 .btn_edit_yellow:hover
@@ -2931,7 +2911,7 @@ background-color: transparent !important;
   color: #A5A5A5;
   font-size: 13px;
   margin-bottom: 0px;
-  font-family: 'HelveticaBold';
+  
 }
 .switch_div_1 .first_check
 {

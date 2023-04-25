@@ -1,12 +1,12 @@
 import React,{useState , Fragment} from 'react';
 import AdminHeader from './AdminHeader';
-import Sidebar from './Sidebar';
 import {FloatingLabel, Form,Button} from 'react-bootstrap'
 import DataTable from 'react-data-table-component';
 import { Bar } from "react-chartjs-2";
 import Datepicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import ReactDatatable from '@ashvin27/react-datatable';
+import AdminSidebar from './AdminSidebar';
 
 const TableView = () =>{
     const columns = [
@@ -203,7 +203,7 @@ const datas = {
     return(
         <div id="dashboard" className='showsidebar'>
             <div id='sidebar'>
-                <Sidebar/>
+                <AdminSidebar/>
             </div>
             <div className='headandcont'>
                <div className="adminheader"><AdminHeader /></div> 

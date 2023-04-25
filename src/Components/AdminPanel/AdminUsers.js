@@ -1,6 +1,5 @@
 import React,{useState , Fragment} from 'react';
 import HomeHeader from '../HomeHeader';
-import Sidebar from './Sidebar';
 import "react-datepicker/dist/react-datepicker.css";
 import DataTable from 'react-data-table-component';
 import asset1 from '../../Assets/Images/asset1.png'
@@ -8,6 +7,7 @@ import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
+import AdminSidebar from './AdminSidebar';
 const AdminUsers = () =>{
     const columns = [
         {
@@ -92,7 +92,7 @@ const[checked, setChecked] = useState(false)
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
-                <Sidebar/>
+                <AdminSidebar/>
             </div>
             <div className='headandcont'>
                <div className="adminheader"><HomeHeader /></div> 
