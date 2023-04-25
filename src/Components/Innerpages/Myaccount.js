@@ -14,6 +14,8 @@ import disease6 from '../../Assets/Images/disease6.png'
 import profile from '../../Assets/Images/profile.png'
 
 import doc from '../../Assets/Images/doc.png'
+import med from '../../Assets/Images/med.png'
+
 import Editdetails from '../Offcanvas/EditDetailsOff';
 import ChangePass from '../Offcanvas/ChangePassword';
 import SecurityControl from '../Offcanvas/SecurityControl';
@@ -105,14 +107,14 @@ const Myaccount = () =>{
                             <div className='card-body'>
                                 <div className='flex_img_div flex_img_div_med'>
                                     <img src={doc} className='img-fluid img_purpl_care' />
-                                    <div className='ms-3'>
+                                    <div className='ms-2'>
                                         <p className='disease_head'>Free Confidential</p>
                                         <p className='disease_desc_grey'>Lorem Ipsum is simply dummy text</p>
                                     
                                     </div>
                                     <div>
                                     <div>
-                                        <Link to="/" className="btn btn btn-purple btn-purple-sm ms-auto">
+                                        <Link to="/" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
                                         Order Now
                                         </Link>
                                         </div>
@@ -128,15 +130,15 @@ const Myaccount = () =>{
                         <div className='card card_dise'>
                             <div className='card-body'>
                                 <div className='flex_img_div flex_img_div_med'>
-                                    <img src={doc} className='img-fluid img_purpl_care' />
-                                    <div className='ms-3'>
+                                    <img src={med} className='img-fluid img_purpl_care' />
+                                    <div className='ms-2'>
                                         <p className='disease_head'>Medical Certificate</p>
                                         <p className='disease_desc_grey'>Lorem Ipsum is simply dummy text</p>
                                     
                                     </div>
                                     <div>
                                     <div>
-                                        <Link to="/" className="btn btn btn-purple btn-purple-sm ms-auto">
+                                        <Link to="/" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
                                         Order Now
                                         </Link>
                                         </div>
