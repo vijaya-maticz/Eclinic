@@ -83,7 +83,7 @@ const Home = () => {
         setIsanim(true)
         setIsanim1(false)
         setIsanim2(false)
-        document.getElementById("video_1").play();
+        // document.getElementById("video_1").play();
         }
         else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 401 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 600)
         {
@@ -94,7 +94,7 @@ const Home = () => {
         setIsanim1(true)
         setIsanim(false)
         setIsanim2(false)
-        document.getElementById("video_2").play();
+        // document.getElementById("video_2").play();
 
         }
         else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 601)
@@ -107,7 +107,7 @@ const Home = () => {
         setIsanim2(true)
         setIsanim(false)
         setIsanim1(false)
-        document.getElementById("video_3").play();
+        // document.getElementById("video_3").play();
 
         }
 

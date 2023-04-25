@@ -291,11 +291,11 @@ const data1 =  {
                <div className='cont p-sm-5 p-4 cont_padding'>
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
-                <div className='row'>
-                    <div className='col-12 col-md-7 col-lg-7'>
+                <div className='row justify-content-between'>
+                    <div className='col-12 col-md-6 col-lg-7'>
                         <div className='p-4 p-lg-5 pb-lg-3 pt-lg-4'>
-                        <p className='card_text_white_big'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                        <p className='card_tect_grrey_sm_card'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        <p className='card_text_white_big dashb_titlr_w'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
+                        <p className='card_tect_grrey_sm_card mt-2 dashb_desc_w'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                        <div className='mt-3'>
                       
                         <div className='row w-100'>
@@ -339,8 +339,8 @@ const data1 =  {
                         </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-5 col-lg-5 sec_img_dots'>
-                        <img src={treatment} className='img-fluid' />
+                    <div className='col-12 col-md-6 col-lg-5 sec_img_dots'>
+                        <img src={treatment} className='img-fluid px-2 px-xl-5' />
                         </div>
                 </div>
                 </div>

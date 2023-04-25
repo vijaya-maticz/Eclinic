@@ -48,7 +48,7 @@ const Myaccount = () =>{
                 <HomeHeader />
                 </div> 
                <div className='cont p-sm-5 p-4 cont_padding'>
-            <button onClick={() => Navigate("/ordernow")}>Order now</button>
+         
           
 
                 <div className='row'>
@@ -114,7 +114,7 @@ const Myaccount = () =>{
                                     </div>
                                     <div>
                                     <div>
-                                        <Link to="/" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
+                                        <Link to="/ordernow" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
                                         Order Now
                                         </Link>
                                         </div>
@@ -138,7 +138,7 @@ const Myaccount = () =>{
                                     </div>
                                     <div>
                                     <div>
-                                        <Link to="/" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
+                                        <Link to="/ordernow" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
                                         Order Now
                                         </Link>
                                         </div>

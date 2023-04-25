@@ -77,8 +77,8 @@ const Treatments = (props) =>{
                <div className='cont p-sm-5 p-4 cont_padding'>
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
-                <div className='row'>
-                    <div className='col-12 col-md-7 col-lg-6'>
+                <div className='row justify-content-between' >
+                    <div className='col-12 col-md-7 col-lg-5 col-xl-6 sec_desc_pr_card'>
                         <div className='p-4 p-lg-5'>
                         <p className='card_text_white_big'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
                     
@@ -96,8 +96,8 @@ const Treatments = (props) =>{
 
                         </div>
                     </div>
-                    <div className='col-12 col-md-5 col-lg-5 offset-lg-1 sec_img_dots'>
-                        <img src={treatment} className='img-fluid' />
+                    <div className='col-12 col-md-5 col-lg-7 col-xl-5 sec_img_dots'>
+                        <img src={treatment} className='img-fluid px-2 px-xl-5' />
                         </div>
                 </div>
                 </div>
