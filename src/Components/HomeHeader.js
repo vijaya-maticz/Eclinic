@@ -38,7 +38,7 @@ const HomeHeader = () => {
           
 
           <Nav className='align-items-center'>
-          <div className='cart me-3'> 
+          <div className='cartmenu me-3'> 
              <button className='btn btn-link p-0' onClick={() => setCart(!cart)}>
                <img src={user} />
               </button>

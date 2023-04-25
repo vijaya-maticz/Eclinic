@@ -21,7 +21,7 @@ import img_ad from '../../Assets/Images/img_ad.png'
 
 
 
-const Sidebar = () =>{
+const AdminSidebar = () =>{
     const toggleDrop = (e) =>{
         e.target.nextElementSibling.classList.toggle("d-none")
     }
@@ -123,4 +123,4 @@ const Sidebar = () =>{
     )
 }
 
-export default Sidebar
+export default AdminSidebar

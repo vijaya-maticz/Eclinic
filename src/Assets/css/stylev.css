@@ -1,4 +1,5 @@
 /* common */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
 :root{
     --themeclr: #573080
 }
@@ -94,14 +95,20 @@
     color: #000;
     font-size: 16px;
 }
+button.themebtn-bordered.big {
+  padding: 12px 35px;
+}
 .themebtn-bordered, .queries ul li button {
     border:2px solid #8045BC !important;
     color: #8045BC !important;
     font-weight: 600;
     font-size: 12px;
-    padding: 7px 18px;
-    border-radius: 5px;
-}
+    padding: 9px 18px;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  
+
 .themebtn-light{
   background: #CEAEEF;
     border: 2px solid #CEAEEF;
@@ -115,11 +122,11 @@
     background: #7F30CF;
     color: #fff;
     font-size: 12px;
-    font-weight: bold;
-    padding: 7px 18px;
-    border-radius: 5px;
+    padding: 9px 18px;
+    border-radius: 10px;
     border: 1px solid #7F30CF;
-    font-weight: normal;
+    font-weight: bold;
+    box-shadow: 0px 3px 33px #00000057 !important
 }
 .offcanvas-body {
     scrollbar-width: none;
@@ -326,6 +333,14 @@ padding-right: 0;
   opacity: .65;
   transform: scale(.85) translateY(-1.8rem) translateX(.15rem);
 }
+.form-floating label {
+  font-size: 14px;
+  color: #727272;
+}
+input {
+  font-size: 14px !important;
+  color: #727272 !important;
+}
 .dangerbg {
   background: #F5ADAD;
   margin-bottom: 0;
@@ -352,13 +367,13 @@ padding-right: 0;
 .addorremove input{
   border-radius: 0;
 }
-.cart{
+.cartmenu{
   position: relative;
 }
-.cart img {
+.cartmenu img {
   width: 40px;
 }
-.cart span {
+.cartmenu span {
   font-size: 10px;
   position: absolute;
   background: #19C590;
@@ -375,6 +390,7 @@ padding-right: 0;
 
 .admin .form-floating > .form-control.borderinput:focus~label{
   background-color: #fff;
+  color: #727272 !important;
 }
 .admin .nav.nav-tabs {
   justify-content: space-around;
@@ -386,6 +402,7 @@ padding-right: 0;
 .admin .nav.nav-tabs .nav-link {
   position: relative;
   z-index: 1;
+  color: #000;
 
 }
 .admin .nav.nav-tabs .nav-link:hover{
@@ -405,8 +422,36 @@ padding-right: 0;
   left: 0;
   z-index: -1;
 }
+.browseimg {
+  width: 87px;
+  height: 76px;
+}
+.browseimg img{
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 
+.browseinput input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+}
+.browseinput  {
+  position: relative;
+}
+.browseinput button{
+  pointer-events: none;
+}
+.profile .browseimg img,.profile .browseimg {
+  width: 150px;
+  height: 100px;
+}
 
 
 
