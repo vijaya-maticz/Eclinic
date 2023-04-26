@@ -11,6 +11,8 @@ import qr from '../../Assets/Images/eclinic-img/qr.png'
 import { Tabs, Tab} from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
+import AdminHeader from '../AdminHeader';
+import Footer from '../Footer';
 const AdminSettings = () =>{
     const columns = [
         {
@@ -106,13 +108,14 @@ const imgName = document.querySelector('.filename')
 }
 
     return(
+      <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd admin'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <AdminSidebar/>
             </div>
             <div className='headandcont'>
-               <div className="adminheader"><HomeHeader /></div> 
+               <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className=''> 
               <h4 className=''>Transaction</h4>
@@ -223,7 +226,7 @@ const imgName = document.querySelector('.filename')
                       
                       <div className='row mt-4'>
                           <div className='col-xl-3'>
-                          <div className='borderedinputbox text-center mb-4 py-3'>
+                          <div className='borderedinputbox text-xl-center text-sm-start text-center  mb-4 py-3'>
                                         <div className='d-flex jc-between align-items-center flex-xl-column flex-sm-row flex-column'>
                                           <div className='d-flex align-items-center gap-2 flex-xl-column flex-sm-row flex-column'>
                                             <div className='browseimg'><img className='img' src={dummyimgbig} />
@@ -335,6 +338,12 @@ const imgName = document.querySelector('.filename')
                </div> 
             </div>
         </div>
+        <div className='footer_sec'>
+<div className='container'>
+<Footer />
+</div>
+</div>
+</>
     )
 }
 

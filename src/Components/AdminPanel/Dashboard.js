@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
 
-import HomeHeader from '../HomeHeader';
 import Footer from '../Footer';
 import treatment from '../../Assets/Images/treatment.png'
 import graph_violet from '../../Assets/Images/graph_violet.png'
@@ -14,6 +13,7 @@ import img_icon_aud from '../../Assets/Images/img_icon_aud.png'
 
 import feather_check from "../../Assets/Images/feather_check.svg"
 import AdminSidebar from './AdminSidebar';
+import AdminHeader from '../AdminHeader';
 
 
 
@@ -30,7 +30,7 @@ const AdminDashboard = () =>{
             <div className='headandcont'>
                <div className="adminheader">
                 {/* <AdminHeader /> */}
-                <HomeHeader />
+                <AdminHeader />
                 </div> 
                <div className='cont p-sm-5 p-4 cont_padding'>
                <div className='card purple_bg_card'>

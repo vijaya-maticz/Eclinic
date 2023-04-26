@@ -114,7 +114,7 @@ const Myaccount = () =>{
                                     </div>
                                     <div>
                                     <div>
-                                        <Link to="/ordernow" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
+                                        <Link to="/certificate" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
                                         Order Now
                                         </Link>
                                         </div>
@@ -138,7 +138,7 @@ const Myaccount = () =>{
                                     </div>
                                     <div>
                                     <div>
-                                        <Link to="/ordernow" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
+                                        <Link to="/certificate" className="ms-1 btn btn btn-purple btn-purple-sm ms-auto">
                                         Order Now
                                         </Link>
                                         </div>

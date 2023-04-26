@@ -8,6 +8,8 @@ import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
+import AdminHeader from '../AdminHeader';
+import Footer from '../Footer';
 const AdminUsers = () =>{
     const columns = [
         {
@@ -22,18 +24,23 @@ const AdminUsers = () =>{
             sortable: false
           },
           {
-            name: "Amount",
-            selector: (vals) => vals.amount,
+            name: "Email Id",
+            selector: (vals) => vals.email,
             sortable: false
           },
           {
-            name: "Purpose",
-            selector: (vals) => vals.purpose,
+            name: "Phone",
+            selector: (vals) => vals.phone,
             sortable: false
           },
           {
             name: "Status",
             selector: (vals) => vals.status,
+            sortable: false
+          },
+          {
+            name: "Option",
+            selector: (vals) => vals.option,
             sortable: false
           }
           
@@ -47,6 +54,10 @@ const AdminUsers = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-pending'>Pending</badge>,
+        email: "mail@mail.com",
+        phone: "+91 9876574125",
+         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        status: <badge className='btn btn-approve'>Active</badge>,
        
       },
 
@@ -55,7 +66,11 @@ const AdminUsers = () =>{
         username: "David",
         amount: "$25",
         purpose: "Treatment",
-        status: <badge className='btn btn-approve'>Approved</badge>,
+        status: <badge className='btn btn-pending'>Approved</badge>,
+        email: "mail@mail.com",
+        phone: "+91 9876574125",
+         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        status: <badge className='btn btn-pending'>Inactive</badge>,
        
       },
 
@@ -65,6 +80,10 @@ const AdminUsers = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-pending'>Pending</badge>,
+        email: "mail@mail.com",
+        phone: "+91 9876574125",
+         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        status: <badge className='btn btn-approve'>Active</badge>,
        
       },
 
@@ -74,6 +93,10 @@ const AdminUsers = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-approve'>Approved</badge>,
+        email: "mail@mail.com",
+        phone: "+91 9876574125",
+         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        status: <badge className='btn btn-approve'>Active</badge>,
        
       },
     
@@ -89,13 +112,14 @@ const[checked, setChecked] = useState(false)
 
 
     return(
+      <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <AdminSidebar/>
             </div>
             <div className='headandcont'>
-               <div className="adminheader"><HomeHeader /></div> 
+               <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className='d-flex jc-between pad_sec_head align-items-center flex_wrap_npb'> 
               <h3 className='dash_head_blk mb-0'>Transaction</h3>
@@ -137,6 +161,12 @@ const[checked, setChecked] = useState(false)
                </div> 
             </div>
         </div>
+        <div className='footer_sec'>
+<div className='container'>
+<Footer />
+</div>
+</div>
+</>
     )
 }
 
