@@ -10,7 +10,11 @@ import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
+
+import Recordsview from '../Offcanvas/Recordsview';
+
 const Records = () =>{
+  const[show, setShow] = useState(false)
     const columns = [
         {
           name: "ID",
@@ -265,6 +269,8 @@ const[checked, setChecked] = useState(false)
             </div>
         </div>
 
+        <button onClick={() => {setShow(true)}} className="btn btn_round_purple ms-auto mt-3"> <i class="fa fa-arrow-right"></i></button>
+        {show && <Recordsview onDismiss={() => setShow(false)} />}
 <div className='footer_sec'>
 <div className='container'>
 <Footer />
