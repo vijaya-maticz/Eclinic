@@ -1140,6 +1140,15 @@ font-weight: 500 !important;
   line-height: 2;
   margin-top: 15px;
 }
+.banner_lit_font_bold
+{
+  color:#635F5F;
+  font-size: 15px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 15px;
+  font-weight: 700;
+}
 .banner_thick_font
 {
   color:#3E3C3C;
