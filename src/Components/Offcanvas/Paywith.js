@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import {Offcanvas,InputGroup,Form,Table } from 'react-bootstrap'
 import user from "../../Assets/Images/user.png"
+import copy from "../../Assets/Images/eclinic-img/copy.png"
 
 
 const Paywith = (props) =>{
@@ -21,11 +22,11 @@ const Paywith = (props) =>{
                         <div className='d-flex align-items-center'>
                             <img src={user} className='me-2'/> 
                             <div> 
-                                <h4>Medical Certificate</h4>
+                                <h4>Weight Loss</h4>
                             </div>
                          </div>
                          <div className='row mt-4'>
-                            <div className='col-md-7'>
+                            <div className='col-lg-7  mb-3 mb-lg-0'>
                                 <div className='whitebox h-100 py-4'>
                                     <InputGroup className="mb-3 borderinput">
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Product'/>
@@ -39,11 +40,11 @@ const Paywith = (props) =>{
 
                                     <div className='d-flex jc-between mt-4'>
                                         <button className='btn-grey btn'>Cancel</button>
-                                        <button className='themebtn-bordered btn'>Checkout</button>
+                                        <button className='themebtn-bordered btn'>Proceed Payment</button>
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-md-5'>
+                            <div className='col-lg-5'>
                             <div className='whitebox h-100 py-4'>
                                 <div className=' mb-4'>
                                 <Table hover>
@@ -57,7 +58,7 @@ const Paywith = (props) =>{
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                   <span className='fa fa-copy'></span>
+                                                   <img src={copy} className='copy' />
                                                    <span> Medical Certificate</span>
                                                 </td>
                                                 <td>0.1</td>

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import {Offcanvas,InputGroup,Form } from 'react-bootstrap'
 import user from "../../Assets/Images/user.png"
+import write from "../../Assets/Images/eclinic-img/write.png"
 
 
 const Paynow = (props) =>{
@@ -20,18 +21,18 @@ const Paynow = (props) =>{
                         <div className='d-flex align-items-center'>
                             <img src={user} className='me-2'/> 
                             <div> 
-                                <h4>Medical Certificate</h4>
+                                <h4>Weight loss</h4>
                             </div>
                          </div>
                          <div className='row mt-4'>
-                            <div className='col-md-7'>
+                            <div className='col-lg-7  mb-3 mb-lg-0'>
                                 <div className='whitebox h-100 py-4'>
                                     <InputGroup className="mb-3 borderinput">
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Product'/>
-                                        <InputGroup.Text>Price</InputGroup.Text>
+                                        <InputGroup.Text>Price </InputGroup.Text>
                                     </InputGroup>
                                     <InputGroup className="mb-3 borderinput">
-                                    <InputGroup.Text>Price</InputGroup.Text>
+                                    <InputGroup.Text><img src={write} className='write' /> </InputGroup.Text>
 
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Product'/>
                                         <InputGroup.Text>$25</InputGroup.Text>
@@ -43,7 +44,7 @@ const Paynow = (props) =>{
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-md-5'>
+                            <div className='col-lg-5 '>
                             <div className='whitebox h-100 py-4'>
                             <div className='d-flex flex-1 jc-between mb-3'>
                                     <p>Sub total</p>

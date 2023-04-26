@@ -4,6 +4,7 @@ import {Link, NavLink} from 'react-router-dom'
 import logo from '../Assets/Images/logo.png'
 import user from "../Assets/Images/user.png"
 import prof from "../Assets/Images/user.png"
+import cartimg from "../Assets/Images/eclinic-img/cart.png"
 import Cart from './Offcanvas/CartOff';
 
 
@@ -38,17 +39,16 @@ const HomeHeader = () => {
           
 
           <Nav className='align-items-center menu_mobilalign'>
-          <div className='cartmenu me-3'> 
-             <button className='btn btn-link p-0' onClick={() => setCart(!cart)}>
-               <img src={user} />
-              </button>
-              <span>1</span>
-           </div> 
-           <Dropdown className="admin-prof me-3">
-                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='p-0'>
+            <div className='cartmenu me-3'> 
+              <button className='btn btn-link p-0' onClick={() => setCart(!cart)}>
+                <img src={cartimg} />
+                </button>
+                <span>1</span>
+            </div> 
+            <Dropdown className="admin-prof me-3">
+              <Dropdown.Toggle variant="link" id="dropdown-basic" className='p-0'>
                       <img src={prof} className=""/>
                     </Dropdown.Toggle>
-
                     <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">Logout</Dropdown.Item>
                     </Dropdown.Menu>

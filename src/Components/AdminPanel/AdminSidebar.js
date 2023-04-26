@@ -36,7 +36,7 @@ const AdminSidebar = () =>{
         }
     }
     return(
-        <div className="sidebar">
+        <div className="sidebar adminside">
             {/* <div className='text-center py-4'>
             <button className='togglebtn' onClick={() => sidetoggle()} ><img src={hamburgur} className="ham"/></button>
                 <img src={logo} className="adminlogo"/>
@@ -56,7 +56,7 @@ const AdminSidebar = () =>{
           
           <div className='sidelist'>
           <div className='menus'>
-               <NavLink activeClassName="active" to="/admin"  className="nounder">
+               <NavLink activeClassName="active" to="/admin/dashboard"  className="nounder">
                 <img src={treat} className="active" />
                 Dashboard</NavLink>
                 

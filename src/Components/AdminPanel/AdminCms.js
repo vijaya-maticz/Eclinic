@@ -6,8 +6,10 @@ import asset1 from '../../Assets/Images/asset1.png'
 import asset2 from '../../Assets/Images/asset2.png'
 import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
+import Footer from '../Footer';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
+import AdminHeader from '../AdminHeader';
 const AdminCms = () =>{
     const columns = [
         {
@@ -17,25 +19,21 @@ const AdminCms = () =>{
         },
      
           {
-            name: "User Name",
-            selector: (vals) => vals.username,
+            name: "Page Name",
+            selector: (vals) => vals.pagename,
             sortable: false
           },
-          {
-            name: "Amount",
-            selector: (vals) => vals.amount,
-            sortable: false
-          },
-          {
-            name: "Purpose",
-            selector: (vals) => vals.purpose,
-            sortable: false
-          },
+         
           {
             name: "Status",
             selector: (vals) => vals.status,
             sortable: false
-          }
+          },
+          {
+            name: "Option",
+            selector: (vals) => vals.option,
+            sortable: false
+          },
           
        
     ]  
@@ -43,36 +41,32 @@ const AdminCms = () =>{
   
       {
         no: "001",
-        username: "David william",
-        amount: "$25",
-        purpose: "Treatment",
+        pagename: "Astma- Treatment",
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
 
       {
         no: "002",
-        username: "David",
-        amount: "$25",
-        purpose: "Treatment",
+        pagename: "Acne Treatment",
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Approved</badge>,
        
       },
 
       {
         no: "003",
-        username: "David william",
-        amount: "$25",
-        purpose: "Treatment",
+        pagename: "Astma- Treatment",
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
 
       {
         no: "004",
-        username: "David",
-        amount: "$25",
-        purpose: "Treatment",
+        pagename: "Acne Treatment",
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Approved</badge>,
        
       },
@@ -89,13 +83,14 @@ const[checked, setChecked] = useState(false)
 
 
     return(
+      <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <AdminSidebar/>
             </div>
             <div className='headandcont'>
-               <div className="adminheader"><HomeHeader /></div> 
+               <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className='d-flex jc-between pad_sec_head align-items-center flex_wrap_npb'> 
               <h3 className='dash_head_blk mb-0'>Transaction</h3>
@@ -137,6 +132,12 @@ const[checked, setChecked] = useState(false)
                </div> 
             </div>
         </div>
+        <div className='footer_sec'>
+<div className='container'>
+<Footer />
+</div>
+</div>
+        </>
     )
 }
 

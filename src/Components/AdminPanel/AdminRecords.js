@@ -8,6 +8,8 @@ import asset3 from '../../Assets/Images/asset3.png'
 import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
+import AdminHeader from '../AdminHeader';
+import Footer from '../Footer';
 const AdminRecords = () =>{
     const columns = [
         {
@@ -35,6 +37,11 @@ const AdminRecords = () =>{
             name: "Status",
             selector: (vals) => vals.status,
             sortable: false
+          },
+          {
+            name: "Options",
+            selector: (vals) => vals.option,
+            sortable: false
           }
           
        
@@ -47,7 +54,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "002",
@@ -55,7 +62,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
 
       {
@@ -64,7 +71,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "004",
@@ -72,7 +79,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -82,7 +89,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "006",
@@ -90,7 +97,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -100,7 +107,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "008",
@@ -108,7 +115,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -118,7 +125,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "010",
@@ -126,7 +133,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -136,7 +143,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "012",
@@ -144,7 +151,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -154,7 +161,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "014",
@@ -162,7 +169,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -172,7 +179,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "016",
@@ -180,7 +187,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
@@ -190,7 +197,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "018",
@@ -198,7 +205,7 @@ const AdminRecords = () =>{
         response: <button className='btn btn-grey-dark'>View</button>,
         prescription: <button className='btn btn-grey-dark'>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-       
+        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
     
@@ -213,13 +220,14 @@ const[checked, setChecked] = useState(false)
 
 
     return(
+      <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <AdminSidebar/>
             </div>
             <div className='headandcont'>
-               <div className="adminheader"><HomeHeader /></div> 
+               <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className='d-flex jc-between pad_sec_head align-items-center flex_wrap_npb'> 
               <h3 className='dash_head_blk mb-0'>Records</h3>
@@ -261,6 +269,12 @@ const[checked, setChecked] = useState(false)
                </div> 
             </div>
         </div>
+        <div className='footer_sec'>
+<div className='container'>
+<Footer />
+</div>
+</div></>
+
     )
 }
 

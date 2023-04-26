@@ -86,7 +86,6 @@ const[register, setRegister] = useState(false)
             </div>
             <div className='headandcont'>
                <div className="adminheader">
-                {/* <AdminHeader /> */}
                 <HomeHeader />
                 </div> 
                <div className='cont p-sm-5 p-4 cont_padding'>
@@ -101,7 +100,7 @@ const[register, setRegister] = useState(false)
                         </div>
                         <p className='card_text_white_big_new mt-2'>{location.state.title}</p>
 
-                            <div className='mt-3'>
+                            <div className='mt-5'>
                             <div className='steps_badge active'>1</div>
                             <div className='steps_badge active'>2</div>
                             {/* {[...Array(steps)].map((e,index)=>{
@@ -128,13 +127,13 @@ const[register, setRegister] = useState(false)
             <Tab eventKey="query1" title="Back">
                 <div className='querylist'>
                     <h6>What sex were you born as? *</h6>
-                   <div className='d-flex mt-3'>  
+                   <div className='mt-3'>  
                         <label class="custradio me-2">FEMALE
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio1" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio">MALE
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio"  name="radio1" />
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -153,25 +152,25 @@ const[register, setRegister] = useState(false)
                  </div>
                  <div className='querylist'>
                     <h6>What form of weight loss have you tried in the past? *</h6>
-                   <div className='d-flex mt-3'>  
+                   <div className='mt-3'>  
                         <label class="custradio me-2">Diating
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">Exercies
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">Suplements
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">None
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">If others,please specify
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
                         
@@ -182,14 +181,14 @@ const[register, setRegister] = useState(false)
                  </div>
                  <div className='querylist'>
                     <h6>Have you been diagnosed with high blood sugar ? *</h6>
-                   <div className='d-flex mt-3'>  
+                   <div className='mt-3'>  
                        
                         <label class="custradio me-2">None
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio4" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">If Yes,please specify
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio4" />
                             <span class="checkmark"></span>
                         </label>
                         
@@ -200,14 +199,14 @@ const[register, setRegister] = useState(false)
                  </div>
                  <div className='querylist'>
                     <h6>Do you currently suffer from either heart disease, high blood pressure or are you being prescribed a treatment for high blood pressure?* </h6>
-                   <div className='d-flex mt-3'>  
+                   <div className='mt-3'>  
                        
                         <label class="custradio me-2">None
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio3" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">If Yes,please specify
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio3" />
                             <span class="checkmark"></span>
                         </label>
                         
@@ -218,14 +217,14 @@ const[register, setRegister] = useState(false)
                  </div>
                  <div className='querylist'>
                     <h6>Have you been diagnosed with liver issues?* </h6>
-                   <div className='d-flex mt-3'>  
+                   <div className='mt-3'>  
                        
                         <label class="custradio me-2">None
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio5" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio me-2">If Yes,please specify
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio5" />
                             <span class="checkmark"></span>
                         </label>
                         
@@ -239,13 +238,13 @@ const[register, setRegister] = useState(false)
       <Tab eventKey="query2" title="Next">
       <div className='querylist'>
                     <h6>What sex were you born as? *</h6>
-                   <div className='d-flex mt-3'>  
+                   <div className=' mt-3'>  
                         <label class="custradio me-2">FEMALE
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio6" />
                             <span class="checkmark"></span>
                         </label>
                         <label class="custradio">MALE
-                            <input type="radio" checked="checked" name="radio" />
+                            <input type="radio" name="radio6" />
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -257,7 +256,7 @@ const[register, setRegister] = useState(false)
                     </div>
                  </div>
                  <div className='text-right mt-3'>
-                    <button onClick={() => setShow(true)} className='btn themebtn-bordered'>Next</button>
+                    <button onClick={() => setShow(true)} className='btn themebtn-bordered finalmodal'>Next</button>
                 </div> 
         </Tab>
 

@@ -4,7 +4,7 @@ import {Link,Navigate,useLocation, useNavigate} from 'react-router-dom';
 import HomeHeader from '../HomeHeader';
 import Footer from '../Footer';
 import Sidebar from './Sidebar';
-import females from '../../Assets/Images/females.png'
+import females from '../../Assets/Images/eclinic-img/certi.png'
 import female from '../../Assets/Images/female.png'
 import male from '../../Assets/Images/male.png'
 
@@ -20,7 +20,7 @@ import PaySuccess from '../Offcanvas/PaySuccess';
 
 export const TreatContext = createContext()
 
-const OrderNow = (props) =>{
+const Certificate = (props) =>{
 
 const [category,setCategory] = useState("female");
 const [activestep,setActivestep] = useState(1)
@@ -60,20 +60,20 @@ const[paysuccess, setPaysuccess] = useState(false)
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
                 <div className='row'>
-                    <div className='col-12 col-md-7 col-lg-6'>
-                        <div className='p-4 p-lg-5'>
+                    <div className='col-12 col-md-7 col-lg-7 d-flex  align-center'>
+                        <div className='p-4 p-lg-5 '>
                             <div className='img_text_sx'>
                                 <img src={category=="female"?female:male} className='img_sx'/>
                         <p className='card_text_white_patient ms-2'>Patient</p>
                         </div>
-                        <p className='card_text_white_big_new mt-2'>Weight loss</p>
+                        <p className='card_text_white_big_new mt-2'>Medical Certificate</p>
 
                             
                         </div>
                     </div>
-                    <div className='col-12 col-md-5 col-lg-5 offset-lg-1 sec_img_dots'>
+                    <div className='col-12 col-md-5 col-lg-5  sec_img_dots justify-content-sm-send pe-sm-5'>
                         <img src={females} className='img-fluid pe-3' />
-                        </div>
+                    </div>
                 </div>
                 </div>
                 </div>
@@ -84,13 +84,13 @@ const[paysuccess, setPaysuccess] = useState(false)
                      <div eventKey="query1" title="Back">
                     <div className='querylist'>
                         <h6>What sex were you born as? *</h6>
-                    <div className='d-flex mt-3'>  
+                    <div className='mt-3'>  
                             <label class="custradio me-2">FEMALE
-                                <input type="radio" checked="checked" name="radio" />
+                                <input type="radio" name="radio" />
                                 <span class="checkmark"></span>
                             </label>
                             <label class="custradio">MALE
-                                <input type="radio" checked="checked" name="radio" />
+                                <input type="radio" name="radio" />
                                 <span class="checkmark"></span>
                             </label>
                         </div>
@@ -119,7 +119,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                     </div>
                     
                    
-                    <div className='d-flex w-full gap-3'>
+                    <div className='d-sm-flex w-full gap-3'>
                     <div className='querylist w-full'>
                         <h6>Start of sick Note</h6>
                         <div className='d-flex mt-3'>  
@@ -129,7 +129,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                         </div>
                     </div>
                     <div className='querylist w-full'>
-                        <h6>Start of sick Note</h6>
+                        <h6>End of sick Note</h6>
                         <div className='d-flex mt-3'>  
                             <div className='dateinput w-full'> 
                                 <input type="date" className='form-control borderinput' placeholder='Date of Birth'/>
@@ -140,13 +140,13 @@ const[paysuccess, setPaysuccess] = useState(false)
                   <p className='aqua'>Book only Maximam 7 days</p>
                     <div className='querylist mt-3'>
                         <h6>I confirm that a have read and understand this and my answer are fully correct and true. *</h6>
-                    <div className='d-flex mt-3'>  
+                    <div className='mt-3'>  
                             <label class="custradio me-2">CONFIRM
-                                <input type="radio" checked="checked" name="radio" />
+                                <input type="radio" name="radio1" />
                                 <span class="checkmark"></span>
                             </label>
                             <label class="custradio">I DO NOT CONFIRM
-                                <input type="radio" checked="checked" name="radio" />
+                                <input type="radio" name="radio1" />
                                 <span class="checkmark"></span>
                             </label>
                         </div>
@@ -172,4 +172,4 @@ const[paysuccess, setPaysuccess] = useState(false)
     )
 }
 
-export default OrderNow
+export default Certificate

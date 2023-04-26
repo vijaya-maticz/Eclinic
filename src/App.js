@@ -22,7 +22,6 @@ import Myaccount from './Components/Innerpages/Myaccount';
 
 
 
-import OrderNow from './Components/Innerpages/OrderNow';
 
 import Records from './Components/Innerpages/Records';
 import Transaction from './Components/Innerpages/Transaction';
@@ -33,6 +32,7 @@ import AdminUsers from './Components/AdminPanel/AdminUsers';
 import AdminDoctor from './Components/AdminPanel/AdminDoctor';
 import AdminCms from './Components/AdminPanel/AdminCms';
 import AdminSettings from './Components/AdminPanel/AdminSettings';
+import Certificate from './Components/Innerpages/Certificate';
 
 
 
@@ -63,13 +63,13 @@ function App() {
           <Route path="/treatmentquery" element={<Treatmentquery />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/myaccount" element={<Myaccount />} />
-          <Route path='/ordernow' element={<OrderNow />} />
+          <Route path='/certificate' element={<Certificate />} />
           <Route path='/records' element={<Records />} />
           <Route path='/transaction' element={<Transaction />} />
 
 
 {/* Admin */}
-<Route path="/admin" element={<AdminDashboard />} /> 
+<Route path="/admin/dashboard" element={<AdminDashboard />} /> 
 <Route path='/admin/records' element={<AdminRecords />} />
           <Route path='/admin/transaction' element={<AdminTransaction />} />
           <Route path='/admin/users' element={<AdminUsers />} />

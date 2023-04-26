@@ -7,7 +7,7 @@ import Datepicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import ReactDatatable from '@ashvin27/react-datatable';
 import AdminSidebar from './AdminSidebar';
-
+import Footer from '../Footer';
 const TableView = () =>{
     const columns = [
         {
@@ -201,6 +201,7 @@ const datas = {
   ],
 };
     return(
+        <>
         <div id="dashboard" className='showsidebar'>
             <div id='sidebar'>
                 <AdminSidebar/>
@@ -226,6 +227,12 @@ const datas = {
                </div> 
             </div>
         </div>
+        <div className='footer_sec'>
+<div className='container'>
+<Footer />
+</div>
+</div>
+</>
     )
 }
 

@@ -233,13 +233,17 @@ select:focus, input:focus, textarea:focus{
 .ham {
   height: 14px;
 }
+.sidelist {
+  margin-bottom: 45px;
+}
 .sidebar{
   position: relative;
 }
 .sidebar .sidelist {
-  height: calc(100vh - 305px);
+  height: calc(100vh - 328px);
   padding-left: 0;
   margin-top: 0px;
+  overflow-y: auto;
 }
 .sidebar ul{
   overflow-y: auto;
@@ -596,8 +600,8 @@ span.title.timer {
 }
 
 .admin-prof img{
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 .admin-prof .show>.btn-success.dropdown-toggle,
@@ -611,6 +615,7 @@ span.title.timer {
 .admin-prof button:after{
   display: none;
 }
+
 @media(max-width:991px){
   .menu_mobilalign.align-items-center
   {
@@ -895,7 +900,7 @@ div#header .hamcomp:after {
 @media(max-width:991px){
 #basic-navbar-nav
   {
-    min-height: 100vh;
+    /* min-height:calc(100vh - 50px) ; */
     position: fixed;
     background: #fff;
     min-width: 250px;
@@ -905,6 +910,7 @@ div#header .hamcomp:after {
     z-index: 5;
     overflow-y: auto;
     box-shadow: rgb(0 0 0 / 4%) 0px -21px 10px !important;
+    height:calc(100% - 80px) 
   }
   .navbar-light .navbar-nav .nav-link::after
   {
@@ -1570,14 +1576,9 @@ content: none !important;
 .btn-grey
 {
   background-color: #E2E0E0;
-  border-radius: 10px;
   color:#635F5F;
-  font-size: 14px;
-  
-  padding:7px 20px !important;
    border:2px solid #E2E0E0;
    letter-spacing: 0.19px;
-   font-weight: 500;
 }
 .btn-grey:hover
 {
@@ -1640,14 +1641,9 @@ content: none !important;
 .btn-purple
 {
   background-color: transparent;
-  border-radius: 10px;
   color:#571E92;
-  font-size: 14px;
-  
-  padding:7px 13px !important;
    border:2px solid #571E92;
    letter-spacing: 0.19px;
-   font-weight: 500;
 }
 .btn-purple:hover
 {

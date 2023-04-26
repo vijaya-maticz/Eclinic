@@ -135,7 +135,7 @@ const Sidebar = () =>{
             </div>
      
             <div className='menus'>
-               <NavLink activeClassName="active" to="/admin/tableview"  className="nounder">
+               <NavLink activeClassName="active" to="/certificate"  className="nounder">
                 <img src={ceti} className="active"/>
                Certificate</NavLink>
                 

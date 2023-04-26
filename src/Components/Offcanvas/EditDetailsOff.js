@@ -62,7 +62,7 @@ const Editdetails = (props) =>{
                             </div>
                           
                           <div className='col-md-6'>
-                          <div className='d-flex flex-1 gap-2'>
+                          <div className='d-sm-flex flex-1 gap-2'>
                           <div class="form-floating mb-3">
                                 <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                                 <label for="floatingInput">State</label>
@@ -79,15 +79,15 @@ const Editdetails = (props) =>{
                          </div>
                          <div className='row'>
                             <div className="col-md-6">
-                            <div className='d-flex flex-1 gap-2'>
-                          <div class="form-floating mb-3">
-                                <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">State</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">Country</label>
-                            </div>
+                            <div className='d-sm-flex flex-1 gap-2'>
+                                <div class="form-floating mb-3">
+                                        <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
+                                        <label for="floatingInput">State</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
+                                        <label for="floatingInput">Country</label>
+                                    </div>
                           </div>
                             </div>
                             
