@@ -900,6 +900,7 @@ div#header .hamcomp:after {
 @media(max-width:991px){
 #basic-navbar-nav
   {
+    padding-bottom: 20px;
     /* min-height:calc(100vh - 50px) ; */
     position: fixed;
     background: #fff;
@@ -3002,5 +3003,15 @@ min-width: 130px !important;
 {
   display: flex;
   align-items: center;
+}
+.que_sex
+{
+  margin-bottom: 20px;
+}
+.card_stik_positn
+{
+  position: sticky;
+  top:90px;
+  height:230px;
 }
 /* END NEW CSS */

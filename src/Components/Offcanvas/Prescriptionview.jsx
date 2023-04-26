@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import {TreatContext} from "../../Components/Innerpages/Treatments"
 import disease1 from '../../Assets/Images/disease1.png'
 
-const Recordsview = (props) =>{
-    const[show, setShow] = useState(true)
+const Prescriptionview = (props) =>{
+    const[showpres, setShowpres] = useState(true)
   
     return(
         <div>
-             <Offcanvas show={show} placement="bottom">
+             <Offcanvas show={showpres} placement="bottom">
                
                 <Offcanvas.Body>
                 <div className='text-right'><button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
@@ -20,7 +20,7 @@ const Recordsview = (props) =>{
                             <div className='row'>
                                 <div className='col-xl-9 col-lg-8 col-md-7 mb-md-0 mb-3'>
                                     <div className=''>
-                                    <h4>View Records</h4>
+                                    <h4>View Prescription</h4>
                                        <div className='mt-4'>
                                         <div className='que_sex d-flex querylist'>
                                             <div>
@@ -126,4 +126,4 @@ const Recordsview = (props) =>{
     )
 }
 
-export default Recordsview
+export default Prescriptionview
