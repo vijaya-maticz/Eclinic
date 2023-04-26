@@ -24,10 +24,10 @@ const LoginOff = (props) =>{
                          </div>
                          <div className='row mt-4'>
                             <div className='col-md-6'>
-                                <input type="text" className='form-control borderinput' placeholder='Enter Email'/>
+                                <input type="text" className='form-control borderinput mb-3' placeholder='Enter Email'/>
                             </div>
                             <div className='col-md-6'>
-                                <input type="password" className='form-control borderinput' placeholder='Enter Password'/>
+                                <input type="password" className='form-control borderinput mb-3' placeholder='Enter Password'/>
                             </div>
                          </div>
                     
