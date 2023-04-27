@@ -900,6 +900,7 @@ div#header .hamcomp:after {
 @media(max-width:991px){
 #basic-navbar-nav
   {
+    padding-bottom: 20px;
     /* min-height:calc(100vh - 50px) ; */
     position: fixed;
     background: #fff;
@@ -1138,6 +1139,15 @@ font-weight: 500 !important;
   text-align: center;
   line-height: 2;
   margin-top: 15px;
+}
+.banner_lit_font_bold
+{
+  color:#635F5F;
+  font-size: 15px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 15px;
+  font-weight: 700;
 }
 .banner_thick_font
 {
@@ -3002,5 +3012,15 @@ min-width: 130px !important;
 {
   display: flex;
   align-items: center;
+}
+.que_sex
+{
+  margin-bottom: 20px;
+}
+.card_stik_positn
+{
+  position: sticky;
+  top:90px;
+  height:230px;
 }
 /* END NEW CSS */
