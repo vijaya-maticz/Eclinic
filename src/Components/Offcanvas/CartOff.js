@@ -1,6 +1,9 @@
 import React, { useContext, useState } from 'react';
 import {Offcanvas, InputGroup ,Form } from 'react-bootstrap'
 import user from "../../Assets/Images/user.png"
+import deleteimg from "../../Assets/Images/eclinic-img/delete.png"
+
+import doc from "../../Assets/Images/doc.png"
 
 const Cart = (props) =>{
     const[cart, setCart] = useState(true)
@@ -20,7 +23,7 @@ const Cart = (props) =>{
                             </div>
                          </div>
                          <div className='row mt-4'>
-                            <div className='col-md-7'>
+                            <div className='col-lg-7 mb-lg-0 mb-4'>
                                 <div className='whitebox h-100 py-4'>
                                    <div className='borderedinputbox mb-4'>
                                       <div className='d-flex jc-between align-items-center'>
@@ -32,9 +35,9 @@ const Cart = (props) =>{
                                    <div className='borderedinputbox mb-4'>
                                       <div className='d-flex jc-between align-items-center'>
                                         <div className='d-flex gap-2'>
-                                            <img src={user} />
+                                            <img src={doc} className='doc'/>
                                             <div>
-                                                <p>Patient application for weight loss treatment</p>
+                                                <p className='mb-2'>Patient application for weight loss treatment</p>
                                                 <div className='addorremove'>
                                                     <button className='btn btn-link nounder '>-</button>
                                                     <input type="text" className='form-control'/>
@@ -42,14 +45,31 @@ const Cart = (props) =>{
                                                 </div>
                                             </div>
                                         </div>
-                                        <button className='btn btn-link text-danger p-0'> <img src={user} /></button>
+                                        <button className='btn btn-link text-danger p-0'> <img src={deleteimg} /></button>
                                       </div>
                                    </div>
+
+                                   {/* <div className='borderedinputbox mb-4'>
+                                      <div className='d-lg-flex text-lg-start text-center jc-between align-items-center'>
+                                        <div className='d-lg-flex gap-2'>
+                                            <img src={doc} className='doc'/>
+                                            <div className=' my-lg-0 my-3'>
+                                                <p className='mb-2'>Patient application for weight loss treatment</p>
+                                                <div className='addorremove m-lg-0 m-auto'>
+                                                    <button className='btn btn-link nounder '>-</button>
+                                                    <input type="text" className='form-control'/>
+                                                    <button className='btn btn-link nounder'>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button className='btn btn-link text-danger p-0'> <img src={deleteimg} /></button>
+                                      </div>
+                                   </div> */}
                                    
                                 
                                 </div>
                             </div>
-                            <div className='col-md-5'>
+                            <div className='col-lg-5'>
                             <div className='whitebox h-100 py-4'>
                             <div className='d-flex flex-1 jc-between mb-3'>
                                     <p>Sub total</p>

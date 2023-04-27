@@ -153,15 +153,15 @@ const[register, setRegister] = useState(false)
                  <div className='querylist'>
                     <h6>What form of weight loss have you tried in the past? *</h6>
                    <div className='mt-3'>  
-                        <label class="custradio me-2">Diating
+                        <label class="custradio me-2">Dieting
                             <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
-                        <label class="custradio me-2">Exercies
+                        <label class="custradio me-2">Exercise
                             <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
-                        <label class="custradio me-2">Suplements
+                        <label class="custradio me-2">Supplements
                             <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>

@@ -118,7 +118,7 @@ const imgName = document.querySelector('.filename')
                <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className=''> 
-              <h4 className=''>Transaction</h4>
+              <h4 className=''>Settings</h4>
         
              </div> 
              <div className='whitebox mt-4'>

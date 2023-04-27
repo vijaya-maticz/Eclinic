@@ -143,6 +143,12 @@ button.themebtn-bordered.big {
 .requestlogin.paynow img.write {
   width: 33px;
 }
+
+.requestlogin.cart img.doc {
+  border-radius: 18px;
+  width: 75px;
+  height: 70px !important;
+}
 .requestlogin.paywith img.copy {
   border-radius: 5px !important;
   width: 40px !important;
@@ -373,6 +379,9 @@ input {
   font-size: 13px;
   padding: 15px;
   border-radius: 5px;
+  display: flex;
+  align-content: center;
+  height: 100%;
 }
 .borderedinputbox {
   border: 1px dashed #adadad;
