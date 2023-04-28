@@ -91,7 +91,7 @@
     margin-top: 10px;
 }
 .imgborder{
-    background-image: url("../Images/eclinic-img/profile_bg.png");
+    background-image: url("../Images/eclinic-img/art.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,6 +170,7 @@ button.themebtn-bordered.big {
 }
 .requestlogin.paynow img.write {
   width: 33px;
+  border-radius: 0px !important;
 }
 .dashbanner{
   display: flex;

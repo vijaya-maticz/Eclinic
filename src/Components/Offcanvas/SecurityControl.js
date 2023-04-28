@@ -22,19 +22,19 @@ const SecurityControl = (props) =>{
                   
                          
                          <div className='row mt-5'>
-                         <div className='col-md-9'>
+                         <div className='col-md-8'>
                           <div class="form-floating mb-3">
                                 <input type="password" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                                 <label for="floatingInput">Password</label>
                             </div>
-                            <button className='btn btn-link themeclr fw-700 ps-0' onClick={props.forgetpass}>Forget password</button>
+                            <button className='btn btn-link themeclr fw-700 ps-0 btn_for_border' onClick={props.forgetpass}>Forgot password</button>
                           </div>
                             
-                        <div className=' col-md-3'>
+                        <div className=' col-md-4'>
                             <div className='d-flex jc-end gap-2'>
                               
                                 <div>
-                                    <button className=' themebtn' onClick={props.onDismiss}>Change Password</button>
+                                    <button className=' themebtn btn_pad_reduc_therm' onClick={props.onDismiss}>Change Password</button>
                                     </div>
                                     <div>
                                     <button className='themebtn-bordered' onClick={props.onDismiss}>Cancel</button>

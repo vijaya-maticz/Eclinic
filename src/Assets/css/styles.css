@@ -1557,6 +1557,11 @@ margin-bottom: 20px !important;
 
 @media only screen and (min-width:768px) and (max-width:991px)
 {
+  .btn_pad_reduc_therm.themebtn
+  {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
   .container_radio
   {
     padding-left: 30px!important;
@@ -3266,5 +3271,26 @@ img.arrowleft:hover
 {
   padding-top: 12px !important;
   padding-bottom: 12px !important;
+}
+.btn-link.btn_for_border
+{
+  text-decoration: underline !important;
+}
+.btn-link.btn_for_border:hover
+{
+  color:#19C590 !important;
+}
+.fot_bolf_prt
+{
+  font-weight: 900 !important;
+  color:#000 !important;
+}
+.treadh_hover_dele
+{
+  cursor: pointer;
+}
+.treadh_hover_dele:hover
+{
+color:#000 !important;
 }
 /* END NEW CSS */
