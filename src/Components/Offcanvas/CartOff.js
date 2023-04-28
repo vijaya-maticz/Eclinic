@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import {Offcanvas, InputGroup ,Form } from 'react-bootstrap'
-import user from "../../Assets/Images/user.png"
+import cartfill from "../../Assets/Images/eclinic-img/cartfill.png"
 import deleteimg from "../../Assets/Images/eclinic-img/delete.png"
 
 import doc from "../../Assets/Images/doc.png"
@@ -16,11 +16,10 @@ const Cart = (props) =>{
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
                         <div className='container'>
                         <div className='d-flex align-items-center'>
-                            <img src={user} className='me-2'/> 
+                            <img src={cartfill} className='me-2'/> 
                             <div> 
                                 <h4>Your Cart</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
+                           </div>
                          </div>
                          <div className='row mt-4'>
                             <div className='col-lg-7 mb-lg-0 mb-4'>
@@ -28,7 +27,7 @@ const Cart = (props) =>{
                                    <div className='borderedinputbox mb-4'>
                                       <div className='d-flex jc-between align-items-center'>
                                         <p className='mb-0'>You have  <span className='themeclr'>1 Item</span> in your cart</p>
-                                        <button className='btn btn-link text-danger p-0'>Clear cart</button>
+                                        <button className='btn btn-link text-danger p-0 f-14'>Clear cart</button>
                                       </div>
                                    </div>
 
