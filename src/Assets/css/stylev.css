@@ -672,6 +672,16 @@ button.action:hover{
   font-weight: 600;
   margin-bottom: 16px;
 }
+.setting ul.nav.nav-tabs {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  padding: 15px;
+}
+.setting ul.nav.nav-tabs li{
+  white-space: nowrap;
+}
 
 /* 
 @media(max-width:1400px){

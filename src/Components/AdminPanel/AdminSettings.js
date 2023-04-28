@@ -91,24 +91,30 @@ const AdminSettings = () =>{
 const[token, setToken] = useState(false)
 const[checked, setChecked] = useState(false)
 
-const imgsrc = () =>{
+const imgsrc = (e) =>{
   const imgInput = document.querySelector('input.file')
 const imgEl = document.querySelector('.img')
 const imgName = document.querySelector('.filename')
-  imgInput.addEventListener('change', () => {
-    if (imgInput.files && imgInput.files[0]) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        imgEl.src = e.target.result;
-        imgName.innerText = imgInput.files[0].name
-      }
-      reader.readAsDataURL(imgInput.files[0]);
-    }
-  })
+console.log(e.target.files, "e.target.innerHtml")
+console.log(e.target.parentNode, "parent")
+var img = e.target.parentNode.previousSibling.firstChild.innerHTML
+console.log(img, "prev sibling")
+console.log(document.querySelector('.img'), "prev sibling")
+
+// e.target.addEventListener('change', () => {
+//     if (e.target.files && e.target.files[0]) {
+//       const reader = new FileReader();
+//       reader.onload = (e) => {
+//         imgEl.src = e.target.result;
+//         imgName.innerText = e.target.files[0].name
+//       }
+//       reader.readAsDataURL(e.target.files[0]);
+//     }
+//   })
 }
     return(
       <>
-        <div id="dashboard" className='tableview showsidebar recordes_sec_padd admin'>
+        <div id="dashboard" className='tableview showsidebar recordes_sec_padd admin setting'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <AdminSidebar/>
@@ -180,7 +186,8 @@ const imgName = document.querySelector('.filename')
                               <div className='borderedinputbox mb-4'>
                                         <div className='d-flex jc-between align-items-center flex-column flex-md-row gap-2 text-center text-md-start'>
                                           <div className='d-flex align-items-center flex-column flex-md-row gap-2 text-center text-md-start'>
-                                            <div className='browseimg'><img className='img' src={dummyimg} />
+                                            <div className='browseimg'>
+                                                 <img className='img' src={dummyimg} />
                                               </div> 
                                               <div className='my-md-0 my-3'>
                                                   <h5>Uh5load Logo</h5>
@@ -189,7 +196,7 @@ const imgName = document.querySelector('.filename')
                                           </div>
                                         <div className='browseinput'> 
                                           <button className='btn themebtn '> Upload Image</button>  
-                                          <input type="file" className='file' onClick={() => imgsrc()}/>
+                                          <input type="file" className='file' onClick={(e) => imgsrc(e)}/>
                                           </div>
                                         </div>
                                     </div>
@@ -301,12 +308,12 @@ const imgName = document.querySelector('.filename')
                           <div className='col-xl-9'>
                           <div class="form-floating mb-3">
                               <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                              <label for="floatingInput">32 digit sercurity code</label>
+                              <label for="floatingInput">32 digits security code</label>
                           </div>
                         
                         <div class="form-floating mb-3">
                               <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                              <label for="floatingInput">6 digit 2FA code</label>
+                              <label for="floatingInput">6 digits 2FA code</label>
                           </div>
                     
                         <div class="form-floating mb-3">
