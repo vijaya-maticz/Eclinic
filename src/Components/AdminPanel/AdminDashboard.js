@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
-import {Link} from 'react-router-dom';
 
 import Footer from '../Footer';
+// import ApexCharts from 'apexcharts'
+import Chart from "react-apexcharts";
 import treatment from '../../Assets/Images/treatment.png'
 import graph_violet from '../../Assets/Images/graph_violet.png'
 import icon_plus_file from '../../Assets/Images/icon_plus_file.png'
@@ -20,6 +21,260 @@ import AdminHeader from '../AdminHeader';
 
 const AdminDashboard = () =>{
   
+//   const [chart,setchart] = useState(data)
+
+  const data =  {
+ options: {
+              chart: {
+                offsetX: 0,
+                offsetY: 0,
+                parentHeightOffset: 0,
+                toolbar: {
+                    show: false,
+                },
+                type: 'bar',
+                height: 200
+              },
+              
+              plotOptions: {
+                bar: {
+                  horizontal: false,
+                  columnWidth: '45%',
+                //   endingShape: 'rounded',
+                //   borderRadius: 20,
+                //   borderRadiusApplication: 'end',
+                //   borderRadiusWhenStacked: 'all',
+                //   borderRadius:20,
+                //   borderRadiusApplication: 'end',
+                //   borderRadiusWhenStacked: 'last',
+                },
+              },
+              dataLabels: {
+                enabled: false
+              },
+              stroke: {
+                show: true,
+                width: 2,
+                colors: ['#3D3B3B']
+              },
+              
+            //   xaxis: {
+            //     labels: {
+            //         show: false,
+            //     }
+              
+            //   },
+            xaxis: {
+              
+                labels: {
+                    show: false,
+                 
+                },
+             
+                axisBorder: {
+                    show: false,
+                    color: '#d4c689',
+                    height: 1,
+                    width: '100%',
+                    offsetX: 0,
+                    offsetY: 0
+                },
+                axisTicks: {
+                    show: false,
+                  },
+            
+                tooltip: {
+                    enabled: false,
+                    formatter: undefined,
+                    offsetY: 0,
+                    style: {
+                      fontSize: 0,
+                      fontFamily: 0,
+                    },
+                },
+            },
+          
+            
+              yaxis: {
+                labels: {
+                    show: false,
+                }
+              },
+
+              grid: {
+                show: true,
+                borderColor: '#d4c689',
+                strokeDashArray: 0,
+                position: 'back',
+                xaxis: {
+                    lines: {
+                        show: true
+                    }
+                },   
+                yaxis: {
+                    lines: {
+                        show: true
+                    }
+                },  
+                row: {
+                    colors: undefined,
+                    opacity: 0.5
+                },  
+                column: {
+                    colors: undefined,
+                    opacity: 0.5
+                },  
+                padding: {
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    left: -15
+                },  
+            },
+              fill: {
+                opacity: 1,
+                colors: ['#3D3B3B']
+              },
+              tooltip: {
+               
+                    enabled: false,
+                    shared: false,
+                    intersect: false
+              }
+            },
+  series: [{
+              name: 'Net Profit',
+              data: [44, 55, 57, 56, 61, 58, 63, 60]
+            }],
+};
+
+
+
+const data1 =  {
+    options: {
+                 chart: {
+                   offsetX: 0,
+                   offsetY: 0,
+                   parentHeightOffset: 0,
+                   toolbar: {
+                       show: false,
+                   },
+                   type: 'bar',
+                   height: 200
+                 },
+                
+                 plotOptions: {
+                   bar: {
+                     horizontal: false,
+                     columnWidth: '45%',
+                   //   endingShape: 'rounded',
+                   //   borderRadius: 20,
+                   //   borderRadiusApplication: 'end',
+                   //   borderRadiusWhenStacked: 'all',
+                   //   borderRadius:20,
+                   //   borderRadiusApplication: 'end',
+                   //   borderRadiusWhenStacked: 'last',
+                   },
+                 },
+                 dataLabels: {
+                   enabled: false
+                 },
+                 stroke: {
+                   show: true,
+                   width: 2,
+                   colors: ['#174375'],
+                   curve: 'straight'
+                 },
+                 
+               //   xaxis: {
+               //     labels: {
+               //         show: false,
+               //     }
+                 
+               //   },
+               xaxis: {
+                 
+                   labels: {
+                       show: false,
+                    
+                   },
+                
+                   axisBorder: {
+                       show: false,
+                       color: '#1abbb9',
+                       height: 1,
+                       width: '100%',
+                       offsetX: 0,
+                       offsetY: 0
+                   },
+                   axisTicks: {
+                    show: false,
+                  },
+               
+                   tooltip: {
+                       enabled: true,
+                       formatter: undefined,
+                       offsetY: 0,
+                       style: {
+                         fontSize: 0,
+                         fontFamily: 0,
+                       },
+                   },
+               },
+             
+               
+                 yaxis: {
+                   labels: {
+                       show: false,
+                   }
+                 },
+   
+                 grid: {
+                   show: true,
+                   borderColor: '#1abbb9',
+                   strokeDashArray: 0,
+                   position: 'back',
+                   xaxis: {
+                       lines: {
+                           show: true
+                       }
+                   },   
+                   yaxis: {
+                       lines: {
+                           show: true
+                       }
+                   },  
+                   row: {
+                       colors: undefined,
+                       opacity: 0.5
+                   },  
+                   column: {
+                       colors: undefined,
+                       opacity: 0.5
+                   },  
+                   padding: {
+                       top: 0,
+                       right: 0,
+                       bottom: 0,
+                       left: -15
+                   },  
+               },
+                 fill: {
+                   opacity: 1,
+                   colors: ['#3D3B3B']
+                 },
+                 tooltip: {
+                  
+                       enabled: false,
+                       shared: false,
+                       intersect: false
+                 }
+               },
+               series: [{
+                name: "Desktops",
+                data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+            }],
+   };
 
     return(
         <>
@@ -35,11 +290,11 @@ const AdminDashboard = () =>{
                <div className='cont p-sm-5 p-4 cont_padding'>
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
-                <div className='row'>
-                    <div className='col-12 col-md-7 col-lg-7'>
+                <div className='row justify-content-between'>
+                    <div className='col-12 col-md-6 col-lg-7 dashbanner'>
                         <div className='p-4 p-lg-5 pb-lg-3 pt-lg-4'>
-                        <p className='card_text_white_big'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                        <p className='card_tect_grrey_sm_card'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        <p className='card_text_white_big dashb_titlr_w'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
+                        <p className='card_tect_grrey_sm_card mt-2 dashb_desc_w'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                        <div className='mt-3'>
                       
                         <div className='row w-100'>
@@ -83,8 +338,8 @@ const AdminDashboard = () =>{
                         </div>
                         </div>
                     </div>
-                    <div className='col-12 col-md-5 col-lg-5 sec_img_dots'>
-                        <img src={treatment} className='img-fluid' />
+                    <div className='col-12 col-md-6 col-lg-5 sec_img_dots'>
+                        <img src={treatment} className='img-fluid px-2 px-xl-5' />
                         </div>
                 </div>
                 </div>
@@ -133,7 +388,9 @@ const AdminDashboard = () =>{
                                     </div>
                                     <img src={icon_plus_file} className='img-fluid img_file_plus' />
                                 </div>
-                                <img src={img_graph_blue} className='img-fluid img_graph_blue mt-3' />
+                                <Chart options={data1?.options}
+                          series={data1?.series}  type="line" height={180} />
+                                {/* <img src={img_graph_blue} className='img-fluid img_graph_blue mt-3' /> */}
 
                             </div>
                         </div>
@@ -182,7 +439,11 @@ const AdminDashboard = () =>{
                                     </div>
                                     <img src={img_icon_aud} className='img-fluid img_icon_aud' />
                                 </div>
-                                <img src={img_graph_yellow} className='img-fluid img_graph_blue mt-3' />
+                                 <Chart options={data?.options}
+                          series={data?.series}  type="bar" height={180} />
+</div>
+    
+                                {/* <img src={img_graph_yellow} className='img-fluid img_graph_blue mt-3' /> */}
 
                             </div>
                         </div>
@@ -200,7 +461,6 @@ const AdminDashboard = () =>{
                </div> 
             </div>
           
-        </div>
 
 <div className='footer_sec'>
 <div className='container'>

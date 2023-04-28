@@ -44,7 +44,7 @@ const Cart = (props) =>{
                                                 </div>
                                             </div>
                                         </div>
-                                        <button className='btn btn-link text-danger p-0'> <img src={deleteimg} /></button>
+                                        <button className='btn btn-link text-danger p-0'> <img src={deleteimg} className='cartimg' /></button>
                                       </div>
                                    </div>
 

@@ -25,7 +25,7 @@ import Myaccount from './Components/Innerpages/Myaccount';
 
 import Records from './Components/Innerpages/Records';
 import Transaction from './Components/Innerpages/Transaction';
-import AdminDashboard from './Components/AdminPanel/Dashboard';
+import AdminDashboard from './Components/AdminPanel/AdminDashboard';
 import AdminRecords from './Components/AdminPanel/AdminRecords';
 import AdminTransaction from './Components/AdminPanel/AdminTransaction';
 import AdminUsers from './Components/AdminPanel/AdminUsers';

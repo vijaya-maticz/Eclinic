@@ -106,7 +106,6 @@ const imgName = document.querySelector('.filename')
     }
   })
 }
-
     return(
       <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd admin'>
@@ -179,11 +178,11 @@ const imgName = document.querySelector('.filename')
                           <div className='row'>
                           <div className='col-xl-6'>
                               <div className='borderedinputbox mb-4'>
-                                        <div className='d-flex jc-between align-items-center flex-column flex-sm-row gap-2 text-center text-sm-start'>
-                                          <div className='d-flex align-items-center flex-column flex-sm-row gap-2 text-center text-sm-start'>
+                                        <div className='d-flex jc-between align-items-center flex-column flex-md-row gap-2 text-center text-md-start'>
+                                          <div className='d-flex align-items-center flex-column flex-md-row gap-2 text-center text-md-start'>
                                             <div className='browseimg'><img className='img' src={dummyimg} />
                                               </div> 
-                                              <div>
+                                              <div className='my-md-0 my-3'>
                                                   <h5>Uh5load Logo</h5>
                                                   <p className='filename'>Logo.png</p>
                                               </div>

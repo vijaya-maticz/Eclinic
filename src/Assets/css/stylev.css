@@ -170,11 +170,16 @@ button.themebtn-bordered.big {
 .requestlogin.paynow img.write {
   width: 33px;
 }
-
+.dashbanner{
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
 .requestlogin.cart img.doc {
-  border-radius: 18px;
+  border-radius: 14px;
   width: 75px;
   height: 70px !important;
+  background: #7f30cf;
 }
 .requestlogin.paywith img.copy {
   border-radius: 5px !important;
@@ -356,6 +361,9 @@ button.themebtn-bordered.big {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+.cartimg {
+  width: 46px !important;
 }
 img.arrowleft {
   border-radius: 8px;
@@ -713,5 +721,11 @@ button.action:hover{
 @media(max-width:575px){
   .querylist, .whitebox {
     padding: 10px;
+  }
+}
+@media(max-width:420px){
+  .filename {
+    overflow: hidden;
+    width: 200px;
   }
 }
