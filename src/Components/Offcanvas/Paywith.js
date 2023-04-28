@@ -2,6 +2,10 @@ import React, { useContext, useState } from 'react';
 import {Offcanvas,InputGroup,Form,Table } from 'react-bootstrap'
 import user from "../../Assets/Images/user.png"
 import copy from "../../Assets/Images/eclinic-img/copy.png"
+import card1 from "../../Assets/Images/eclinic-img/card1.png"
+import card2 from "../../Assets/Images/eclinic-img/card2.png"
+import card3 from "../../Assets/Images/eclinic-img/card3.png"
+import arrowrighticon from "../../Assets/Images/eclinic-img/arrowrighticon.png"
 
 
 const Paywith = (props) =>{
@@ -33,9 +37,9 @@ const Paywith = (props) =>{
                                         
                                     </InputGroup>
                                     <h5 className='mt-4'>Pay with</h5>
-                                    <InputGroup className="mb-3 borderinput">
-                                        <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Product'/>
-                                       <InputGroup.Text><i className='fa fa-trash themeclr'></i></InputGroup.Text>
+                                    <InputGroup className="mb-3 borderinput cards">
+                                        <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Wallet'/>
+                                       <InputGroup.Text> <img src={card1} className='wallimg'/> <img src={card2}  className='wallimg' />  <img src={card3}  className='wallimg'/><img  src={arrowrighticon}  className='righticon'/></InputGroup.Text>
                                     </InputGroup>
 
                                     <div className='d-flex jc-between mt-4'>
@@ -47,22 +51,22 @@ const Paywith = (props) =>{
                             <div className='col-lg-5'>
                             <div className='whitebox h-100 py-4'>
                                 <div className=' mb-4'>
-                                <Table hover>
-                                        <thead>
+                                <Table >
+                                        <thead style={{borderColor:"transparent"}}>
                                             <tr>
                                                 <th>Product</th>
                                                 <th>Quantity</th>
                                                 <th>Price</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody className='f-14'>
                                             <tr>
                                                 <td>
-                                                   <img src={copy} className='copy' />
-                                                   <span> Medical Certificate</span>
+                                                   <img src={copy} className='copy me-2' />
+                                                   <span> Weight Loss</span>
                                                 </td>
                                                 <td>0.1</td>
-                                                <td>$25</td>
+                                                <td> <h6>$25</h6></td>
                                             </tr>
                                         </tbody>
                                     </Table>

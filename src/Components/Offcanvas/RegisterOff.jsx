@@ -29,7 +29,7 @@ const RegisterOff = (props) =>{
                          </div>
                          <div className='row'>
                             <div className='col-md-6'>
-                              <div className='dateinput'> <input type="date" className='form-control borderinput mb-3' placeholder='Date of Birth'/></div> 
+                              <div className='dateinput'> <input type="date" className='form-control borderinput mb-3' placeholder='Date of Birth'  onfocus="(this.type='date')"/></div> 
                             </div>
                             <div className='col-md-6'>
                                 <select className='form-control borderinput mb-3'>

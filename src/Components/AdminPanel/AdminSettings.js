@@ -22,7 +22,7 @@ const AdminSettings = () =>{
         },
      
           {
-            name: "User Name",
+            name: "Username",
             selector: (vals) => vals.username,
             sortable: false
           },
@@ -48,7 +48,7 @@ const AdminSettings = () =>{
   
       {
         no: "001",
-        username: "David william",
+        username: "David William",
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -66,7 +66,7 @@ const AdminSettings = () =>{
 
       {
         no: "003",
-        username: "David william",
+        username: "David William",
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-pending'>Pending</badge>,

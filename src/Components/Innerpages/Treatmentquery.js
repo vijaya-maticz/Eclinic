@@ -255,7 +255,7 @@ useEffect(() =>{
                             <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
-                        <label class="custradio me-2">If others,please specify
+                        <label class="custradio me-2">If others, please specify
                             <input type="radio" name="radio2" />
                             <span class="checkmark"></span>
                         </label>
@@ -266,14 +266,14 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Have you been diagnosed with high blood sugar ? *</h6>
+                    <h6>Have you been diagnosed with high blood sugar? *</h6>
                    <div className='mt-3'>  
                        
                         <label class="custradio me-2">None
                             <input type="radio" name="radio4" />
                             <span class="checkmark"></span>
                         </label>
-                        <label class="custradio me-2">If Yes,please specify
+                        <label class="custradio me-2">If Yes, please specify
                             <input type="radio" name="radio4" />
                             <span class="checkmark"></span>
                         </label>
@@ -284,14 +284,14 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Do you currently suffer from either heart disease, high blood pressure or are you being prescribed a treatment for high blood pressure?* </h6>
+                    <h6>Do you currently suffer from either heart disease, high blood pressure or are you being prescribed a treatment for high blood pressure? * </h6>
                    <div className='mt-3'>  
                        
                         <label class="custradio me-2">None
                             <input type="radio" name="radio3" />
                             <span class="checkmark"></span>
                         </label>
-                        <label class="custradio me-2">If Yes,please specify
+                        <label class="custradio me-2">If Yes, please specify
                             <input type="radio" name="radio3" />
                             <span class="checkmark"></span>
                         </label>
@@ -302,14 +302,14 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Have you been diagnosed with liver issues?* </h6>
+                    <h6>Have you been diagnosed with liver issues? * </h6>
                    <div className='mt-3'>  
                        
                         <label class="custradio me-2">None
                             <input type="radio" name="radio5" />
                             <span class="checkmark"></span>
                         </label>
-                        <label class="custradio me-2">If Yes,please specify
+                        <label class="custradio me-2">If Yes, please specify
                             <input type="radio" name="radio5" />
                             <span class="checkmark"></span>
                         </label>
@@ -345,7 +345,7 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Have you noticed dramatic loss of interest in sex, excercise or work? *</h6>
+                    <h6>Have you noticed dramatic loss of interest in sex, exercise or work? *</h6>
                    <div className=' mt-3'>  
                         <select className='form-control themeinput' >
                             <option>YES</option>
@@ -369,7 +369,7 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Do you feel sad or anxious for 2 weeks or more on a continuous basis? ?</h6>
+                    <h6>Do you feel sad or anxious for 2 weeks or more on a continuous basis?</h6>
                    <div className=' mt-3'>  
                         <label class="custradio me-2">YES
                             <input type="radio" name="radio6" />
@@ -382,7 +382,7 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Do you excercise regularly ?</h6>
+                    <h6>Do you exercise regularly ?</h6>
                    <div className=' mt-3'>  
                         <label class="custradio me-2">YES
                             <input type="radio" name="radio6" />
