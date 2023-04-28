@@ -396,6 +396,20 @@ input::-webkit-datetime-edit {
 .paywith table tr th:last-child, .paywith table tr td:last-child{
   text-align: right;
 }
+.limitcard {
+  width: 184px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: left;
+  display: flex;
+}
+img.righticon.leftangle {
+  transform: rotate(180deg);
+}
+.limitcard.showlast{
+  justify-content: right;
+}
 .cards .wallimg {
   height: 30px;
   border-radius: 5px;
@@ -443,6 +457,7 @@ background-image: url("../Images/eclinic-img/deleteicon.png");
 .form-floating label {
   font-size: 14px;
   color: #727272;
+  top:-5px
 }
 .form-floating input{
   height: 45px !important;
@@ -752,6 +767,9 @@ button.action:hover{
 }
 }
 @media(max-width:575px){
+  .admin .nav.nav-tabs{
+    justify-content: unset;
+  }
   .purplebtn
   {
     padding: 9px !important;
