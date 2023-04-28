@@ -47,7 +47,7 @@ const AdminRecords = () =>{
   
       {
         id: "001",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -64,7 +64,7 @@ const AdminRecords = () =>{
 
       {
         id: "003",
-        treatment: "Astma - treatment",
+        treatment: "asthma - treatment",
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -82,7 +82,7 @@ const AdminRecords = () =>{
 
       {
         id: "005",
-        treatment: "Astma - treatment",
+        treatment: "asthma - treatment",
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
