@@ -14,33 +14,33 @@ const Cart = (props) =>{
                 <Offcanvas.Body className='requestlogin cart'>
                 <div className='text-right '>
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
-                        <div className='container'>
+                        <div className='container pb-4'>
                         <div className='d-flex align-items-center'>
                             <img src={cartfill} className='me-2'/> 
                             <div> 
-                                <h4>Your Cart</h4>
+                                <h4 className='mb-0'>Your Cart</h4>
                            </div>
                          </div>
                          <div className='row mt-4'>
                             <div className='col-lg-7 mb-lg-0 mb-4'>
                                 <div className='whitebox h-100 py-4'>
                                    <div className='borderedinputbox mb-4'>
-                                      <div className='d-flex jc-between align-items-center'>
-                                        <p className='mb-0'>You have  <span className='themeclr'>1 Item</span> in your cart</p>
-                                        <button className='btn btn-link text-danger p-0 f-14'>Clear cart</button>
+                                      <div className='d-flex jc-between align-items-center mob_blk_fle'>
+                                        <p className='mb-0'>You have  <span className='themeclr font_bld'>1 Item</span> in your cart</p>
+                                        <button className='btn btn-link text-danger p-0 f-14 clar_cart_hover'>Clear cart</button>
                                       </div>
                                    </div>
 
                                    <div className='borderedinputbox mb-4'>
                                       <div className='d-sm-flex jc-between align-items-center text-sm-left text-center'>
                                         <div className='d-sm-flex gap-2'>
-                                            <img src={doc} className='doc'/>
+                                            <img src={doc} className='doc mb-3'/>
                                             <div>
                                                 <p className='mb-2'>Patient application for weight loss treatment</p>
                                                 <div className='addorremove m-auto m-sm-0 mb-3 mb-sm-0'>
-                                                    <button className='btn btn-link nounder '>-</button>
-                                                    <input type="text" className='form-control'/>
-                                                    <button className='btn btn-link nounder'>+</button>
+                                                    <button className='btn btn-link nounder bt_t_grey'>-</button>
+                                                    <input type="text" className='form-control input_no_t_b_border'/>
+                                                    <button className='btn btn-link nounder bt_t_grey'>+</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ const Cart = (props) =>{
                                 </div>
                                 <div className='d-flex jc-between mt-sm-5  mt-4'>
                                     <button className='themebtn btn'>View Cart</button>
-                                    <button className='themebtn-bordered btn' onClick={props.onDismiss}>Pay Now</button>
+                                    <button className='themebtn-bordered btn' onClick={props.onDismiss}>Checkout</button>
                                 </div>
                                
                             </div>
