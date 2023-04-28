@@ -28,7 +28,9 @@ const Prescriptionview = (props) =>{
                                    
                                        <div className='mt-4'>
                                         <div className='querylist'>
-                                        <div className='que_sex  jc-between align-items-start d-flex'>
+                                        <p className='text-right text-dark banner_lit_font_bold mt-0'>Date : 27-Apr-2023 04:37 PM</p>
+
+                                        <div className='que_sex'>
                                             <div>
                                                <p className='bold '>ID: 266</p>
                                                 <p className='f-14'>Address : PUNE</p>
@@ -37,12 +39,11 @@ const Prescriptionview = (props) =>{
                                             </div>
                                          
                                         <div>
-                                            <p className='text-right text-dark banner_lit_font_bold mt-0'>Date : 27-Apr-2023 04:37 PM</p>
                                    
                                         </div>
                                         </div>
                                         <div className='table-responsive'>
-                                        <Table responsive>
+                                        <Table responsive className='table_pres'>
                                                 <thead>
                                                     <tr>
                                                         <th> Medicine Name</th>
@@ -75,7 +76,7 @@ const Prescriptionview = (props) =>{
                                                 </tbody>
                                             </Table>
                                         </div>
-                                        <div>
+                                        <div className='mt-3'>
                                             <p className='bold '>Advice given</p>
                                             <p className='f-14'>* Avoid Oily and Spicy Food</p>
                                             <p className='bold  mt-3'>Follow Up : 22-12-23</p>

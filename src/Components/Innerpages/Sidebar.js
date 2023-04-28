@@ -115,7 +115,7 @@ const Sidebar = () =>{
                 </div> */}
         
         <div className='d-flex align-items-center logo_sec_sidebar'>
-               <img src={logo} className="adminlogo"/> 
+        <NavLink to="/"> <img src={logo} className="adminlogo"/> </NavLink>
 
                <div> 
                 <Button onClick={() => sidetoggle()}  variant="link" className='text-dark mobiletog ps-0 pe-0'>
