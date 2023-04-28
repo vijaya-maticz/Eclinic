@@ -26,6 +26,11 @@ const HomeHeader = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='custom_pad_nav sidebar_mob_home'>
           <Nav className='mx-auto'>
+            <div className='web_menu_so_hme'>
+            <NavLink className='nav-link link_mr' to="/">Home</NavLink>     
+            <NavLink className='nav-link link_mr' to=" ">About eClinic</NavLink>
+            <NavLink className='nav-link link_mr link_cont_no_after' to=" ">Contacts</NavLink>     
+            </div>
           <div className='mobileadmin menus'>
         
 
@@ -48,13 +53,17 @@ const HomeHeader = () => {
 
 
                 <NavLink activeClassName="active" to="/certificate"  className="nounder d-none-inner-menu">
-                <img src={treat} className="active" />
+                <img src={ceti} className="active" />
                 Certificate</NavLink>
+
+                <NavLink activeClassName="active" to="/dashboard"  className="nounder d-none-inner-menu">
+                <img src={dash} className="active" />
+                Dashboard</NavLink>
 
 
                 
                 <NavLink activeClassName="active" to="/myaccount"  className="nounder d-none-inner-menu">
-                <img src={treat} className="active" />
+                <img src={myacc} className="active" />
                 My Account</NavLink>
                 
           
@@ -64,7 +73,7 @@ const HomeHeader = () => {
 
                 
                 <NavLink activeClassName="active" to="/transaction"  className="nounder d-none-inner-menu">
-                <img src={treat} className="active" />
+                <img src={trans} className="active" />
                 Transaction</NavLink>
 
 

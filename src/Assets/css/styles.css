@@ -617,6 +617,10 @@ span.title.timer {
 }
 
 @media(max-width:991px){
+  .web_menu_so_hme
+  {
+    display: none !important;
+  }
   .menu_mobilalign.align-items-center
   {
 align-items: flex-start !important;
@@ -711,6 +715,10 @@ display: none;
   .custom_pad_nav
   {
     padding-left: 30%;
+  }
+  .home_only_head .custom_pad_nav
+  {
+    padding-left: 0% !important;
   }
   .d-none-inner-menu
   {
@@ -1006,6 +1014,10 @@ div#header .hamcomp:after {
   }
 }
 @media(max-width:575px){
+  .que_sex.d-flex
+  {
+    display: block !important;
+  }
 .flex_wrap_npb
 {
   flex-wrap: wrap !important;
@@ -3028,12 +3040,16 @@ min-width: 130px !important;
 .card_stik_positn
 {
   position: sticky;
-  top:90px;
+  top:0px;
   height:230px;
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px)
 {
+  .btn_edit_yellow
+  {
+    font-size: 11px !important;
+  }
   .navbar-light .navbar-nav .nav-link
   {
     padding-right: 15px !important;
@@ -3113,10 +3129,68 @@ color:#fff !important;
   color:#fff !important;
 
 }
+
+.adminheader .navbar-light .sidebar_mob_home .navbar-nav .web_menu_so_hme .nav-link.active,
+.home_only_head .navbar-light .sidebar_mob_home .navbar-nav .web_menu_so_hme .nav-link.active 
+  {
+  color: #571e92 !important;
+}
+
 .sidebar_mob_home .menus a.active img,.sidebar_mob_home .menus a:hover img {
   filter: brightness(0) invert(1);
 }
 
+.navbar  .dropdpwn-menu
+{
+  box-shadow: 0px 3px 26px #0000006B;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.navbar .dropdown-item:focus,.navbar .dropdown-item:active ,.navbar .dropdown-item{
+  color: #1e2125;
+  background-color: #e9ecef;
+  outline-offset: 0px !important;
+  outline: 0px !important;
 
+}
+.home_only_head #homeheader .navbar
+{
+padding-top: 20px !important;
+}
+@media only screen and (min-width:1200px) and (max-width:1239px)
+{
+  .btn_edit_yellow
+  {
+    font-size: 11px !important;
+    padding-left:5px !important;
+    padding-right: 5px !important;
 
+  }
+}
+
+@media only screen and (min-width:1240px) and (max-width:1399px)
+{
+  .btn_edit_yellow
+  {
+    font-size: 11px !important;
+    padding-left:7px !important;
+    padding-right: 7px !important;
+
+  }
+}
+
+.table_pres th,.table_pres td
+{
+  border-bottom-color: #f4f4f4 !important;
+}
+.table_pres td
+{
+  min-width: 150px !important;
+}
+.web_menu_so_hme
+{
+  display: flex;
+  align-items: center;
+}
 /* END NEW CSS */
