@@ -33,12 +33,12 @@ const Cart = (props) =>{
                                    </div>
 
                                    <div className='borderedinputbox mb-4'>
-                                      <div className='d-flex jc-between align-items-center'>
-                                        <div className='d-flex gap-2'>
+                                      <div className='d-sm-flex jc-between align-items-center text-sm-left text-center'>
+                                        <div className='d-sm-flex gap-2'>
                                             <img src={doc} className='doc'/>
                                             <div>
                                                 <p className='mb-2'>Patient application for weight loss treatment</p>
-                                                <div className='addorremove'>
+                                                <div className='addorremove m-auto m-sm-0 mb-3 mb-sm-0'>
                                                     <button className='btn btn-link nounder '>-</button>
                                                     <input type="text" className='form-control'/>
                                                     <button className='btn btn-link nounder'>+</button>

@@ -30,6 +30,7 @@ const steps = useRef(false)
 const[show, setShow] = useState(false)
 const[login, setLogin] = useState(false)
 const[register, setRegister] = useState(false)
+const [next,setNext] = useState('1')
 // const clickNext = () =>{
 //     console.log("steps is false",steps)
 //     document.getElementById("uncontrolled-tab-example-tab-query2").addEventListener("click", () =>{
@@ -49,26 +50,27 @@ const[register, setRegister] = useState(false)
 
 // const memofunc = useMemo(() => expensiveCalculation(steps), [steps])
 
+console.log(steps.current, "step false")
+const expensiveCalculation = () =>{
+    document.getElementById("uncontrolled-tab-example-tab-query2").addEventListener("click", () =>{
 
-// const expensiveCalculation = () =>{
-//     console.log("steps is false",steps)
-//     document.getElementById("uncontrolled-tab-example-tab-query2").addEventListener("click", () =>{
-//        steps.current = true
-//         console.log("steps must be true",steps)
-//     })
-//     document.getElementById("uncontrolled-tab-example-tab-query1").addEventListener("click", () =>{
-//         steps.current = false
-//         console.log("steps must be false",steps)
-//     })
-//     if(steps.current = true){
-//         document.getElementById("uncontrolled-tab-example-tab-query2").addEventListener("click", () =>{
-//             setShow(true)
-//         })
-//     }
-// }
-// useEffect(() =>{
-//     clickNext() 
-// },[steps])
+       steps.current = true
+       setNext('1')
+       console.log(steps.current, "step true")
+    })
+
+    // back
+    document.getElementById("uncontrolled-tab-example-tab-query1").addEventListener("click", () =>{
+        steps.current = false
+        setNext('2')
+        console.log(steps.current, "step false")
+   
+    })
+   
+}
+useEffect(() =>{
+    expensiveCalculation() 
+},[steps])
 
 
     return(
@@ -80,7 +82,7 @@ const[register, setRegister] = useState(false)
        </TreatContext.Provider>
        
 
-        <div id="dashboard" className= {steps ? "showsidebar final" : "showsidebar "}>
+        <div id="dashboard" className= "showsidebar final">
             <div id='sidebar'>
                 <Sidebar/>
             </div>
@@ -101,8 +103,9 @@ const[register, setRegister] = useState(false)
                         <p className='card_text_white_big_new mt-2'>{location.state.title}</p>
 
                             <div className='mt-5'>
-                            <div className='steps_badge active'>1</div>
-                            <div className='steps_badge active'>2</div>
+                                {console.log('fajhjfhjhjf',steps.current)}
+                            <div className={next == '1'  ? 'steps_badge':"steps_badge active" }>1</div>
+                            <div className={next == '2'  ? 'steps_badge active':"steps_badge" }>2</div>
                             {/* {[...Array(steps)].map((e,index)=>{
                                 return <><div className='steps_badge active'>{index+1}</div></>
                                 })} */}
@@ -125,6 +128,17 @@ const[register, setRegister] = useState(false)
       className="mb-3"
     >
             <Tab eventKey="query1" title="Back">
+            <div className='querylist'>
+            <h6>What sex were you born as? *</h6>
+            <label class="custcheck">
+                <input type="checkbox" />ONE
+                <span class="checkboxmark"></span>
+                </label>
+                <label class="custcheck">
+                <input type="checkbox" />TWO
+                <span class="checkboxmark"></span>
+            </label>
+            </div>
                 <div className='querylist'>
                     <h6>What sex were you born as? *</h6>
                    <div className='mt-3'>  
@@ -144,6 +158,14 @@ const[register, setRegister] = useState(false)
                         <input type="number" className='form-control themeinput' />
                     </div>
                  </div>
+                 {/* <div className='querylist'>
+                    <h6>What is your current height (enter as centimeters)?</h6>
+                   <div className=' mt-3'>  
+                        <select className='form-control themeinput' >
+                            <option>jhgi</option>
+                            </select>
+                    </div>
+                 </div> */}
                  <div className='querylist'>
                     <h6>What is your current Weight (enter as centimeters)?</h6>
                    <div className=' mt-3'>  

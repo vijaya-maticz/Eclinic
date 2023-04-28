@@ -2529,7 +2529,7 @@ font-size: 18px;
 }
 .steps_badge
 {
-  background: #713DA7;
+
 border-radius: 10px;
 opacity: 1;
 width: 35px;
@@ -2538,12 +2538,16 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 font-size: 14px;
-color:#BE93E9;
+
 }
-.steps_badge.active
+.steps_badge.active{
+  background: #BE93E9;
+  color:#713DA7;
+}
+.steps_badge
 {
-  background: #CEAEEF;
-  color:#7F30CF;
+  background: #713DA7;
+  color:#CEAEEF;
 
 }
 .card_tect_grrey_sm_card
