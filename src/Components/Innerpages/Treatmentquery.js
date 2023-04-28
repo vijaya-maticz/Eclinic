@@ -102,7 +102,7 @@ useEffect(() =>{
                         </div>
                         <p className='card_text_white_big_new mt-2'>{location.state.title}</p>
 
-                            <div className='mt-5'>
+                            <div className='mt-4'>
                                 {console.log('fajhjfhjhjf',steps.current)}
                             <div className={next == '1'  ? 'steps_badge':"steps_badge active" }>1</div>
                             <div className={next == '2'  ? 'steps_badge active':"steps_badge" }>2</div>
