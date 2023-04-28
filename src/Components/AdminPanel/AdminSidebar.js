@@ -65,14 +65,14 @@ const AdminSidebar = () =>{
             <div className='menus'>
                <NavLink activeClassName="active" to="/admin/users"  className="nounder">
                 <img src={ceti} className="active"/>
-               User</NavLink>
+               Users</NavLink>
                 
             </div>
 
             <div className='menus'>
                <NavLink activeClassName="active" to="/admin/doctor"  className="nounder">
                 <img src={dash} className="active"/>
-               Doctor</NavLink>
+               Doctors</NavLink>
                 
             </div>
             <div className='menus'>

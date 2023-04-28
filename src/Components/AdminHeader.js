@@ -31,7 +31,7 @@ const AdminHeader = () => {
             
             <Dropdown className="admin-prof me-3">
               <Dropdown.Toggle variant="link" id="dropdown-basic" className='p-0'>
-                      <img src={prof} className=""/> <span className='fa fa-chevron-down text-dark f-14'></span>
+                      <img src={prof} className=""/> <span className='fa fa-caret-down text-dark f-14'></span>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">Logout</Dropdown.Item>
@@ -43,10 +43,10 @@ const AdminHeader = () => {
                 Dashboard</NavLink>
                 <NavLink activeClassName="active" to="/admin/users"  className="nounder">
                 <img src={ceti} className="active"/>
-               User</NavLink>
+               Users</NavLink>
                <NavLink activeClassName="active" to="/admin/doctor"  className="nounder">
                 <img src={dash} className="active"/>
-               Doctor</NavLink>
+               Doctors</NavLink>
                <NavLink activeClassName="active" to="/admin/records"  className="nounder">
                 <img src={treat} className="active"/>
                Records</NavLink>

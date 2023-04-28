@@ -741,6 +741,10 @@ button.action:hover{
 }
 
 @media(max-width:767px){
+  .browseinput
+  {
+    margin-bottom: 10px !important;
+  }
   .offcanvas-body .container {
     padding: 0;
 }
