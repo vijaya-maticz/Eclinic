@@ -93,19 +93,9 @@ const[checked, setChecked] = useState(false)
                <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
               <div className='d-flex jc-between pad_sec_head align-items-center flex_wrap_npb'> 
-              <h3 className='dash_head_blk mb-0'>Transaction</h3>
+              <h3 className='dash_head_blk mb-0'>CMS</h3>
               <div className='d-flex align-items-center flex_wrap_npb'>
-              <div className={checked?'switch_div mx-auto switch_div_length switch_div_1 active_check':'switch_div mx-auto switch_div_length switch_div_1'}>
-                        <p className='pe-2 first_check'>Prescription</p>
-                       
-                    <label className="switch mx-auto">
-                    <input type="checkbox" onChange={(e)=>{console.log(e.target.checked);setChecked(e.target.checked)}}/>
-                    <span className="slider round"></span>
-                    </label>
-                    
-                        <p className='ps-2 second_check'>Certificate</p>
-
-                        </div>
+            
 
                         <div class="input-group input_grp_search ms-3">
                         <input type="text" placeholder='Search' className='form-control ms-2 search_input_style'/>
