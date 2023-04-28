@@ -59,7 +59,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                <div className='cont p-sm-5 p-4 cont_padding'>
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
-                <div className='row'>
+                <div className='row jc-between'>
                     <div className='col-12 col-md-7 col-lg-7 d-flex  align-center'>
                         <div className='p-4 p-lg-5 '>
                             <div className='img_text_sx'>
@@ -73,6 +73,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                     </div>
                     <div className='col-12 col-md-5 col-lg-5  sec_img_dots justify-content-sm-send pe-sm-5'>
                         <img src={females} className='img-fluid pe-3' />
+                        <div className='dots'></div>
                     </div>
                 </div>
                 </div>
