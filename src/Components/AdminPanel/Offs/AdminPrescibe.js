@@ -1,12 +1,12 @@
 import React, { useState,useContext } from 'react';
 import {Offcanvas, Table } from 'react-bootstrap'
-import female from '../../Assets/Images/eclinic-img/female.png'
-import prof from '../../Assets/Images/prof.png'
-import { Link } from 'react-router-dom';
-import {TreatContext} from "../../Components/Innerpages/Treatments"
-import disease1 from '../../Assets/Images/disease1.png'
+// import female from '../../Assets/Images/eclinic-img/female.png'
+// import prof from '../../Assets/Images/prof.png'
+// import { Link } from 'react-router-dom';
+// import {TreatContext} from "../../Components/Innerpages/Treatments"
+// import disease1 from '../../../Assets/Images/disease1.png'
 
-const Prescriptionview = (props) =>{
+const AdminPrescribe = (props) =>{
     const[showpres, setShowpres] = useState(true)
   
     return(
@@ -20,13 +20,13 @@ const Prescriptionview = (props) =>{
           </div></div>
         </Offcanvas.Header>
                 <Offcanvas.Body className="containerpad0">
-              <div className='container'>
+               
+                        <div className='container'>
                        
                             <div className='row'>
                                 <div className='col-xl-12 col-lg-12 col-md-12 mb-md-0 mb-3'>
                                     <div className=''>
                                    
-                                       <div className='mt-4'>
                                         <div className='querylist'>
                                         <div className='que_sex  jc-between align-items-start d-flex'>
                                             <div>
@@ -81,7 +81,7 @@ const Prescriptionview = (props) =>{
                                             <p className='bold  mt-3'>Follow Up : 22-12-23</p>
                                         </div>
                                         </div>
-                                       </div>
+                                     
                                     </div>
                                 </div>
                        
@@ -94,4 +94,4 @@ const Prescriptionview = (props) =>{
     )
 }
 
-export default Prescriptionview
+export default AdminPrescribe

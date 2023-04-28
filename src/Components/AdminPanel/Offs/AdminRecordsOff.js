@@ -1,12 +1,9 @@
 import React, { useState,useContext } from 'react';
 import {Offcanvas } from 'react-bootstrap'
-import female from '../../Assets/Images/eclinic-img/female.png'
-import prof from '../../Assets/Images/prof.png'
 import { Link } from 'react-router-dom';
-import {TreatContext} from "../../Components/Innerpages/Treatments"
-import disease1 from '../../Assets/Images/disease1.png'
+import disease1 from '../../../Assets/Images/disease1.png'
 
-const Recordsview = (props) =>{
+const AdminRecordsOff = (props) =>{
     const[show, setShow] = useState(true)
   
     return(
@@ -15,17 +12,18 @@ const Recordsview = (props) =>{
              <Offcanvas.Header >
              <div className='container'>
                 <div className='d-flex jc-between'>
-                    <Offcanvas.Title> <h4>View Records</h4></Offcanvas.Title>
+                    <Offcanvas.Title><h4>View Records</h4></Offcanvas.Title>
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button>
           </div></div>
         </Offcanvas.Header>
-                <Offcanvas.Body className="containerpad0">
-             <div className='container'>
+                <Offcanvas.Body className='containerpad0'>
+               
+                        <div className='container'>
                        
                             <div className='row'>
                                 <div className='col-xl-9 col-lg-8 col-md-7 mb-md-0 mb-3'>
-                                   
-                                   
+                                    <div className=''>
+                                    
                                        <div className=''>
                                         <div className='que_sex d-flex querylist'>
                                             <div>
@@ -98,7 +96,7 @@ const Recordsview = (props) =>{
                                         </div>
                                        
                                        </div>
-                                 
+                                    </div>
                                 </div>
                                 <div className='col-xl-3 col-lg-4 col-md-5 mb-md-0 mb-3'>
 
@@ -131,4 +129,4 @@ const Recordsview = (props) =>{
     )
 }
 
-export default Recordsview
+export default AdminRecordsOff

@@ -1,15 +1,12 @@
 import React,{useState , Fragment} from 'react';
-import HomeHeader from '../HomeHeader';
 import "react-datepicker/dist/react-datepicker.css";
 import DataTable from 'react-data-table-component';
-import asset1 from '../../Assets/Images/asset1.png'
-import asset2 from '../../Assets/Images/asset2.png'
-import asset3 from '../../Assets/Images/asset3.png'
-import { Button } from 'react-bootstrap';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
 import AdminHeader from '../AdminHeader';
 import Footer from '../Footer';
+import AdminPrescribe from './Offs/AdminPrescibe';
+import AdminRecordsOff from './Offs/AdminRecordsOff';
 const AdminRecords = () =>{
     const columns = [
         {
@@ -51,16 +48,16 @@ const AdminRecords = () =>{
       {
         id: "001",
         treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
+         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
+        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "002",
         treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
+         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
+        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
@@ -68,16 +65,16 @@ const AdminRecords = () =>{
       {
         id: "003",
         treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
+         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
+        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "004",
         treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
+         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
+        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
@@ -86,133 +83,27 @@ const AdminRecords = () =>{
       {
         id: "005",
         treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
+         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
+        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
       {
         id: "006",
         treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
+         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
+        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
       },
     
 
-      {
-        id: "007",
-        treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-      {
-        id: "008",
-        treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-    
-
-      {
-        id: "009",
-        treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-      {
-        id: "010",
-        treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-    
-
-      {
-        id: "011",
-        treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-      {
-        id: "012",
-        treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-    
-
-      {
-        id: "013",
-        treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-      {
-        id: "014",
-        treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-    
-
-      {
-        id: "015",
-        treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-      {
-        id: "016",
-        treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-    
-
-      {
-        id: "017",
-        treatment: "Astma - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
-      {
-        id: "018",
-        treatment: "Acne - treatment",
-        response: <button className='btn btn-grey-dark'>View</button>,
-        prescription: <button className='btn btn-grey-dark'>View</button>,
-        status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
-      },
     
     
     
     ]
-  
-  
+    const[show, setShow] = useState(false) 
+    const[showpres, setShowpres] = useState(false)
 
 const[token, setToken] = useState(false)
 const[checked, setChecked] = useState(false)
@@ -222,6 +113,8 @@ const[checked, setChecked] = useState(false)
     return(
       <>
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
+            {showpres && <AdminPrescribe onDismiss={() => setShowpres(false)} />}
+            {show && <AdminRecordsOff onDismiss={() => setShow(false)} />}
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
                 <AdminSidebar/>
