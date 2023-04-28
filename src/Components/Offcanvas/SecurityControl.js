@@ -16,7 +16,7 @@ const SecurityControl = (props) =>{
                             <img src={user} className='me-2'/> 
                             <div> 
                                 <h4>Security Control</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p className='fotn_log_reg_sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                          </div>
                   
@@ -25,7 +25,7 @@ const SecurityControl = (props) =>{
                          <div className='col-md-9'>
                           <div class="form-floating mb-3">
                                 <input type="password" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">New Password</label>
+                                <label for="floatingInput">Password</label>
                             </div>
                             <button className='btn btn-link themeclr fw-700 ps-0' onClick={props.forgetpass}>Forget password</button>
                           </div>

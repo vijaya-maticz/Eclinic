@@ -64,7 +64,7 @@ const Paynow = (props) =>{
                                 </div>
                                 <div className='d-flex jc-between mt-sm-5  mt-4'>
                                     <button className='themebtn btn' onClick={() =>setPromo(!promo)}>I have a promo code</button>
-                                    <button className='themebtn-bordered btn' onClick={props.onDismiss}>Pay Now</button>
+                                    <button className='btn themebtn-bordered' onClick={props.onDismiss}>Pay Now</button>
                                 </div>
                                 {promo && 
                                 <div className='mt-2'>

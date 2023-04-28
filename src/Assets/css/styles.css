@@ -1018,6 +1018,14 @@ div#header .hamcomp:after {
   }
 }
 @media(max-width:575px){
+  .themebtn-bordered.btnpad_chag_purple
+  {
+    padding: 9px !important;
+  }
+  .card_text_white_big_new
+  {
+    font-size: 21px !important;
+  }
   .que_sex.d-flex
   {
     display: block !important;
@@ -3151,12 +3159,17 @@ color:#fff !important;
     border: none;
     margin-top: 10px;
 }
-.navbar .dropdown-item:focus,.navbar .dropdown-item:active ,.navbar .dropdown-item{
+.navbar .dropdown-item:focus,.navbar .dropdown-item:active{
   color: #1e2125;
   background-color: #e9ecef;
   outline-offset: 0px !important;
   outline: 0px !important;
 
+}
+.navbar .dropdown-item
+{
+  outline-offset: 0px !important;
+  outline: 0px !important;
 }
 .home_only_head #homeheader .navbar
 {
@@ -3230,5 +3243,28 @@ textarea.form-control
 img.arrowleft:hover
 {
   opacity: 0.5 !important;
+}
+@media(max-width:575px){
+  .card_text_white_big_new
+  {
+    font-size: 21px !important;
+  }
+}
+.fotn_log_reg_sm
+{
+  font-size: 13px !important;
+}
+
+@media only screen and (min-width:1201px) and (max-width:1439px)
+{
+  .themebtn-bordered.btnpad_chag_purple,.themebtn.btnpad_chag_purple
+  {
+    padding: 12px 5px !important;
+  }
+}
+.themebtn-bordered.btnpad_chag_purple,.themebtn.btnpad_chag_purple
+{
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
 }
 /* END NEW CSS */

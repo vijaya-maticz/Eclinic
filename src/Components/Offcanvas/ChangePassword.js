@@ -16,7 +16,7 @@ const ChangePass = (props) =>{
                             <img src={user} className='me-2'/> 
                             <div> 
                                 <h4>Change Password</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p className='fotn_log_reg_sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                          </div>
                          <div className='row mt-4'>
@@ -47,9 +47,9 @@ const ChangePass = (props) =>{
                         <div className=' col-md-6'>
                             <div className='d-flex jc-between flex5-5 gap-2'>
                                 <h6 className='dangerbg'>Two-Factor Authentication not enabled</h6>
-                                <div className='w-full d-flex d-block gap-2 jc-end '>
-                                    <button className='w-full themebtn' onClick={props.changepass}>Enable 2FA</button>
-                                    <button className='w-full themebtn-bordered' onClick={props.onDismiss}>Change Password</button>
+                                <div className='w-full d-flex d-block gap-2 jc-end mb-4'>
+                                    <button className='w-full themebtn btnpad_chag_purple' onClick={props.changepass}>Enable 2FA</button>
+                                    <button className='w-full themebtn-bordered btnpad_chag_purple' onClick={props.onDismiss}>Change Password</button>
                                 </div>  
                             </div>
                             

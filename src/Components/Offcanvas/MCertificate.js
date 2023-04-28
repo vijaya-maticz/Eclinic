@@ -33,7 +33,7 @@ const MCertificate = (props) =>{
                             
                         </div>
                         <div className='text-end mt-3'>
-                                <button className='themebtn-light me-3' onClick={props.paynow}>Pay Now</button>
+                                <button className='btn themebtn-bordered me-3' onClick={props.paynow}>Pay Now</button>
                         </div>
                          <div>
                          

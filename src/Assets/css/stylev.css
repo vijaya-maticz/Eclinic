@@ -442,6 +442,7 @@ input {
   display: flex;
   align-content: center;
   height: 100%;
+  justify-content: center;
 }
 .borderedinputbox {
   border: 1px dashed #adadad;
@@ -714,7 +715,7 @@ button.action:hover{
     width: calc(100% - 10px);
 }
   .offcanvas-bottom, .small.offcanvas-bottom {
-    height: calc(100vh - 20px);
+    height: calc(85vh - 20px);
 }
 }
 
@@ -730,6 +731,10 @@ button.action:hover{
 }
 }
 @media(max-width:575px){
+  .purplebtn
+  {
+    padding: 9px !important;
+  }
   .querylist h6
   {
     font-size: 14px !important;

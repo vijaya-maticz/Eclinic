@@ -16,7 +16,7 @@ const Editdetails = (props) =>{
                             <img src={user} className='me-2'/> 
                             <div> 
                                 <h4>Details</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p className='fotn_log_reg_sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                          </div>
                          <div className='row mt-4'>
@@ -65,11 +65,11 @@ const Editdetails = (props) =>{
                           <div className='d-sm-flex flex-1 gap-2'>
                           <div class="form-floating mb-3">
                                 <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">State</label>
+                                <label for="floatingInput">Area</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">Country</label>
+                                <label for="floatingInput">Zip Code</label>
                             </div>
                           </div>
                           

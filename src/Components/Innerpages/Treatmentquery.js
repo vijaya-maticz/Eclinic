@@ -157,7 +157,8 @@ useEffect(() =>{
                                 <img src={category=="female"?female:male} className='img_sx'/>
                         <p className='card_text_white_patient ms-2'>Patient</p>
                         </div>
-                        <p className='card_text_white_big_new mt-2'>{treatments[0].title}</p>
+                        {/* <p className='card_text_white_big_new mt-2'>{treatments[0].title}</p> */}
+                        <p className='card_text_white_big_new mt-2'>Weight Loss Treatment</p>
 
                             <div className='mt-4'>
                                 {console.log('fajhjfhjhjf',steps)}
@@ -231,7 +232,7 @@ useEffect(() =>{
                     </div>
                  </div> */}
                  <div className='querylist'>
-                    <h6>What is your current Weight (enter as centimeters)?</h6>
+                    <h6>What is your current Weight (enter as kg)?</h6>
                    <div className=' mt-3'>  
                         <input type="number" className='form-control themeinput' />
                     </div>
@@ -266,10 +267,10 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Have you been diagnosed with high blood sugar ? *</h6>
+                    <h6>Have you been diagnosed with high blood sugar levels or diabetes ? *</h6>
                    <div className='mt-3'>  
                        
-                        <label class="custradio me-2">None
+                        <label class="custradio me-2">No
                             <input type="radio" name="radio4" />
                             <span class="checkmark"></span>
                         </label>
@@ -287,7 +288,7 @@ useEffect(() =>{
                     <h6>Do you currently suffer from either heart disease, high blood pressure or are you being prescribed a treatment for high blood pressure?* </h6>
                    <div className='mt-3'>  
                        
-                        <label class="custradio me-2">None
+                        <label class="custradio me-2">No
                             <input type="radio" name="radio3" />
                             <span class="checkmark"></span>
                         </label>
@@ -305,7 +306,7 @@ useEffect(() =>{
                     <h6>Have you been diagnosed with liver issues?* </h6>
                    <div className='mt-3'>  
                        
-                        <label class="custradio me-2">None
+                        <label class="custradio me-2">No
                             <input type="radio" name="radio5" />
                             <span class="checkmark"></span>
                         </label>
@@ -356,7 +357,7 @@ useEffect(() =>{
 
 
                  <div className='querylist'>
-                    <h6>Have you been diagnosed with a form of eating disorder - anorexia, bulimia , either currently or in the past?  *</h6>
+                    <h6>Have you been diagnosed with a form of eating disorder - anorexia, bulimia, either currently or in the past?  *</h6>
                    <div className=' mt-3'>  
                         <label class="custradio me-2">YES
                             <input type="radio" name="radio6" />
@@ -369,7 +370,7 @@ useEffect(() =>{
                     </div>
                  </div>
                  <div className='querylist'>
-                    <h6>Do you feel sad or anxious for 2 weeks or more on a continuous basis? ?</h6>
+                    <h6>Do you feel sad or anxious for 2 weeks or more on a continuous basis?</h6>
                    <div className=' mt-3'>  
                         <label class="custradio me-2">YES
                             <input type="radio" name="radio6" />
@@ -394,12 +395,7 @@ useEffect(() =>{
                         </label>
                     </div>
                  </div>
-                 <div className='querylist'>
-                    <h6>What is your current height (enter as centimeters)?</h6>
-                   <div className=' mt-3'>  
-                        <input type="text" className='form-control themeinput' />
-                    </div>
-                 </div>
+                
                  <div className='text-right mt-3'>
                     <button onClick={() => setShow(true)} className='btn themebtn-bordered finalmodal'>Next</button>
                 </div> 
