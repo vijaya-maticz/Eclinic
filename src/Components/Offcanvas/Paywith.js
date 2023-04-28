@@ -12,7 +12,7 @@ const Paywith = (props) =>{
    
     const[paywith, setPaywith] = useState(true)
     const[promo, setPromo] = useState(false)
-   
+   const[showlast, setShowlast] = useState(false)
     return(
         <div className=''>
            
@@ -39,7 +39,18 @@ const Paywith = (props) =>{
                                     <h5 className='mt-4'>Pay with</h5>
                                     <InputGroup className="mb-3 borderinput cards">
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Wallet'/>
-                                       <InputGroup.Text> <img src={card1} className='wallimg'/> <img src={card2}  className='wallimg' />  <img src={card3}  className='wallimg'/><img  src={arrowrighticon}  className='righticon'/></InputGroup.Text>
+                                       <InputGroup.Text className='cardlists '>
+                                        <div className={showlast ? 'limitcard showlast' : 'limitcard '}>
+                                         <button className='btn btn-link px-0'><img src={card1} className='wallimg'/></button>
+                                         <button className='btn btn-link px-0'> <img src={card2}  className='wallimg' /> </button>
+                                         <button className='btn btn-link px-0'>  <img src={card3}  className='wallimg'/></button>
+                                         <button className='btn btn-link px-0'> <img src={card2}  className='wallimg' /> </button>
+                                         <button className='btn btn-link px-0'>  <img src={card3}  className='wallimg'/></button>
+                                         <button className='btn btn-link px-0'><img src={card1} className='wallimg'/></button>
+                                        
+                                         </div>
+                                          <button className='btn btn-link' onClick={() => setShowlast(!showlast)}> <img  src={arrowrighticon}  className={showlast ? 'righticon leftangle' :  'righticon '}/></button>
+                                        </InputGroup.Text>
                                     </InputGroup>
 
                                     <div className='d-flex jc-between mt-4'>

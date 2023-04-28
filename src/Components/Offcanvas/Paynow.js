@@ -67,7 +67,7 @@ const Paynow = (props) =>{
                                     <button className='btn themebtn-bordered' onClick={props.onDismiss}>Pay Now</button>
                                 </div>
                                 {promo && 
-                                <div className='mt-2'>
+                                <div className='mt-4'>
                                     <InputGroup className="mb-3 borderinput">
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Code'/>
                                        <InputGroup.Text className='themeclr'>Apply</InputGroup.Text>
