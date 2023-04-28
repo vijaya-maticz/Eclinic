@@ -16,12 +16,12 @@ const Paynow = (props) =>{
              <Offcanvas.Body className='requestlogin paynow'>
                 <div className='text-right '>
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
-                        <div className='container'>
+                        <div className='container pb-4'>
                        
                         <div className='d-flex align-items-center'>
                             <img src={user} className='me-2'/> 
                             <div> 
-                                <h4>Weight loss</h4>
+                                <h4 className='mb-0'>Weight loss</h4>
                             </div>
                          </div>
                          <div className='row mt-4'>
@@ -34,12 +34,12 @@ const Paynow = (props) =>{
                                     <InputGroup className="mb-3 borderinput">
                                     <InputGroup.Text><img src={write} className='write' /> </InputGroup.Text>
 
-                                        <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Product'/>
-                                        <InputGroup.Text>$25</InputGroup.Text>
-                                        <InputGroup.Text><i className='fa fa-trash themeclr'></i></InputGroup.Text>
+                                        <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Patients - weight loss'/>
+                                        <InputGroup.Text className='fot_bolf_prt'>$25</InputGroup.Text>
+                                        <InputGroup.Text><i className='fa fa-trash themeclr treadh_hover_dele'></i></InputGroup.Text>
                                     </InputGroup>
                                     <div className='d-flex jc-between mt-sm-5  mt-4'>
-                                        <button className='btn-grey btn'>Cancel</button>
+                                        <button className='btn-grey btn'>Continue</button>
                                         <button className='themebtn-bordered btn'>Checkout</button>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ const Paynow = (props) =>{
                                 </div>
                                 <div className='d-flex jc-between mt-sm-5  mt-4'>
                                     <button className='themebtn btn' onClick={() =>setPromo(!promo)}>I have a promo code</button>
-                                    <button className='themebtn-bordered btn' onClick={props.onDismiss}>Pay Now</button>
+                                    <button className='btn themebtn-bordered' onClick={props.onDismiss}>Pay Now</button>
                                 </div>
                                 {promo && 
                                 <div className='mt-2'>

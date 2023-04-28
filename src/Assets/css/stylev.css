@@ -91,7 +91,7 @@
     margin-top: 10px;
 }
 .imgborder{
-    background-image: url("../Images/eclinic-img/imgborder.png");
+    background-image: url("../Images/eclinic-img/art.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,6 +109,7 @@
 .offcanvas {
     background-color: #f9efff;
     border-radius: 30px 30px 0 0;
+    border:none;
 }
 .treat-det {
     background: #E7DCF3B0;
@@ -124,7 +125,7 @@
 }
 .violetcard h5 {
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
 }
 button.themebtn-bordered.big {
   padding: 12px 35px;
@@ -169,6 +170,7 @@ button.themebtn-bordered.big {
 }
 .requestlogin.paynow img.write {
   width: 33px;
+  border-radius: 0px !important;
 }
 .dashbanner{
   display: flex;
@@ -459,6 +461,7 @@ input {
   display: flex;
   align-content: center;
   height: 100%;
+  justify-content: center;
 }
 .borderedinputbox {
   border: 1px dashed #adadad;
@@ -685,7 +688,7 @@ button.action:hover{
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .querylist h6 {
   font-weight: 600;
@@ -733,7 +736,7 @@ button.action:hover{
     width: calc(100% - 10px);
 }
   .offcanvas-bottom, .small.offcanvas-bottom {
-    height: calc(100vh - 20px);
+    height: calc(85vh - 20px);
 }
 }
 
@@ -749,6 +752,18 @@ button.action:hover{
 }
 }
 @media(max-width:575px){
+  .purplebtn
+  {
+    padding: 9px !important;
+  }
+  .querylist h6
+  {
+    font-size: 14px !important;
+  }
+  select.themeinput,.querylist .custradio, .querylist .custcheck
+  {
+    font-size: 12px !important;
+  }
   .querylist, .whitebox {
     padding: 10px;
   }

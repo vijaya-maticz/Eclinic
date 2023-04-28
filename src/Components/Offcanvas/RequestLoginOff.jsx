@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
 import {Offcanvas } from 'react-bootstrap'
 import { TreatContext } from '../Innerpages/Treatmentquery';
-import diseaseimg from '../../Assets/Images/user.png'
+
+import user from "../../Assets/Images/user.png"
 
 const RequestLoginOff = (props) =>{
    
@@ -21,8 +22,10 @@ const RequestLoginOff = (props) =>{
                     
                       <div className=''>
                          <div className='d-flex align-items-center'>
-                            <img src={diseaseimg} className='me-2'/> 
-                            <h4>Weight Loss Treatment</h4>
+                            <img src={user} className='me-2'/> 
+                            {/* <h4>{treats.title}</h4> */}
+                            <h4 className='mb-0'>Weight loss</h4>
+
                          </div>
                          <div className='treat-det mt-3'>
                          <h6>Sign Up for a eClinic.ie account</h6>

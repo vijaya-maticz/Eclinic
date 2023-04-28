@@ -23,7 +23,7 @@ const TreatmentOff = (props) =>{
                                     <div className=''>
                                         <div className='d-flex align-center gap-2'>
                                             <img src={female} className='img-fluid' />
-                                            <h4>{treats.title}</h4>
+                                            <h4 className="mb-0">{treats.title}</h4>
                                         </div>
                                         <div className='treat-det mt-3'>
                                             <p>{treats.description}</p>
@@ -33,7 +33,7 @@ const TreatmentOff = (props) =>{
                                     </div>
                                 </div>
                                 <div className='col-xl-3 col-lg-4 col-md-5'>
-                                    <div>
+                                    <div className='sticky_card_dr'>
                                         <div className='violetcard'>
                                             <h5>{treats.docname} is online now</h5>
                                             <div className='imgborder my-4'>

@@ -13,10 +13,10 @@ const RegisterOff = (props) =>{
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
                         <div className='container'>
                         <div className='d-flex align-items-center mb-4'>
-                            <img src={user} className='me-2'/> 
+                            <img src={user} className='me-3'/> 
                             <div> 
                                 <h4>Register</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p className='fotn_log_reg_sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                          </div>
                          <div className='row'>
@@ -34,6 +34,9 @@ const RegisterOff = (props) =>{
                             <div className='col-md-6'>
                                 <select className='form-control borderinput mb-3'>
                                     <option>Gender</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+
                                 </select>
                             </div>
                             
@@ -47,7 +50,7 @@ const RegisterOff = (props) =>{
                             </div>
                          </div>
                     
-                        <div className='text-end'>
+                        <div className='text-end mt-3 mb-2'>
                             <div className='d-flex jc-between'>
                                 <button className='purplebtn me-3' onClick={props.alreadyhave}>Already have an Account</button>
                                 <button className='themebtn-bordered' onClick={props.onDismiss}>Signup</button>

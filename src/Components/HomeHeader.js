@@ -13,6 +13,13 @@ import dash from '../Assets/Images/dash.png'
 import myacc from '../Assets/Images/myacc.png'
 import trans from '../Assets/Images/trans.png'
 
+
+import home_icon from '../Assets/Images/home_icon.png'
+import about_icon from '../Assets/Images/about_icon.png'
+import contact_icon from '../Assets/Images/contact_icon.png'
+
+
+
 const HomeHeader = () => {  
 
   const[cart, setCart] = useState(false)
@@ -35,15 +42,15 @@ const HomeHeader = () => {
         
 
           <NavLink activeClassName="active" to="/"  className="nounder">
-                <img src={treat} className="active" />
+                <img src={home_icon} className="active" />
                 Home</NavLink>
 
                 <NavLink activeClassName="active" to=" "  className="nounder">
-                <img src={treat} className="active" />
+                <img src={about_icon} className="active" />
                 About eClinic</NavLink>
 
                 <NavLink activeClassName="active" to=" "  className="nounder">
-                <img src={treat} className="active" />
+                <img src={contact_icon} className="active" />
                 Contacts</NavLink>
 
 

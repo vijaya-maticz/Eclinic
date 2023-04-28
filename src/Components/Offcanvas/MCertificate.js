@@ -21,7 +21,7 @@ const MCertificate = (props) =>{
                       <div className=''>
                          <div className='d-flex align-items-center'>
                             <img src={user} className='me-2'/> 
-                            <h4>Medical Certificate</h4>
+                            <h4 className='mb-0'>Weight loss</h4>
                          </div>
                          <div className='treat-det mt-3'>
                          <h6>Sign Up for a eClinic.ie account</h6>
@@ -33,7 +33,7 @@ const MCertificate = (props) =>{
                             
                         </div>
                         <div className='text-end mt-3'>
-                                <button className='themebtn-light me-3' onClick={props.paynow}>Pay Now</button>
+                                <button className='btn themebtn-bordered me-3' onClick={props.paynow}>Pay Now</button>
                         </div>
                          <div>
                          

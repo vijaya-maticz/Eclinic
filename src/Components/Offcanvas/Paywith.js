@@ -26,7 +26,7 @@ const Paywith = (props) =>{
                         <div className='d-flex align-items-center'>
                             <img src={user} className='me-2'/> 
                             <div> 
-                                <h4>Weight Loss</h4>
+                                <h4 className='mb-0'>Weight Loss</h4>
                             </div>
                          </div>
                          <div className='row mt-4'>

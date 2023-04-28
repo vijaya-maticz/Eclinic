@@ -21,12 +21,18 @@ const PaySuccess = (props) =>{
                         <div className='text-center'>
                             <img src={card} className='me-2 mb-2'/> 
                             <div> 
-                                <h4>Success Certificate</h4>
+                                <h4>Payment Successfully</h4>
                             </div>
-                            <p className='my-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                          
-                           <img onClick={props.onDismiss} className='arrowleft' src={arrowleft} />
-                          
+                            <div className='treat-det mt-3'>
+                                <div className='row'>
+                                    <div className='col-12 col-md-10 col-lg-9 mx-auto'>
+                            <p className='my-3 desc_card_off_bold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                           <img onClick={props.onDismiss} className='arrowleft mt-4 mb-4' src={arrowleft} />
+                         
                          </div>
                        
                         </div>

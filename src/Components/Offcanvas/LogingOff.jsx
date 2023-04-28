@@ -16,10 +16,10 @@ const LoginOff = (props) =>{
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
                         <div className='container'>
                         <div className='d-flex align-items-center'>
-                            <img src={user} className='me-2'/> 
+                            <img src={user} className='me-3'/> 
                             <div> 
                                 <h4>Login</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p className='fotn_log_reg_sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                          </div>
                          <div className='row mt-4'>

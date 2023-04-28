@@ -1018,6 +1018,14 @@ div#header .hamcomp:after {
   }
 }
 @media(max-width:575px){
+  .themebtn-bordered.btnpad_chag_purple
+  {
+    padding: 9px !important;
+  }
+  .card_text_white_big_new
+  {
+    font-size: 21px !important;
+  }
   .que_sex.d-flex
   {
     display: block !important;
@@ -1549,6 +1557,11 @@ margin-bottom: 20px !important;
 
 @media only screen and (min-width:768px) and (max-width:991px)
 {
+  .btn_pad_reduc_therm.themebtn
+  {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
   .container_radio
   {
     padding-left: 30px!important;
@@ -3151,12 +3164,17 @@ color:#fff !important;
     border: none;
     margin-top: 10px;
 }
-.navbar .dropdown-item:focus,.navbar .dropdown-item:active ,.navbar .dropdown-item{
+.navbar .dropdown-item:focus,.navbar .dropdown-item:active{
   color: #1e2125;
   background-color: #e9ecef;
   outline-offset: 0px !important;
   outline: 0px !important;
 
+}
+.navbar .dropdown-item
+{
+  outline-offset: 0px !important;
+  outline: 0px !important;
 }
 .home_only_head #homeheader .navbar
 {
@@ -3217,5 +3235,62 @@ select.themeinput
 textarea.form-control 
 {
   resize: none !important;
+}
+.sticky_card_dr
+{
+  position: sticky;
+  top:0px;
+}
+.desc_card_off_bold
+{
+  font-weight: 600 !important;
+}
+img.arrowleft:hover
+{
+  opacity: 0.5 !important;
+}
+@media(max-width:575px){
+  .card_text_white_big_new
+  {
+    font-size: 21px !important;
+  }
+}
+.fotn_log_reg_sm
+{
+  font-size: 13px !important;
+}
+
+@media only screen and (min-width:1201px) and (max-width:1439px)
+{
+  .themebtn-bordered.btnpad_chag_purple,.themebtn.btnpad_chag_purple
+  {
+    padding: 12px 5px !important;
+  }
+}
+.themebtn-bordered.btnpad_chag_purple,.themebtn.btnpad_chag_purple
+{
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.btn-link.btn_for_border
+{
+  text-decoration: underline !important;
+}
+.btn-link.btn_for_border:hover
+{
+  color:#19C590 !important;
+}
+.fot_bolf_prt
+{
+  font-weight: 900 !important;
+  color:#000 !important;
+}
+.treadh_hover_dele
+{
+  cursor: pointer;
+}
+.treadh_hover_dele:hover
+{
+color:#000 !important;
 }
 /* END NEW CSS */
