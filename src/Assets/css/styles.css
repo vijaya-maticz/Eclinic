@@ -3218,4 +3218,17 @@ textarea.form-control
 {
   resize: none !important;
 }
+.sticky_card_dr
+{
+  position: sticky;
+  top:0px;
+}
+.desc_card_off_bold
+{
+  font-weight: 600 !important;
+}
+img.arrowleft:hover
+{
+  opacity: 0.5 !important;
+}
 /* END NEW CSS */

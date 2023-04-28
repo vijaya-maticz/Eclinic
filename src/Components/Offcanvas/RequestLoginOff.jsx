@@ -22,7 +22,9 @@ const RequestLoginOff = (props) =>{
                       <div className=''>
                          <div className='d-flex align-items-center'>
                             <img src={treats.diseaseimg} className='me-2'/> 
-                            <h4>{treats.title}</h4>
+                            {/* <h4>{treats.title}</h4> */}
+                            <h4 className='mb-0'>Weight loss</h4>
+
                          </div>
                          <div className='treat-det mt-3'>
                          <h6>Sign Up for a eClinic.ie account</h6>
