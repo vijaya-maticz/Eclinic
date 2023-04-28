@@ -51,7 +51,7 @@ const[paysuccess, setPaysuccess] = useState(false)
             {paywith &&  <Paywith onsuccess={() => {setPaywith(false);setPaysuccess(true)}} onDismiss={() => {setPaywith(false)}} />}
             {paysuccess && <PaySuccess onDismiss={() =>setPaysuccess(false)} /> }
             
-            <div className='headandcont'>
+            <div className='headandcont certificate'>
                <div className="adminheader">
                 {/* <AdminHeader /> */}
                 <HomeHeader />
@@ -60,7 +60,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                <div className='card purple_bg_card'>
                 <div className='card-body p-0'>
                 <div className='row jc-between'>
-                    <div className='col-12 col-md-7 col-lg-7 d-flex  align-center'>
+                    <div className='col-12 col-md-7 col-lg-8 d-flex  align-center'>
                         <div className='p-4 p-lg-5 '>
                             <div className='img_text_sx'>
                                 <img src={category=="female"?female:male} className='img_sx'/>
@@ -71,7 +71,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                             
                         </div>
                     </div>
-                    <div className='col-12 col-md-5 col-lg-5  sec_img_dots justify-content-sm-send pe-sm-5'>
+                    <div className='col-12 col-md-5 col-lg-4  sec_img_dots justify-content-sm-send pe-sm-5'>
                         <img src={females} className='img-fluid pe-3' />
                         <div className='dots'></div>
                     </div>
@@ -100,20 +100,22 @@ const[paysuccess, setPaysuccess] = useState(false)
                         <h6>Are you currently or in the last two months have you taken any medicine (prescribed or not), alternative medicines or recreational drugs? *</h6>
                         <div className=' mt-3'>  
                             <select className='form-control themeinput' >
-                                <option>hgf</option>
+                                <option>YES</option>
+                                                                <option>NO</option>
                             </select>
                         </div>
                     </div>
                     <div className='querylist'>
-                    <h6>Are you currently or in the last two months have you taken any medicine (prescribed or not), alternative medicines or recreational drugs? *</h6>
+                    <h6>Other tha issue mentioned in iyour below sick notes details,do you have any significant medical conditions, illness or past surgical procedure? </h6>
                         <div className=' mt-3'>  
                             <select className='form-control themeinput' >
-                                <option>hgf</option>
+                                <option>YES</option>
+                                                                <option>NO</option>
                             </select>
                         </div>
                     </div>
                     <div className='querylist'>
-                        <h6>Have you been diagnosed with hign blood sugar levels or diabetes?* </h6>
+                        <h6>Have you been diagnosed with high blood sugar levels or diabetes?* </h6>
                     <div className=' mt-3'>  
                             <textarea className='form-control '></textarea>
                         </div>
@@ -138,7 +140,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                         </div>
                     </div>
                     </div>
-                  <p className='aqua'>Book only Maximam 7 days</p>
+                  <p className='aqua'>Book only Maximum 7 days</p>
                     <div className='querylist mt-3'>
                         <h6>I confirm that a have read and understand this and my answer are fully correct and true. *</h6>
                     <div className='mt-3'>  

@@ -40,7 +40,7 @@ const Paywith = (props) =>{
 
                                     <div className='d-flex jc-between mt-4'>
                                         <button className='btn-grey btn'>Cancel</button>
-                                        <button className='themebtn-bordered btn'>Proceed Payment</button>
+                                        <button className='themebtn-bordered btn'>Checkout</button>
                                     </div>
                                 </div>
                             </div>
