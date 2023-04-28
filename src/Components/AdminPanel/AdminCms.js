@@ -92,7 +92,7 @@ const[checked, setChecked] = useState(false)
             <div className='headandcont'>
                <div className="adminheader"><AdminHeader /></div> 
                <div className='cont p-sm-5 p-4 cont cont_padding'>
-              <div className='d-flex jc-between pad_sec_head align-items-center flex_wrap_npb'> 
+              <div className='d-flex jc-between pad_sec_head align-items-center'> 
               <h3 className='dash_head_blk mb-0'>CMS</h3>
               <div className='d-flex align-items-center flex_wrap_npb'>
             

@@ -37,7 +37,7 @@ const Paywith = (props) =>{
                                         
                                     </InputGroup>
                                     <h5 className='mt-4'>Pay with</h5>
-                                    <InputGroup className="mb-3 borderinput cards">
+                                    <InputGroup className="mb-3 borderinput cards border_inpt_card_list">
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Wallet'/>
                                        <InputGroup.Text className='cardlists '>
                                         <div className={showlast ? 'limitcard showlast' : 'limitcard '}>
@@ -49,7 +49,7 @@ const Paywith = (props) =>{
                                          <button className='btn btn-link px-0'><img src={card1} className='wallimg'/></button>
                                         
                                          </div>
-                                          <button className='btn btn-link' onClick={() => setShowlast(!showlast)}> <img  src={arrowrighticon}  className={showlast ? 'righticon leftangle' :  'righticon '}/></button>
+                                          <button className='btn btn-link pe-0' onClick={() => setShowlast(!showlast)}> <img  src={arrowrighticon}  className={showlast ? 'righticon leftangle' :  'righticon '}/></button>
                                         </InputGroup.Text>
                                     </InputGroup>
 
@@ -62,7 +62,7 @@ const Paywith = (props) =>{
                             <div className='col-lg-5'>
                             <div className='whitebox h-100 py-4'>
                                 <div className=' mb-4'>
-                                <Table >
+                                <Table className='tabe_mif_pay'>
                                         <thead style={{borderColor:"transparent"}}>
                                             <tr>
                                                 <th>Product</th>

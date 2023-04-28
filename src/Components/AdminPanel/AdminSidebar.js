@@ -10,6 +10,10 @@ import dash from '../../Assets/Images/dash.png'
 import myacc from '../../Assets/Images/myacc.png'
 import trans from '../../Assets/Images/trans.png'
 
+import copy from '../../Assets/Images/icon_copy.png'
+import settings from '../../Assets/Images/icon_settings.png'
+
+
 
 import img_ad from '../../Assets/Images/img_ad.png'
 
@@ -57,7 +61,7 @@ const AdminSidebar = () =>{
           <div className='sidelist'>
           <div className='menus'>
                <NavLink activeClassName="active" to="/admin/dashboard"  className="nounder">
-                <img src={treat} className="active" />
+                <img src={dash} className="active" />
                 Dashboard</NavLink>
                 
             </div>
@@ -90,12 +94,12 @@ const AdminSidebar = () =>{
             </div>
             <div className='menus'>
                <NavLink activeClassName="active" to="/admin/setting"  className="nounder">
-                <img src={myacc} className="active"/>
+                <img src={settings} className="active"/>
               Settings</NavLink>
             </div>
             <div className='menus'>
                <NavLink activeClassName="active" to="/admin/cms"  className="nounder">
-                <img src={myacc} className="active"/>
+                <img src={copy} className="active"/>
                CMS</NavLink>
                 
             </div>

@@ -1018,6 +1018,23 @@ div#header .hamcomp:after {
   }
 }
 @media(max-width:575px){
+  .tabe_mif_pay th
+  {
+    font-size: 14px !important;
+  }
+  .border_inpt_card_list 
+  {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .border_inpt_card_list  input
+  {
+    display: block;
+    width: 100% !important;
+    max-height: 45px !important;
+  }
   .mob_blk_fle
   {
     display: block !important;
@@ -1033,6 +1050,10 @@ div#header .hamcomp:after {
   .que_sex.d-flex
   {
     display: block !important;
+  }
+  .que_sex.d-flex.querylist
+  {
+    display: flex !important;
   }
 .flex_wrap_npb
 {
@@ -3321,6 +3342,16 @@ color:#000 !important;
 .uload_log_size
 {
   font-size: 16px !important;
+}
+.admin_trasn_table .rdt_TableCell,
+.admin_trasn_table .rdt_TableCol_Sortable,
+.admin_trasn_table .rdt_TableCol
+{
+min-width: 130px !important;
+}
+.tabe_mif_pay
+{
+  vertical-align: middle;
 }
 /* .card_text_white_big_new
 {

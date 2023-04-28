@@ -139,7 +139,7 @@ const[checked, setChecked] = useState(false)
              </div> 
               
                 <div className='tablesec '>
-                    <div className='mt-2 responsive shadowbox_tabe br-30' >
+                    <div className='mt-2 responsive shadowbox_tabe br-30 admin_trasn_table' >
                     <DataTable striped responsive={true} pagination
                         data={data}
                         columns={columns}
