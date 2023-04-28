@@ -7,7 +7,11 @@ import prof from "../Assets/Images/user.png"
 import cartimg from "../Assets/Images/eclinic-img/cart.png"
 import Cart from './Offcanvas/CartOff';
 
-
+import ceti from '../Assets/Images/ceti.png'
+import treat from '../Assets/Images/treat.png'
+import dash from '../Assets/Images/dash.png'
+import myacc from '../Assets/Images/myacc.png'
+import trans from '../Assets/Images/trans.png'
 
 const HomeHeader = () => {  
 
@@ -20,21 +24,51 @@ const HomeHeader = () => {
       <Container>
         <NavLink to="/"><Navbar.Brand><img src={logo} className="logo"/> </Navbar.Brand></NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
+        <Navbar.Collapse id="basic-navbar-nav" className='custom_pad_nav sidebar_mob_home'>
           <Nav className='mx-auto'>
-            <NavLink className='nav-link link_mr' to="/">Home</NavLink>     
-            <NavLink className='nav-link link_mr' to="/treatments">About eClinic</NavLink>
-            <NavLink className='nav-link link_mr link_cont_no_after' to="/">Contacts</NavLink>          
-          
-            <NavLink className='nav-link link_mr d-none-inner-menu' to="/">Treatments</NavLink>
-            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/">Certificate</NavLink>  
+          <div className='mobileadmin menus'>
+        
 
-              <NavLink className='nav-link link_mr d-none-inner-menu' to="/dashboard">Dashboard</NavLink>
-            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/myaccount">My Account</NavLink>          
+          <NavLink activeClassName="active" to="/"  className="nounder">
+                <img src={treat} className="active" />
+                Home</NavLink>
 
-              <NavLink className='nav-link link_mr d-none-inner-menu' to="/records">Records</NavLink>
-            <NavLink className='nav-link link_mr link_cont_no_after d-none-inner-menu' to="/transaction">Transaction</NavLink>                  
+                <NavLink activeClassName="active" to=" "  className="nounder">
+                <img src={treat} className="active" />
+                About eClinic</NavLink>
+
+                <NavLink activeClassName="active" to=" "  className="nounder">
+                <img src={treat} className="active" />
+                Contacts</NavLink>
+
+
+                <NavLink activeClassName="active" to="/treatments"  className="nounder d-none-inner-menu">
+                <img src={treat} className="active" />
+                Treatments</NavLink>
+
+
+                <NavLink activeClassName="active" to="/certificate"  className="nounder d-none-inner-menu">
+                <img src={treat} className="active" />
+                Certificate</NavLink>
+
+
+                
+                <NavLink activeClassName="active" to="/myaccount"  className="nounder d-none-inner-menu">
+                <img src={treat} className="active" />
+                My Account</NavLink>
+                
           
+                <NavLink activeClassName="active" to="/records"  className="nounder d-none-inner-menu">
+                <img src={treat} className="active" />
+                Records</NavLink>
+
+                
+                <NavLink activeClassName="active" to="/transaction"  className="nounder d-none-inner-menu">
+                <img src={treat} className="active" />
+                Transaction</NavLink>
+
+
+          </div>
           </Nav>
           
 
