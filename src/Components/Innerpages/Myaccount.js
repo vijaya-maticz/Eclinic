@@ -19,6 +19,7 @@ import med from '../../Assets/Images/med.png'
 import Editdetails from '../Offcanvas/EditDetailsOff';
 import ChangePass from '../Offcanvas/ChangePassword';
 import SecurityControl from '../Offcanvas/SecurityControl';
+import LoginOff from '../Offcanvas/LogingOff';
 
 
 
@@ -32,12 +33,13 @@ const Myaccount = () =>{
  const[edit, setEdit] = useState(false)
  const[password, setPassword] = useState(false)
  const[security, setSecurity] = useState(false)
-
+ const[login, setLogin] = useState(false)
     return(
         <>
+         {login && <LoginOff onDismiss={() => {setLogin(false)}}/>}
         {edit && <Editdetails onDismiss={() => setEdit(false)} />}
         {password && <ChangePass onDismiss={() => setPassword(false)} changepass={() =>{setPassword(false); setSecurity(true)} }/>}
-        {security && <SecurityControl onDismiss={() => setSecurity(false)} />}
+        {security && <SecurityControl onDismiss={() => setSecurity(false)} forgetpass={() =>{ setSecurity(false);setLogin(true);} } />}
         <div id="dashboard" className='showsidebar'>
             <div id='sidebar'>
                 <Sidebar/>

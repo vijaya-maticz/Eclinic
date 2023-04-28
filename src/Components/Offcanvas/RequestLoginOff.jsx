@@ -26,7 +26,7 @@ const RequestLoginOff = (props) =>{
                          </div>
                          <div className='treat-det mt-3'>
                          <h6>Sign Up for a eClinic.ie account</h6>
-                        <p> In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seekadvice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat.
+                        <p> In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. Seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat.
                           (Xenical is the branded version of Orlistat and both work in the same way).</p>
                         <h6>How we use personal data: </h6>
                         <p>The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. 

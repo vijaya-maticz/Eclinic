@@ -49,7 +49,7 @@ const RegisterOff = (props) =>{
                     
                         <div className='text-end'>
                             <div className='d-flex jc-between'>
-                                <button className='purplebtn me-3'>Already have an Account</button>
+                                <button className='purplebtn me-3' onClick={props.alreadyhave}>Already have an Account</button>
                                 <button className='themebtn-bordered' onClick={props.onDismiss}>Signup</button>
                             </div>
                         </div>

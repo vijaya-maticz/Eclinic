@@ -19,37 +19,25 @@ const SecurityControl = (props) =>{
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                          </div>
-                         <div className='row mt-4'>
-                            <div className='col-md-6'>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">Password</label>
-                            </div>
-                        
-                          </div>
-                          <div className='col-md-6'>
+                  
+                         
+                         <div className='row mt-5'>
+                         <div className='col-md-9'>
                           <div class="form-floating mb-3">
                                 <input type="password" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
                                 <label for="floatingInput">New Password</label>
                             </div>
+                            <button className='btn btn-link themeclr fw-700 ps-0' onClick={props.forgetpass}>Forget password</button>
                           </div>
-                          </div>
-                         
-                         <div className='row'>
-                            <div className="col-md-6">
-                          <div class="form-floating mb-3">
-                                <input type="password" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">Verify New Password</label>
-                            </div>
-                           
-                            </div>
                             
-                        <div className=' col-md-6'>
-                            <div className='d-flex jc-between flex5-5 gap-2'>
-                                <h6 className='dangerbg'>Two-Factor Authentication not enabled</h6>
-                                <div className='w-full d-flex d-block gap-2 jc-end '>
-                                    <button className='w-full themebtn' onClick={props.onDismiss}>Enable 2FA</button>
-                                    <button className='w-full themebtn-bordered' onClick={props.onDismiss}>Change Password</button>
+                        <div className=' col-md-3'>
+                            <div className='d-flex jc-end gap-2'>
+                              
+                                <div>
+                                    <button className=' themebtn' onClick={props.onDismiss}>Change Password</button>
+                                    </div>
+                                    <div>
+                                    <button className='themebtn-bordered' onClick={props.onDismiss}>Cancel</button>
                                 </div>  
                             </div>
                             
