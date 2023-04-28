@@ -63,9 +63,15 @@ const Myaccount = () =>{
                      
                         <img src={profile} className='img-fluid img_profile_bg' />
 
-                        <button className='btn btn_edit'>
-                        <i className="fa fa-pencil"></i>
-                        </button>
+                        <div class="btn btn_edit">
+  <label for="file-input">
+  <i className="fa fa-pencil"></i>
+  </label>
+
+  <input id="file-input" type="file" />
+</div>
+
+                      
                         </div>
                     </div>
                     <p className='profile_name_title mt-3 text-center'>David Williams</p>
