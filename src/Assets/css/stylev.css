@@ -388,13 +388,22 @@ img.arrowleft {
   background: #f9efff;
 }
 input::-webkit-datetime-edit {
-  opacity: 0;
+  /* opacity: 0; */
 }
 .paywith .whitebox .d-flex > *:last-child, 
 .paynow  .whitebox .d-flex > *:last-child, 
 .cart .whitebox .d-flex > *:last-child,
 .paywith table tr th:last-child, .paywith table tr td:last-child{
   text-align: right;
+}
+.cards .wallimg {
+  height: 30px;
+  border-radius: 5px;
+  margin: 2px;
+}
+.cards img.righticon {
+  object-fit: contain;
+  width: 25px;
 }
 .paywith .whitebox .d-flex > *:nth-child(2) , 
 .paynow .whitebox .d-flex > *:nth-child(2),
@@ -423,11 +432,20 @@ padding-right: 0;
 }
 .form-floating > .form-control:focus~label{
   opacity: .65;
-  transform: scale(.85) translateY(-1.8rem) translateX(.15rem);
+  transform: scale(.85) translateY(-0.8rem) translateX(.15rem);
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 24px;
+}
+input.form-control.borderinput[type = "date"]::-webkit-calendar-picker-indicator{
+background-image: url("../Images/eclinic-img/deleteicon.png");
 }
 .form-floating label {
   font-size: 14px;
   color: #727272;
+}
+.form-floating input{
+  height: 45px !important;
 }
 input {
   font-size: 14px !important;
@@ -483,7 +501,9 @@ input {
   text-align: center;
 }
 
-
+.form-floating > .form-control.borderinput:focus~label{
+  opacity: 1;
+}
 .admin .form-floating > .form-control.borderinput:focus~label{
   background-color: #fff;
   color: #727272 !important;

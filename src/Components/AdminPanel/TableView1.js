@@ -33,7 +33,7 @@ const TableView = () =>{
         },
         {
             key: "username",
-            text: "User Name",
+            text: "Username",
             className: "name",
             align: "left",
             sortable: true,

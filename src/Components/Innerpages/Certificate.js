@@ -115,7 +115,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                         </div>
                     </div>
                     <div className='querylist'>
-                        <h6>Have you been diagnosed with high blood sugar levels or diabetes?* </h6>
+                        <h6>Have you been diagnosed with high blood sugar levels or diabetes? * </h6>
                     <div className=' mt-3'>  
                             <textarea className='form-control '></textarea>
                         </div>

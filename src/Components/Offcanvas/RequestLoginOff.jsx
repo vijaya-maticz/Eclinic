@@ -18,7 +18,7 @@ const RequestLoginOff = (props) =>{
                 <div className='text-right '>
                     <button className='ms-auto btn btn-link text-dark' onClick={props.onDismiss}><span className='fa fa-times fa-xs'></span> </button></div>
                         <div className='container'>
-                           { console.log("treats",treats)}
+                      
                     
                       <div className=''>
                          <div className='d-flex align-items-center'>

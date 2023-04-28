@@ -55,7 +55,7 @@ const Records = () =>{
   
       {
         id: "001",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -72,7 +72,7 @@ const Records = () =>{
 
       {
         id: "003",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -90,7 +90,7 @@ const Records = () =>{
 
       {
         id: "005",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -108,7 +108,7 @@ const Records = () =>{
 
       {
         id: "007",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -126,7 +126,7 @@ const Records = () =>{
 
       {
         id: "009",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -144,7 +144,7 @@ const Records = () =>{
 
       {
         id: "011",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -162,7 +162,7 @@ const Records = () =>{
 
       {
         id: "013",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -180,7 +180,7 @@ const Records = () =>{
 
       {
         id: "015",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
@@ -198,7 +198,7 @@ const Records = () =>{
 
       {
         id: "017",
-        treatment: "Astma - treatment",
+        treatment: "Asthma - treatment",
         response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
        prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
