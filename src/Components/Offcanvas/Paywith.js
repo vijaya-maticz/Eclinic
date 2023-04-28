@@ -88,7 +88,7 @@ const Paywith = (props) =>{
                                     <button className='themebtn-bordered btn' onClick={props.onsuccess}>Pay Now</button>
                                 </div>
                                 {promo && 
-                                <div className='mt-2'>
+                                <div className='mt-4'>
                                     <InputGroup className="mb-3 borderinput">
                                         <Form.Control aria-label="Amount (to the nearest dollar)" placeholder='Code'/>
                                        <InputGroup.Text>Apply</InputGroup.Text>

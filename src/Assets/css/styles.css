@@ -1018,6 +1018,10 @@ div#header .hamcomp:after {
   }
 }
 @media(max-width:575px){
+  .mob_blk_fle
+  {
+    display: block !important;
+  }
   .themebtn-bordered.btnpad_chag_purple
   {
     padding: 9px !important;
@@ -3292,5 +3296,26 @@ img.arrowleft:hover
 .treadh_hover_dele:hover
 {
 color:#000 !important;
+}
+.clar_cart_hover.btn-link
+{
+  text-decoration: underline !important;
+}
+.clar_cart_hover.btn-link:hover
+{
+  color:#19C590 !important;
+}
+.input_no_t_b_border
+{
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.bt_t_grey
+{
+  color:#898687 !important;
+}
+.font_bld
+{
+  font-weight: bold !important;
 }
 /* END NEW CSS */

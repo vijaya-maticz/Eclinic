@@ -418,7 +418,7 @@ padding-right: 0;
 }
 
 .bordered {
-  border: 0.1px dashed #b7b7b7 !important;
+  border: 0.1px dashed #312d2d !important;
   background: transparent;
 }
 .form-floating > .form-control:focus~label{

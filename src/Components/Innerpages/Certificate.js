@@ -106,7 +106,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                         </div>
                     </div>
                     <div className='querylist'>
-                    <h6>Other tha issue mentioned in iyour below sick notes details,do you have any significant medical conditions, illness or past surgical procedure? </h6>
+                    <h6>Other than issues mentioned in your below Sick Note details, do you have any significant medical conditions, illness or past surgical procedure? </h6>
                         <div className=' mt-3'>  
                             <select className='form-control themeinput' >
                                 <option>YES</option>
@@ -124,7 +124,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                    
                     <div className='d-sm-flex w-full gap-3'>
                     <div className='querylist w-full'>
-                        <h6>Start of sick Note</h6>
+                        <h6>Start of Sick Note</h6>
                         <div className='d-flex mt-3'>  
                             <div className='dateinput w-full'> 
                                 <input type="date" className='form-control borderinput' placeholder='Date of Birth'/>
@@ -132,7 +132,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                         </div>
                     </div>
                     <div className='querylist w-full'>
-                        <h6>End of sick Note</h6>
+                        <h6>End of Sick Note</h6>
                         <div className='d-flex mt-3'>  
                             <div className='dateinput w-full'> 
                                 <input type="date" className='form-control borderinput' placeholder='Date of Birth'/>
@@ -142,7 +142,7 @@ const[paysuccess, setPaysuccess] = useState(false)
                     </div>
                   <p className='aqua'>Book only Maximum 7 days</p>
                     <div className='querylist mt-3'>
-                        <h6>I confirm that a have read and understand this and my answer are fully correct and true. *</h6>
+                        <h6>I confirm that I have read and understand this and my answers are fully correct and true. *</h6>
                     <div className='mt-3'>  
                             <label class="custradio me-2">CONFIRM
                                 <input type="radio" name="radio1" />
