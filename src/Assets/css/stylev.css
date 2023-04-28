@@ -681,6 +681,7 @@ button.action:hover{
 .setting ul.nav.nav-tabs li{
   white-space: nowrap;
 }
+
 /* 
 @media(max-width:1400px){
   .flex5-5 > *:first-child,.flex2-1-1 > *:nth-child(2), .flex2-1-1 > *:last-child{

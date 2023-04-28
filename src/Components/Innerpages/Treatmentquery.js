@@ -7,7 +7,7 @@ import Sidebar from './Sidebar';
 import females from '../../Assets/Images/females.png'
 import female from '../../Assets/Images/female.png'
 import male from '../../Assets/Images/male.png'
-
+import diseaseimg from '../../Assets/Images/user.png'
 import { Form, Tab, Tabs } from 'react-bootstrap';
 import RequestLoginOff from '../Offcanvas/RequestLoginOff';
 import LoginOff from '../Offcanvas/LogingOff';
@@ -24,7 +24,8 @@ const location = useLocation();
 
 
 const Navigate = useNavigate()
-const steps = useRef(false)
+// const steps = useRef(false)
+const[steps, setSteps] =useState(false)
 
 // offcanvas
 const[show, setShow] = useState(false)
@@ -50,20 +51,15 @@ const [next,setNext] = useState('1')
 
 // const memofunc = useMemo(() => expensiveCalculation(steps), [steps])
 
-console.log(steps.current, "step false")
+console.log(steps.current, "steps")
 const expensiveCalculation = () =>{
     document.getElementById("uncontrolled-tab-example-tab-query2").addEventListener("click", () =>{
-
-       steps.current = true
-       setNext('1')
-       console.log(steps.current, "step true")
+    setSteps(true)
     })
 
     // back
     document.getElementById("uncontrolled-tab-example-tab-query1").addEventListener("click", () =>{
-        steps.current = false
-        setNext('2')
-        console.log(steps.current, "step false")
+        setSteps(false)
    
     })
    
@@ -72,12 +68,73 @@ useEffect(() =>{
     expensiveCalculation() 
 },[steps])
 
-
+    const treatments = [
+        {
+            title:"Patient - Weight Loss Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"25",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Contraceptive Pill Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jhon",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"28",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Bacterial Vaginosis Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"26",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Astma Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"20",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Migraine Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"15",
+            diseaseimg:diseaseimg
+        },
+        {
+            title:"Acne Treatment",
+            description:"Weight loss tablets can help you achieve a healthy weight. In order to benefit from the treatment, you also need to stick to a healthy low calorie diet. seek advice from us on slimming pills online - eClinic.ie offers consultations for the weight loss treatments Xenical and Orlistat. (Xenical is the branded version of Orlistat and both work in the same way).",
+            h4:"How do slimming pills work?",
+            description2:"The weight loss treatments Orlistat and Xenical prevent your body digesting all of the fat you eat. They thereby reduce the amount of calories you take in from your food. The tablets are not very effective on their own but can help you lose weight quicker, if you stick to a low calorie diet and avoid snacks between meals. To consult, fill in our brief medical questionnaire. For additional support and information please review our forum.",
+            docname:"Dr. Jody",
+            qualification:"M.D., MRCGP, FRACGP",
+            fee:"35",
+            diseaseimg:diseaseimg
+        },
+    ]
     return(
         <>
         {login && <LoginOff onDismiss={() => {setLogin(false);Navigate("/treatments")}}/>}
         {register && <RegisterOff onDismiss={() => setRegister(false)} alreadyhave={() =>{ setRegister(false);setLogin(true)}}/>}
-        <TreatContext.Provider value={location.state}>
+        <TreatContext.Provider value={treatments}>
            {show && <RequestLoginOff onDismiss={() => setShow(false)}  logindismiss={() => {setShow(false);setLogin(true)}} signindismiss={() => {setShow(false);setRegister(true)}}/>} 
        </TreatContext.Provider>
        
@@ -100,12 +157,12 @@ useEffect(() =>{
                                 <img src={category=="female"?female:male} className='img_sx'/>
                         <p className='card_text_white_patient ms-2'>Patient</p>
                         </div>
-                        <p className='card_text_white_big_new mt-2'>{location.state.title}</p>
+                        <p className='card_text_white_big_new mt-2'>{treatments[0].title}</p>
 
                             <div className='mt-4'>
-                                {console.log('fajhjfhjhjf',steps.current)}
-                            <div className={next == '1'  ? 'steps_badge':"steps_badge active" }>1</div>
-                            <div className={next == '2'  ? 'steps_badge active':"steps_badge" }>2</div>
+                                {console.log('fajhjfhjhjf',steps)}
+                            <div className="steps_badge active" >1</div>
+                            <div className={steps  ? 'steps_badge active':"steps_badge" }>2</div>
                             {/* {[...Array(steps)].map((e,index)=>{
                                 return <><div className='steps_badge active'>{index+1}</div></>
                                 })} */}
@@ -162,13 +219,7 @@ useEffect(() =>{
                     </div>
                  </div>
 
-                 {/*.................................................... FILE */}
-                 {/* <div className='querylist'>
-                    <h6>What is your current height (enter as centimeters)?</h6>
-                   <div className=' mt-3'>  
-                        <input type="file" className='form-control ' />
-                    </div>
-                 </div> */}
+             
 
                  {/*.................................................SELECTBOX */}
                  {/* <div className='querylist'>
@@ -343,17 +394,6 @@ useEffect(() =>{
                         </label>
                     </div>
                  </div>
-
-
-
-
-
-
-
-
-
-
-
                  <div className='querylist'>
                     <h6>What is your current height (enter as centimeters)?</h6>
                    <div className=' mt-3'>  
