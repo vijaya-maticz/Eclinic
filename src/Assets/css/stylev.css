@@ -765,6 +765,10 @@ button.action:hover{
 }
 
 @media(max-width:767px){
+  .browseinput
+  {
+    margin-bottom: 10px !important;
+  }
   .offcanvas-body .container {
     padding: 0;
 }
@@ -787,6 +791,10 @@ button.action:hover{
   {
     font-size: 14px !important;
   }
+  .querylist p
+  {
+    font-size: 13px !important;
+  }
   select.themeinput,.querylist .custradio, .querylist .custcheck
   {
     font-size: 12px !important;
@@ -800,4 +808,8 @@ button.action:hover{
     overflow: hidden;
     width: 200px;
   }
+}
+.que_sex.d-flex.querylist h6
+{
+  margin-bottom: 10px !important;
 }

@@ -12,6 +12,9 @@ import dash from '../Assets/Images/dash.png'
 import myacc from '../Assets/Images/myacc.png'
 import trans from '../Assets/Images/trans.png'
 
+import copy from '../Assets/Images/icon_copy.png'
+import settings from '../Assets/Images/icon_settings.png'
+
 const AdminHeader = () => {  
 
   const[cart, setCart] = useState(false)
@@ -31,7 +34,7 @@ const AdminHeader = () => {
             
             <Dropdown className="admin-prof me-3">
               <Dropdown.Toggle variant="link" id="dropdown-basic" className='p-0'>
-                      <img src={prof} className=""/> <span className='fa fa-chevron-down text-dark f-14'></span>
+                      <img src={prof} className=""/> <span className='fa fa-caret-down text-dark f-14'></span>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">Logout</Dropdown.Item>
@@ -39,25 +42,25 @@ const AdminHeader = () => {
                 </Dropdown>
                 <div className='mobileadmin menus'>
                 <NavLink activeClassName="active" to="/admin/dashboard"  className="nounder">
-                <img src={treat} className="active" />
+                <img src={dash} className="active" />
                 Dashboard</NavLink>
                 <NavLink activeClassName="active" to="/admin/users"  className="nounder">
-                <img src={ceti} className="active"/>
-               User</NavLink>
+                <img src={myacc} className="active"/>
+               Users</NavLink>
                <NavLink activeClassName="active" to="/admin/doctor"  className="nounder">
-                <img src={dash} className="active"/>
-               Doctor</NavLink>
-               <NavLink activeClassName="active" to="/admin/records"  className="nounder">
                 <img src={treat} className="active"/>
+               Doctors</NavLink>
+               <NavLink activeClassName="active" to="/admin/records"  className="nounder">
+                <img src={ceti} className="active"/>
                Records</NavLink>
                <NavLink activeClassName="active" to="/admin/transaction"  className="nounder">
                 <img src={trans} className="active"/>
                Transaction</NavLink>
                <NavLink activeClassName="active" to="/admin/setting"  className="nounder">
-                <img src={myacc} className="active"/>
+                <img src={settings} className="active"/>
               Settings</NavLink>
               <NavLink activeClassName="active" to="/admin/cms"  className="nounder">
-                <img src={myacc} className="active"/>
+                <img src={copy} className="active"/>
                CMS</NavLink>
                </div>
           </Nav>

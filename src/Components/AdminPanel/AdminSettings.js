@@ -190,7 +190,7 @@ console.log(document.querySelector('.img'), "prev sibling")
                                                  <img className='img' src={dummyimg} />
                                               </div> 
                                               <div className='my-md-0 my-3'>
-                                                  <h5>Uh5load Logo</h5>
+                                                  <h5 className='uload_log_size'>Upload Logo</h5>
                                                   <p className='filename'>Logo.png</p>
                                               </div>
                                           </div>
@@ -238,12 +238,12 @@ console.log(document.querySelector('.img'), "prev sibling")
                                             <div className='browseimg'><img className='img' src={dummyimgbig} />
                                               </div> 
                                               <div className='my-4'>
-                                                  <h5>Uh5load Logo</h5>
+                                                  <h5 className='uload_log_size'>Upload Logo</h5>
                                                   <p className='filename'>Logo.png</p>
                                               </div>
                                           </div>
                                         <div className='browseinput'> 
-                                          <button className='btn themebtn '> Upload Image</button>  
+                                          <button className='btn themebtn'> Upload Image</button>  
                                           <input type="file" className='file' onClick={() => imgsrc()}/>
                                           </div>
                                         </div>
@@ -308,12 +308,12 @@ console.log(document.querySelector('.img'), "prev sibling")
                           <div className='col-xl-9'>
                           <div class="form-floating mb-3">
                               <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                              <label for="floatingInput">32 digits security code</label>
+                              <label for="floatingInput">32 digit security code</label>
                           </div>
                         
                         <div class="form-floating mb-3">
                               <input type="email" class="form-control borderinput" id="floatingInput" placeholder="name@example.com" />
-                              <label for="floatingInput">6 digits 2FA code</label>
+                              <label for="floatingInput">6 digit 2FA code</label>
                           </div>
                     
                         <div class="form-floating mb-3">
@@ -323,7 +323,7 @@ console.log(document.querySelector('.img'), "prev sibling")
                         
                         
                           <div className='text-end '>
-                                  <button className='themebtn-bordered big'>Confirm</button>
+                                  <button className='themebtn-bordered big'>Enable</button>
                               
                           </div>
                         </div>

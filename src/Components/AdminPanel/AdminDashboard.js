@@ -293,47 +293,38 @@ const data1 =  {
                 <div className='row justify-content-between'>
                     <div className='col-12 col-md-6 col-lg-7 dashbanner'>
                         <div className='p-4 p-lg-5 pb-lg-3 pt-lg-4'>
-                        <p className='card_text_white_big dashb_titlr_w'>Contrary to popular belief, Lorem Ipsum is not simply random</p>
+                        <p className='card_text_white_big dashb_titlr_w'>Welcome to</p>
+                        <p className='card_text_white_big card_text_white_big_new dashb_titlr_w'>Admin Dashboard</p>
+
                         <p className='card_tect_grrey_sm_card mt-2 dashb_desc_w'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                        <div className='mt-3'>
                       
                         <div className='row w-100'>
-                            <div className='col-12 col-md-6 col-xl-4 pe-md-0 mb-3 mb-md-0'>
+                            <div className='col-12 col-md-6 col-xl-6 pe-md-0 mb-3 mb-md-0'>
                                 <div className='flex_chart_icon'>
                                     <div className='badge badge_green_card'>
                                  <img src={feather_check} className='img-fluid' />
 
                                     </div>
                                     <div className='ms-2'>
-                                        <p className='violtet_text_desc'>loreum ipse</p>
+                                        <p className='violtet_text_desc'>Profile Complete</p>
                                         <p className='white_text_count'>37</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-xl-4 pe-md-0 mb-3 mb-md-0'>
+                            <div className='col-12 col-md-6 col-xl-6 pe-md-0 mb-3 mb-md-0'>
                                 <div className='flex_chart_icon'>
                                     <div className='badge badge_yellow_card'>
                                  <img src={feather_check} className='img-fluid' />
 
                                     </div>
                                     <div className='ms-2'>
-                                        <p className='violtet_text_desc'>loreum ipse</p>
+                                        <p className='violtet_text_desc'>Profile Pending</p>
                                         <p className='white_text_count'>37</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 mt-3 mt-xl-0 col-xl-4 pe-md-0 mb-3 mb-md-0'>
-                                <div className='flex_chart_icon'>
-                                    <div className='badge badge_orange_card'>
-                                 <img src={feather_check} className='img-fluid' />
-
-                                    </div>
-                                    <div className='ms-2'>
-                                        <p className='violtet_text_desc'>loreum ipse</p>
-                                        <p className='white_text_count'>37</p>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                         </div>
                         </div>
@@ -345,7 +336,7 @@ const data1 =  {
                 </div>
                 </div>
 
-                <p className='dash_head_blk mt-5'>Loruem ipsumof senu</p>
+                <p className='dash_head_blk mt-5'>Analytics</p>
                 <div className='row mt-4'>
                     <div className='col-12 col-md-6 col-xl-3'>
                         <div className='card card_dise mb-4 card_height_adj'>
@@ -353,7 +344,7 @@ const data1 =  {
                                 <div className='flex_img_div_graph'>
                                 
                                     <div className='me-3'>
-                                        <p className='dashboard_title_grey mt-3 pb-3'>Provider</p>
+                                        <p className='dashboard_title_grey mt-3 pb-3'>Patients</p>
                                         <p className='dashboard_count_grey'><span>37</span> No.</p>
                                     
                                     </div>
@@ -366,7 +357,7 @@ const data1 =  {
                                 <div className='flex_img_div_graph'>
                                 
                                     <div className='me-3'>
-                                        <p className='dashboard_title_grey mt-3 pb-3'>Provider</p>
+                                        <p className='dashboard_title_grey mt-3 pb-3'>Earnings</p>
                                         <p className='dashboard_count_grey'><span>37</span> No.</p>
                                     
                                     </div>
@@ -382,7 +373,7 @@ const data1 =  {
                                 <div className='flex_img_div_graph'>
                                 
                                     <div className='me-3'>
-                                        <p className='dashboard_title_grey mt-3 pb-3'>Provider loreum<br /> ipsum</p>
+                                        <p className='dashboard_title_grey mt-3 pb-3'>Activity<br /> Rate</p>
                                         <p className='dashboard_count_grey'><span>37</span> No.</p>
                                     
                                     </div>
@@ -403,7 +394,7 @@ const data1 =  {
                                 <div className='flex_img_div_graph'>
                                 
                                     <div className='me-3'>
-                                        <p className='dashboard_title_grey mt-3 pb-3'>Provider</p>
+                                        <p className='dashboard_title_grey mt-3 pb-3'>Prescription</p>
                                         <p className='dashboard_count_grey'><span>37</span> No.</p>
                                     
                                     </div>
@@ -416,7 +407,7 @@ const data1 =  {
                                 <div className='flex_img_div_graph'>
                                 
                                     <div className='me-3'>
-                                        <p className='dashboard_title_grey mt-3 pb-3'>Provider</p>
+                                        <p className='dashboard_title_grey mt-3 pb-3'>Certificate</p>
                                         <p className='dashboard_count_grey'><span>37</span> No.</p>
                                     
                                     </div>
@@ -433,7 +424,7 @@ const data1 =  {
                                 <div className='flex_img_div_graph'>
                                 
                                     <div className='me-3'>
-                                        <p className='dashboard_title_grey mt-3 pb-3'>Provider loreum<br /> ipsum</p>
+                                        <p className='dashboard_title_grey mt-3 pb-3'>Active<br /> Users</p>
                                         <p className='dashboard_count_grey'><span>37</span> No.</p>
                                     
                                     </div>
