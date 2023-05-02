@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ce72b73.chunk.css",
+    "main.js": "/static/js/main.865f6222.chunk.js",
+    "main.js.map": "/static/js/main.865f6222.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.07b163ec.js",
+    "runtime-main.js.map": "/static/js/runtime-main.07b163ec.js.map",
+    "static/css/2.9ba40322.chunk.css": "/static/css/2.9ba40322.chunk.css",
+    "static/js/2.0d4f3898.chunk.js": "/static/js/2.0d4f3898.chunk.js",
+    "static/js/2.0d4f3898.chunk.js.map": "/static/js/2.0d4f3898.chunk.js.map",
+    "static/js/3.113bbae6.chunk.js": "/static/js/3.113bbae6.chunk.js",
+    "static/js/3.113bbae6.chunk.js.map": "/static/js/3.113bbae6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.9ba40322.chunk.css.map": "/static/css/2.9ba40322.chunk.css.map",
+    "static/css/main.4ce72b73.chunk.css.map": "/static/css/main.4ce72b73.chunk.css.map",
+    "static/js/2.0d4f3898.chunk.js.LICENSE.txt": "/static/js/2.0d4f3898.chunk.js.LICENSE.txt",
+    "static/media/stylev.css": "/static/media/art.830c42bc.png",
+    "static/media/styles.css": "/static/media/purple_card_bg.3d62aada.png",
+    "static/media/certi.5edfe34f.png": "/static/media/certi.5edfe34f.png",
+    "static/media/disease1.bba30e02.png": "/static/media/disease1.bba30e02.png",
+    "static/media/disease2.3e587e04.png": "/static/media/disease2.3e587e04.png",
+    "static/media/disease3.231fbffb.png": "/static/media/disease3.231fbffb.png",
+    "static/media/disease4.4c0bc57e.png": "/static/media/disease4.4c0bc57e.png",
+    "static/media/disease5.b2b07ffd.png": "/static/media/disease5.b2b07ffd.png",
+    "static/media/disease6.603e27e1.png": "/static/media/disease6.603e27e1.png",
+    "static/media/feather_check.4a77cff7.svg": "/static/media/feather_check.4a77cff7.svg",
+    "static/media/females.4f060207.png": "/static/media/females.4f060207.png",
+    "static/media/img_ad.f9e722cb.png": "/static/media/img_ad.f9e722cb.png",
+    "static/media/profile.9910537f.png": "/static/media/profile.9910537f.png",
+    "static/media/treatment.5ed64915.png": "/static/media/treatment.5ed64915.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07b163ec.js",
+    "static/css/2.9ba40322.chunk.css",
+    "static/js/2.0d4f3898.chunk.js",
+    "static/css/main.4ce72b73.chunk.css",
+    "static/js/main.865f6222.chunk.js"
+  ]
+}

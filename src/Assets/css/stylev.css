@@ -553,17 +553,26 @@ input {
   left: 0;
   z-index: -1;
 }
-.browseimg {
+.browseimg, .editer .img {
   width: 87px;
   height: 76px;
+}
+.editer .img {
+  border-radius: 9px;
 }
 .browseimg img{
   height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
-
+.ql-editor {
+  min-height: 237px;
+}
+.borderbox {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px dashed #adadad;
+}
 .browseinput input {
   position: absolute;
   width: 100%;

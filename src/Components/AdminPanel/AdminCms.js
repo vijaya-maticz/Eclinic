@@ -10,6 +10,7 @@ import Footer from '../Footer';
 import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
 import AdminHeader from '../AdminHeader';
+import AdminEditer from './Offs/AdminEditer';
 const AdminCms = () =>{
     const columns = [
         {
@@ -42,7 +43,7 @@ const AdminCms = () =>{
       {
         no: "001",
         pagename: "Astma- Treatment",
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
@@ -50,7 +51,7 @@ const AdminCms = () =>{
       {
         no: "002",
         pagename: "Acne Treatment",
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Approved</badge>,
        
       },
@@ -58,7 +59,7 @@ const AdminCms = () =>{
       {
         no: "003",
         pagename: "Astma- Treatment",
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
@@ -66,7 +67,7 @@ const AdminCms = () =>{
       {
         no: "004",
         pagename: "Acne Treatment",
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Approved</badge>,
        
       },
@@ -75,7 +76,7 @@ const AdminCms = () =>{
     
     ]
   
-  
+    const[editer, setEditer] = useState(false)
 
 const[token, setToken] = useState(false)
 const[checked, setChecked] = useState(false)
@@ -84,6 +85,8 @@ const[checked, setChecked] = useState(false)
 
     return(
       <>
+    {editer &&  <AdminEditer />} 
+
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>
