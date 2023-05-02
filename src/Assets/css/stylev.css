@@ -18,6 +18,9 @@
 .w-full{
   width: 100%;
 }
+.h-100vh{
+ height: 100vh;
+}
 .bold{
   font-weight: 700;
 }
