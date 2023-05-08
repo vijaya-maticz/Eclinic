@@ -3358,3 +3358,155 @@ min-width: 130px !important;
 
 } */
 /* END NEW CSS */
+
+/* manoj css */
+
+.adminpanel .loginpage.bg{
+  transition: 0.5s;
+  padding-right: 18px;
+  border-radius: 15px 0 0 0;
+  background-color: var(--graybg);
+  min-height: calc(100vh - 116px);
+  background-image: url(../Images/bg.png);
+  background-position: top;
+  /* margin-top: 72px; */
+}
+.adminpanel .loginpage .login_row{
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ width: 50%;
+ margin: auto;
+}
+.adminpanel .loginpage .card_dise{
+  padding: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.adminpanel .loginpage .login_row .first_row{
+  align-items: center;
+  text-align: center;
+}
+.adminpanel .loginpage .btn_sec{
+  display: flex;
+  justify-content: center;
+}
+.adminpanel .input_row{
+  width: 80%;
+  margin: auto;
+}
+.adminpanel  a{
+  text-decoration: none;
+}
+.adminpanel .themebtn-bordered.btnpad_chag_purple, .adminpanel .themebtn.btnpad_chag_purple{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adminpanel .signup_text{
+  text-align: center;
+} 
+.select_style{
+  border: 1px dashed #adadad;
+  background: transparent;
+  appearance: auto;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: none !important;
+
+}
+.select_style:focus{
+  border-color: #adadad !important;
+}
+.delete_content{
+  font-size: 24px;
+  text-align: center;
+
+  color: #474545;
+    font-weight: 600;
+}
+.serial_num_off{
+  font-size: 18px;
+  font-weight: 600;
+}
+.delete_canva .requestlogin.offcanvas-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.delete_canva .offcanvas-body > div.container {
+  padding-top: 0px;
+}
+.delete_canva  .close_btn_sec button span{
+  margin-right: 10px !important;
+  margin-top: 10px !important;
+
+}
+.adminpanel .signup_link{
+  color: #573080;
+  font-weight: 500;
+}
+.adminpanel .signup_link:hover{
+  color: #000;
+  font-weight: 500;
+}
+.loginpage .fotn_log_reg_sm{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media only screen  and (max-width:400px){
+.adminpanel .loginpage .btn_sec {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.adminpanel .loginpage .purplebtn,.adminpanel .loginpage .themebtn-bordered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+}
+@media only screen  and (max-width:767px){
+  .adminpanel .loginpage .login_row{
+    width: 100%;
+  }
+  .adminpanel .input_row {
+    width: 100%;
+}
+.adminpanel .loginpage .card_dise{
+  padding: 25px;
+
+}
+}
+@media only screen  and (min-width:768px) and (max-width:991px){
+  .adminpanel .loginpage .login_row{
+    width: 70%;
+  }
+  .adminpanel .input_row {
+    width: 100%;
+}
+.adminpanel .loginpage .card_dise{
+  padding: 25px;
+
+}
+}
+@media only screen  and (min-width:1351px){
+  .adminpanel .loginpage .login_row{
+    width: 35%;
+  }
+}
+
+
+
+select
+{
+  color: #727272 !important;
+  font-size: 14px !important;
+}
+
+/* manoj css end */

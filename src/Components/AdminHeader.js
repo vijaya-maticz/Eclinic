@@ -37,7 +37,7 @@ const AdminHeader = () => {
                       <img src={prof} className=""/> <span className='fa fa-caret-down text-dark f-14'></span>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Logout</Dropdown.Item>
+                        <Dropdown.Item href="/admin/login">Logout</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 <div className='mobileadmin menus'>

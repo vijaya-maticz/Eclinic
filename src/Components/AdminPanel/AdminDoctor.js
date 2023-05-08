@@ -10,7 +10,12 @@ import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
 import AdminHeader from '../AdminHeader';
 import Footer from '../Footer';
+
+import DoctoreditOff from '../AdminPanel/Offs/DoctoreditOff';
+import DoctorDeleteOff from '../AdminPanel/Offs/DoctordeleteOff';
 const AdminDoctor = () =>{
+  const [doctoredit, setDoctorEdit] = useState(false);
+  const [deletedoctor, setDeletedoctor] = useState(false);
     const columns = [
         {
           name: "ID",
@@ -59,7 +64,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Pediatrician",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -69,7 +74,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -80,7 +85,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -90,7 +95,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -102,7 +107,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -112,7 +117,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -124,7 +129,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -134,7 +139,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -146,7 +151,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -156,7 +161,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -168,7 +173,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -178,7 +183,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -190,7 +195,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -200,7 +205,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -212,7 +217,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -222,7 +227,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -234,7 +239,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -244,7 +249,7 @@ const AdminDoctor = () =>{
         email: "mail@mail.com",
         phone: "+91 9876574125",
         specialist: "Cardiology",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setDoctorEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletedoctor(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -262,6 +267,8 @@ const[checked, setChecked] = useState(false)
 
     return(
       <>
+      {doctoredit && <DoctoreditOff onDismiss={() => setDoctorEdit(false)} />} 
+       {deletedoctor && <DoctorDeleteOff onDismiss={() => setDeletedoctor(false)} />} 
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>

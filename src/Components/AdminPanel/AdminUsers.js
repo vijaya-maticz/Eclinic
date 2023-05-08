@@ -10,7 +10,13 @@ import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
 import AdminHeader from '../AdminHeader';
 import Footer from '../Footer';
+
+  import UsereditOff from '../AdminPanel/Offs/UsereditOff';
+  import UserDeleteOff from '../AdminPanel/Offs/UserdeleteOff';
 const AdminUsers = () =>{
+  const [edit, setEdit] = useState(false);
+  const [deleteuser, setDeleteuser] = useState(false);
+  const EditShow = () => setEdit(true);
     const columns = [
         {
           name: "No.",
@@ -56,7 +62,8 @@ const AdminUsers = () =>{
         status: <badge className='btn btn-pending'>Pending</badge>,
         email: "mail@mail.com",
         phone: "+91 9876574125",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setEdit(true)} className='fa fa-pencil action'></button>  
+          <button onClick={() => setDeleteuser(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -69,7 +76,7 @@ const AdminUsers = () =>{
         status: <badge className='btn btn-pending'>Approved</badge>,
         email: "mail@mail.com",
         phone: "+91 9876574125",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleteuser(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Inactive</badge>,
        
       },
@@ -82,7 +89,7 @@ const AdminUsers = () =>{
         status: <badge className='btn btn-pending'>Pending</badge>,
         email: "mail@mail.com",
         phone: "+91 9876574125",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleteuser(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -95,7 +102,7 @@ const AdminUsers = () =>{
         status: <badge className='btn btn-approve'>Approved</badge>,
         email: "mail@mail.com",
         phone: "+91 9876574125",
-         option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+         option: <><button onClick={() => setEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleteuser(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Active</badge>,
        
       },
@@ -113,6 +120,8 @@ const[checked, setChecked] = useState(false)
 
     return(
       <>
+       {edit && <UsereditOff onDismiss={() => setEdit(false)} />} 
+       {deleteuser && <UserDeleteOff onDismiss={() => setDeleteuser(false)} />} 
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>

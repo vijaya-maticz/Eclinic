@@ -11,7 +11,9 @@ import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
 import AdminHeader from '../AdminHeader';
 import AdminEditer from './Offs/AdminEditer';
+import CmsDeleteOff from './Offs/CmsdeleteOff';
 const AdminCms = () =>{
+  const[deletecms, setDeletecms] = useState(false)
     const columns = [
         {
           name: "No.",
@@ -43,7 +45,7 @@ const AdminCms = () =>{
       {
         no: "001",
         pagename: "Astma- Treatment",
-        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button onClick={() => setDeletecms(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
@@ -51,7 +53,7 @@ const AdminCms = () =>{
       {
         no: "002",
         pagename: "Acne Treatment",
-        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button onClick={() => setDeletecms(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Approved</badge>,
        
       },
@@ -59,7 +61,7 @@ const AdminCms = () =>{
       {
         no: "003",
         pagename: "Astma- Treatment",
-        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button onClick={() => setDeletecms(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-pending'>Pending</badge>,
        
       },
@@ -67,7 +69,7 @@ const AdminCms = () =>{
       {
         no: "004",
         pagename: "Acne Treatment",
-        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button className='fa fa-trash action'></button></>,
+        option: <><button className='fa fa-pencil action' onClick={() =>setEditer(true)}></button> <button onClick={() => setDeletecms(true)} className='fa fa-trash action'></button></>,
         status: <badge className='btn btn-approve'>Approved</badge>,
        
       },
@@ -85,7 +87,8 @@ const[checked, setChecked] = useState(false)
 
     return(
       <>
-    {editer &&  <AdminEditer />} 
+    {editer &&  <AdminEditer onDismiss={() => setEditer(false)}/>} 
+    {deletecms && <CmsDeleteOff onDismiss={() => setDeletecms(false)} />} 
 
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }

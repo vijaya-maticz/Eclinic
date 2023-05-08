@@ -10,7 +10,13 @@ import AddToken from '../Modals/AddToken';
 import AdminSidebar from './AdminSidebar';
 import AdminHeader from '../AdminHeader';
 import Footer from '../Footer';
+
+
+import TranseditOff from '../AdminPanel/Offs/TranseditOff';
+import TransDeleteOff from '../AdminPanel/Offs/TransdeleteOff';
 const AdminTransaction = () =>{
+  const [transedit, settransEdit] = useState(false);
+  const [deletetrans, setDeletetrans] = useState(false);
     const columns = [
         {
           name: "No.",
@@ -54,7 +60,7 @@ const AdminTransaction = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => settransEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletetrans(true)} className='fa fa-trash action'></button></>,
        
       },
 
@@ -64,7 +70,7 @@ const AdminTransaction = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => settransEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletetrans(true)} className='fa fa-trash action'></button></>,
        
       },
 
@@ -74,7 +80,7 @@ const AdminTransaction = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button  onClick={() => settransEdit(true)}className='fa fa-pencil action'></button> <button onClick={() => setDeletetrans(true)} className='fa fa-trash action'></button></>,
        
       },
 
@@ -84,7 +90,7 @@ const AdminTransaction = () =>{
         amount: "$25",
         purpose: "Treatment",
         status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => settransEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeletetrans(true)} className='fa fa-trash action'></button></>,
        
       },
     
@@ -101,6 +107,8 @@ const[checked, setChecked] = useState(false)
 
     return(
       <>
+       {transedit && <TranseditOff onDismiss={() => settransEdit(false)} />} 
+       {deletetrans && <TransDeleteOff onDismiss={() => setDeletetrans(false)} />} 
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {token && <AddToken onDismiss={() => setToken(false)}/> }
             <div id='sidebar'>

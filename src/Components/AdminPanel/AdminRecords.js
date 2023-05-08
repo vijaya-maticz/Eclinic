@@ -1,4 +1,4 @@
-import React,{useState , Fragment} from 'react';
+  import React,{useState , Fragment} from 'react';
 import "react-datepicker/dist/react-datepicker.css";
 import DataTable from 'react-data-table-component';
 import AddToken from '../Modals/AddToken';
@@ -7,7 +7,12 @@ import AdminHeader from '../AdminHeader';
 import Footer from '../Footer';
 import AdminPrescribe from './Offs/AdminPrescibe';
 import AdminRecordsOff from './Offs/AdminRecordsOff';
+
+import RecordeditOff from '../AdminPanel/Offs/RecordeditOff';
+import RecordDeleteOff from '../AdminPanel/Offs/RecorddeleteOff';
 const AdminRecords = () =>{
+  const [recordedit, setRecordEdit] = useState(false);
+  const [deleterecord, setDeleterecord] = useState(false);
     const columns = [
         {
           name: "ID",
@@ -51,7 +56,7 @@ const AdminRecords = () =>{
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => setRecordEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleterecord(true)} className='fa fa-trash action'></button></>,
       },
       {
         id: "002",
@@ -59,7 +64,7 @@ const AdminRecords = () =>{
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => setRecordEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleterecord(true)} className='fa fa-trash action'></button></>,
       },
 
       {
@@ -68,7 +73,7 @@ const AdminRecords = () =>{
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => setRecordEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleterecord(true)} className='fa fa-trash action'></button></>,
       },
       {
         id: "004",
@@ -76,7 +81,7 @@ const AdminRecords = () =>{
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => setRecordEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleterecord(true)} className='fa fa-trash action'></button></>,
       },
     
 
@@ -86,7 +91,7 @@ const AdminRecords = () =>{
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-pending'>Pending</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => setRecordEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleterecord(true)} className='fa fa-trash action'></button></>,
       },
       {
         id: "006",
@@ -94,7 +99,7 @@ const AdminRecords = () =>{
          response: <button className='btn btn-grey-dark' onClick={() => {setShow(true)}}>View</button>,
         prescription: <button className='btn btn-grey-dark' onClick={() => {setShowpres(true)}}>View</button>,
         status: <badge className='btn btn-approve'>Approved</badge>,
-        option: <><button className='fa fa-pencil action'></button> <button className='fa fa-trash action'></button></>,
+        option: <><button onClick={() => setRecordEdit(true)} className='fa fa-pencil action'></button> <button onClick={() => setDeleterecord(true)} className='fa fa-trash action'></button></>,
       },
     
 
@@ -112,6 +117,8 @@ const[checked, setChecked] = useState(false)
 
     return(
       <>
+       {recordedit && <RecordeditOff onDismiss={() => setRecordEdit(false)} />} 
+       {deleterecord && <RecordDeleteOff onDismiss={() => setDeleterecord(false)} />} 
         <div id="dashboard" className='tableview showsidebar recordes_sec_padd'>
             {showpres && <AdminPrescribe onDismiss={() => setShowpres(false)} />}
             {show && <AdminRecordsOff onDismiss={() => setShow(false)} />}

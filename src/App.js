@@ -33,7 +33,9 @@ import AdminDoctor from './Components/AdminPanel/AdminDoctor';
 import AdminCms from './Components/AdminPanel/AdminCms';
 import AdminSettings from './Components/AdminPanel/AdminSettings';
 import Certificate from './Components/Innerpages/Certificate';
-import AdminLogin from './Components/AdminPanel/AdminLogin';
+import AdminLogin from './Components/AdminPanel/Adminlogin';
+import AdminForgot from './Components/AdminPanel/Adminforgot';
+import AdminRegister from './Components/AdminPanel/Adminregister';
 
 
 
@@ -59,7 +61,7 @@ function App() {
       <div></div>    
       <div></div></div>}>
        <Routes>
-       <Route path="/" element={<Dashboard /> } />
+       <Route path="/" element={<Home /> } />
           <Route path="/treatments" element={<Treatments />} />
           <Route path="/treatmentquery" element={<Treatmentquery />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -70,8 +72,10 @@ function App() {
 
 
 {/* Admin */}
-<Route path="/admin/login" element={<AdminLogin/>} /> 
 
+<Route path='/admin/login' element={<AdminLogin/>} />
+<Route path='/admin/forgot' element={<AdminForgot/>} />
+<Route path='/admin/register' element={<AdminRegister/>} />
 <Route path="/admin/dashboard" element={<AdminDashboard />} /> 
 <Route path='/admin/records' element={<AdminRecords />} />
           <Route path='/admin/transaction' element={<AdminTransaction />} />

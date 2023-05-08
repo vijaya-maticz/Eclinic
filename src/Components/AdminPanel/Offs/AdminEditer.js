@@ -8,11 +8,11 @@ import 'react-quill/dist/quill.snow.css';
 const AdminEditer = (props) =>{
    
     const[editer, setEditer] = useState(true)
-
+    const EditClose = () => setEditer(false);
     return(
         <div className=''>
            
-             <Offcanvas show={editer} placement="bottom">
+             <Offcanvas show={editer} placement="bottom" onHide={EditClose}>
                
              <Offcanvas.Body className='requestlogin paywith editer'>
                 <div className='text-right '>
@@ -45,7 +45,7 @@ const AdminEditer = (props) =>{
                                                  <img className='img' src={dummyimg} />
                                               </div> 
                                               <div className='my-md-0 my-3'>
-                                                  <h5>Uh5load Logo</h5>
+                                                  <h5>Upload Logo</h5>
                                                   <p className='filename'>Logo.png</p>
                                               </div>
                                           </div>
