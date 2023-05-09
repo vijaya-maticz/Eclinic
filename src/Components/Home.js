@@ -2,6 +2,7 @@ import React,{useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import HomeHeader from './HomeHeader';
 import Footer from './Footer';
+import $ from 'jquery'
 
 import pay from '../Assets/Images/card_icon.png'
 import shoe_icon_purple from '../Assets/Images/shoe_icon_purple.png'
@@ -24,7 +25,14 @@ import { useState } from 'react';
 
 
 const Home = () => {
-
+    // function disableScroll() {
+    //     // document.body.classList.add("stop-scrolling");
+    //     document.body.style.overflow = "hidden";
+    // }
+    const disableScroll = (event) => {
+        document.body.classList.add("stop-scrolling");
+      };
+    window.jquery = window.$ = $
 
     const options = {
       
@@ -74,18 +82,32 @@ const Home = () => {
 
   
   useEffect(() => {
+    $( "#video_sec_full" ).on( "scroll", function() { 
+        document.body.style.overflow = 'hidden';
+       
+      } );
+//     document.querySelector('#video_sec_full').addEventListener('wheel', preventScroll, {passive: false});
+
+// function preventScroll(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+
+//     return false;
+// }
     window.addEventListener('scroll', (event) => {
-        if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 100 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 400)
+       
+       
+        if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 150 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 250)
         {
         //     console.log("1st eve")
-        // setMousecount(1)
+        // setMousecount(1) 
 
         setIsanim(true)
         setIsanim1(false)
         setIsanim2(false)
         // document.getElementById("video_1").play();
         }
-        else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 401 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 600)
+        else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 175 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 400)
         {
         //     console.log("2nd eve")
 
@@ -97,7 +119,7 @@ const Home = () => {
         // document.getElementById("video_2").play();
 
         }
-        else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 601)
+        else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 200)
         {
             
         //     console.log("3rd eve")
@@ -111,13 +133,7 @@ const Home = () => {
 
         }
 
-        else
-        {
-            document.getElementById("video_1").pause();
-            document.getElementById("video_2").pause();
-            document.getElementById("video_2").pause();
-
-        }
+       
 
         console.log(mousecount,"mousecount");
 
@@ -271,12 +287,15 @@ const Home = () => {
             <div className='container'>
             <div className='row'>
                     <div className='col-12 col-md-8 col-lg-7 col-xl-5 mx-auto'>
-                    <p className='banner_thick_font'>Get Medical  <span>Treatment</span></p>
+                    <p className='banner_thick_font'>Get Medical  <span>Treatment</span> & <span>Certificate</span></p>
               <p className='banner_lit_font'>Lorem Ipsum is simply dummy text of the printing and typese Lorem Ipsum has been the industry'</p>
           
                     </div>
                 </div>
-                <div id="video_sec_full" className={isanim || isanim1 || isanim2?'vide_whole_height over_hiden':"vide_whole_height"}>
+                <div className='mobile_view_design'>
+                    <div className='images_sec'></div>
+                </div>
+                <div  id="video_sec_full" className={isanim || isanim1 || isanim2?'vide_whole_height over_hiden':"vide_whole_height"}>
                 <div id="video_sec" className={isanim?"pt-5 video_sec animated opacity_1":"pt-5 video_sec opacity_0"}>
                 <div className='card video_card card_left_top'>
                             <div className='card-body'>
@@ -284,7 +303,7 @@ const Home = () => {
                                 <i className="fa fa-check-circle purple_check" aria-hidden="true"></i>
                                <p className='card_p_grey'>Web 3.0</p>
                                 </div>
-                                <div className='text-right mt-5'>
+                                <div className='text-right mt-lg-5'>
                                     <img src={pay} className='img-fluid card_icon_purple' alt="card"/>
                                 </div>
                                 <p className='card_desc_grey mb-2'>Loreum</p>
@@ -404,14 +423,9 @@ const Home = () => {
 
                 <div className='row'>
                     <div className='col-12 col-md-5 col-lg-4 col-xl-3 mx-auto'>
-                        <div className='card video_card card_vide_pos'>
+                        <div className='video_card card_vide_pos'>
                             <div className='card-body p-0'>
-                            <video width="320" height="240" id="video_1" title="Advertisement"
-    webkit-playsinline="true"
-    playsinline="true"  autoplay="">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
-                            </video>
+                          
                             </div>
 
                         </div>
@@ -426,7 +440,7 @@ const Home = () => {
                                 <i className="fa fa-check-circle purple_check" aria-hidden="true"></i>
                                <p className='card_p_grey'>Web 3.0</p>
                                 </div>
-                                <div className='text-right mt-5'>
+                                <div className='text-right mt-lg-5'>
                                     <img src={pay} className='img-fluid card_icon_purple' alt="card"/>
                                 </div>
                                 <p className='card_desc_grey mb-2'>Stored on</p>
@@ -546,14 +560,9 @@ const Home = () => {
 
                 <div className='row'>
                     <div className='col-12 col-md-5 col-lg-4 col-xl-3 mx-auto'>
-                        <div className='card video_card card_vide_pos'>
+                        <div className='video_card card_vide_pos'>
                             <div className='card-body p-0'>
-                            <video width="320" height="240" id="video_2" title="Advertisement"
-    webkit-playsinline="true"
-    playsinline="true"  autoplay="">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
-                            </video>
+                          
                             </div>
 
                         </div>
@@ -568,7 +577,7 @@ const Home = () => {
                                 <i className="fa fa-check-circle purple_check" aria-hidden="true"></i>
                                <p className='card_p_grey'>Web 3.0</p>
                                 </div>
-                                <div className='text-right mt-5'>
+                                <div className='text-right mt-lg-5'>
                                     <img src={pay} className='img-fluid card_icon_purple' alt="card"/>
                                 </div>
                                 <p className='card_desc_grey mb-2'>Loreum</p>
@@ -688,14 +697,9 @@ const Home = () => {
 
                 <div className='row'>
                     <div className='col-12 col-md-5 col-lg-4 col-xl-3 mx-auto'>
-                        <div className='card video_card card_vide_pos'>
+                        <div className='video_card card_vide_pos'>
                             <div className='card-body p-0'>
-                            <video width="320" height="240" id="video_3" title="Advertisement"
-    webkit-playsinline="true"
-    playsinline="true"  autoplay="">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
-                            </video>
+                           
                             </div>
 
                         </div>

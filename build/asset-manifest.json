@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ce72b73.chunk.css",
-    "main.js": "/static/js/main.865f6222.chunk.js",
-    "main.js.map": "/static/js/main.865f6222.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.07b163ec.js",
-    "runtime-main.js.map": "/static/js/runtime-main.07b163ec.js.map",
-    "static/css/2.9ba40322.chunk.css": "/static/css/2.9ba40322.chunk.css",
-    "static/js/2.0d4f3898.chunk.js": "/static/js/2.0d4f3898.chunk.js",
-    "static/js/2.0d4f3898.chunk.js.map": "/static/js/2.0d4f3898.chunk.js.map",
-    "static/js/3.113bbae6.chunk.js": "/static/js/3.113bbae6.chunk.js",
-    "static/js/3.113bbae6.chunk.js.map": "/static/js/3.113bbae6.chunk.js.map",
+    "main.css": "/static/css/main.d14c5f42.chunk.css",
+    "main.js": "/static/js/main.0bc98af1.chunk.js",
+    "main.js.map": "/static/js/main.0bc98af1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.05e37754.js",
+    "runtime-main.js.map": "/static/js/runtime-main.05e37754.js.map",
+    "static/css/2.da9973f0.chunk.css": "/static/css/2.da9973f0.chunk.css",
+    "static/js/2.fe0a06f8.chunk.js": "/static/js/2.fe0a06f8.chunk.js",
+    "static/js/2.fe0a06f8.chunk.js.map": "/static/js/2.fe0a06f8.chunk.js.map",
+    "static/js/3.da3a6758.chunk.js": "/static/js/3.da3a6758.chunk.js",
+    "static/js/3.da3a6758.chunk.js.map": "/static/js/3.da3a6758.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.9ba40322.chunk.css.map": "/static/css/2.9ba40322.chunk.css.map",
-    "static/css/main.4ce72b73.chunk.css.map": "/static/css/main.4ce72b73.chunk.css.map",
-    "static/js/2.0d4f3898.chunk.js.LICENSE.txt": "/static/js/2.0d4f3898.chunk.js.LICENSE.txt",
-    "static/media/stylev.css": "/static/media/art.830c42bc.png",
+    "static/css/2.da9973f0.chunk.css.map": "/static/css/2.da9973f0.chunk.css.map",
+    "static/css/main.d14c5f42.chunk.css.map": "/static/css/main.d14c5f42.chunk.css.map",
+    "static/js/2.fe0a06f8.chunk.js.LICENSE.txt": "/static/js/2.fe0a06f8.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/static/media/purple_card_bg.3d62aada.png",
+    "static/media/stylev.css": "/static/media/art.830c42bc.png",
     "static/media/certi.5edfe34f.png": "/static/media/certi.5edfe34f.png",
     "static/media/disease1.bba30e02.png": "/static/media/disease1.bba30e02.png",
     "static/media/disease2.3e587e04.png": "/static/media/disease2.3e587e04.png",
@@ -30,10 +30,10 @@
     "static/media/treatment.5ed64915.png": "/static/media/treatment.5ed64915.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.07b163ec.js",
-    "static/css/2.9ba40322.chunk.css",
-    "static/js/2.0d4f3898.chunk.js",
-    "static/css/main.4ce72b73.chunk.css",
-    "static/js/main.865f6222.chunk.js"
+    "static/js/runtime-main.05e37754.js",
+    "static/css/2.da9973f0.chunk.css",
+    "static/js/2.fe0a06f8.chunk.js",
+    "static/css/main.d14c5f42.chunk.css",
+    "static/js/main.0bc98af1.chunk.js"
   ]
 }

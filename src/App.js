@@ -10,7 +10,7 @@ import './Assets/css/styles.css';
 import './Assets/css/stylev.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Home from '../src/Components/Home'
+import Home from './Components/Home'
 import Treatments from './Components/Innerpages/Treatments';
 import Treatmentquery from './Components/Innerpages/Treatmentquery';
 
