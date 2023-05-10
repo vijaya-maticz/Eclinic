@@ -1,9 +1,9 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom'
 import HomeHeader from './HomeHeader';
 import Footer from './Footer';
-import $ from 'jquery'
-
+import Slider from "react-slick";
+import ScrollLock from 'react-scroll-lock-component';
 import pay from '../Assets/Images/card_icon.png'
 import shoe_icon_purple from '../Assets/Images/shoe_icon_purple.png'
 import icon_star_purple from '../Assets/Images/icon_star_purple.png'
@@ -19,52 +19,48 @@ import prof_right from '../Assets/Images/prof_right.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { useState } from 'react';
 
 
 
 
 const Home = () => {
-    // function disableScroll() {
-    //     // document.body.classList.add("stop-scrolling");
-    //     document.body.style.overflow = "hidden";
-    // }
-    const disableScroll = (event) => {
-        document.body.classList.add("stop-scrolling");
-      };
-    window.jquery = window.$ = $
+    const settings = {
+        dots: false ,
+        infinite: true,
+        speed: 2000,
+      autoplaySpeed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nav:true,
+        fade: true,
+    vertical:true,
+}
+    const slider = useRef(null);
 
-    const options = {
-      
-        responsiveClass: true,
-        nav: true,
-        dots: false,
-        autoplay: false,
-       
-      
-        navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            400: {
-                items: 1,
-            },
-            600: {
-                items: 2,
-            },
-            700: {
-                items: 3,
-            },
-            1000: {
-                items: 4,    
-            },
-            1200: {
-                items:5,
-            }
-        },
+function scroll(e){
+    if (slider === null)
+        return 0;
+
+    e.wheelDelta > 0 ? (
+        slider.current.slickNext()
+    ) : (
+        slider.current.slickPrev()
+    );
+
+};
+
+useEffect(() => {
+    window.addEventListener("wheel", scroll,true);
+
+    return () => {
+        window.removeEventListener("wheel", scroll, true);
     };
+}, []);
+
+   
 
     const [isanim,setIsanim] = useState(false);
     const [isanim1,setIsanim1] = useState(false);
@@ -81,165 +77,7 @@ const Home = () => {
   });
 
   
-  useEffect(() => {
-    $( "#video_sec_full" ).on( "scroll", function() { 
-        document.body.style.overflow = 'hidden';
-       
-      } );
-//     document.querySelector('#video_sec_full').addEventListener('wheel', preventScroll, {passive: false});
 
-// function preventScroll(e){
-//     e.preventDefault();
-//     e.stopPropagation();
-
-//     return false;
-// }
-    window.addEventListener('scroll', (event) => {
-       
-       
-        if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 150 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 250)
-        {
-        //     console.log("1st eve")
-        // setMousecount(1) 
-
-        setIsanim(true)
-        setIsanim1(false)
-        setIsanim2(false)
-        // document.getElementById("video_1").play();
-        }
-        else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 175 && window.pageYOffset < document.getElementById("video_sec").offsetTop + 400)
-        {
-        //     console.log("2nd eve")
-
-        // setMousecount(2)
-
-        setIsanim1(true)
-        setIsanim(false)
-        setIsanim2(false)
-        // document.getElementById("video_2").play();
-
-        }
-        else if(window.pageYOffset > document.getElementById("video_sec").offsetTop + 200)
-        {
-            
-        //     console.log("3rd eve")
-
-        // setMousecount(3)
-
-        setIsanim2(true)
-        setIsanim(false)
-        setIsanim1(false)
-        // document.getElementById("video_3").play();
-
-        }
-
-       
-
-        console.log(mousecount,"mousecount");
-
-        
-        //     if(mousecount == 1)
-        //     {
-        //         setIsanim(true)
-        //         setIsanim1(false)
-        //         setIsanim2(false)
-        //     }
-        //     else if(mousecount == 2)
-        //     {
-        //         setIsanim1(true)
-        //         setIsanim(false)
-        //         setIsanim2(false)
-        //     }
-        //    else if(mousecount == 3)
-        //     {
-        //         setIsanim2(true)
-        //         setIsanim(false)
-        //         setIsanim1(false)
-        //     }
-            
-           
-            // window.scrollTo(0,document.getElementById("video_sec_full").offsetTop+400);
-
-            // document.body.classList.add("over_hidden");
-        }
-        // else
-        // {
-        //     document.body.classList.remove("over_hidden");
-
-        // }
-
-        // else if(window.pageYOffset > document.getElementById("video_sec_1").offsetTop + 100)
-        // {
-        //     setIsanim1(true)
-        // }
-        // else if(window.pageYOffset > document.getElementById("video_sec_2").offsetTop + 100)
-        // {
-        //     setIsanim2(true)
-        // }
-       
-     
-      );
-  
-  }, []);
-
-//   useEffect(() => {
-//     window.addEventListener('scroll', (event) => {
-//         console.log(window.pageYOffset,document.getElementById("video_sec").offsetTop,"event");
-
-
-//     if(window.pageYOffset > document.getElementById("video_sec_1").offsetTop + 100)
-//         {
-//             setIsanim1(true)
-//             setIsanim(false)
-//             setIsanim2(false)
-//             // window.scrollTo(0,document.getElementById("video_sec_full").offsetTop+400);
-
-//             // window.scrollTo(0,document.getElementById("video_sec_1").offsetTop);
-//             // window.scrollTo(0,document.getElementById("video_sec").offsetTop+400);
-
-//             // document.body.classList.add("over_hidden");
-
-
-//         }
-//         // else
-//         // {
-//         //     document.body.classList.remove("over_hidden");
-
-//         // }
-      
-       
-     
-//       });
-  
-//   }, []);
-
-//   useEffect(() => {
-//     window.addEventListener('scroll', (event) => {
-//         console.log(window.pageYOffset,document.getElementById("video_sec").offsetTop,"event");
-
-     
-//      if(window.pageYOffset > document.getElementById("video_sec_2").offsetTop + 100)
-//         {
-//             setIsanim2(true)
-//             setIsanim(false)
-//             setIsanim1(false)
-//             // window.scrollTo(0,document.getElementById("video_sec_full").offsetTop+400);
-
-//             // window.scrollTo(0,document.getElementById("video_sec_2").offsetTop);
-//             // window.scrollTo(0,document.getElementById("video_sec").offsetTop+400);
-
-//             // document.body.classList.add("over_hidden");
-
-//         }
-//     //    else
-//     //    {
-//     //     document.body.classList.remove("over_hidden");
-
-//     //    }
-     
-//       });
-  
-//   }, []);
     return(
     <div id='home'>
       
@@ -295,8 +133,11 @@ const Home = () => {
                 <div className='mobile_view_design'>
                     <div className='images_sec'></div>
                 </div>
-                <div  id="video_sec_full" className={isanim || isanim1 || isanim2?'vide_whole_height over_hiden':"vide_whole_height"}>
-                <div id="video_sec" className={isanim?"pt-5 video_sec animated opacity_1":"pt-5 video_sec opacity_0"}>
+                <ScrollLock>
+                <div  id='desktop_view_design' className={isanim || isanim1 || isanim2?'vide_whole_height over_hiden':"vide_whole_height"}>
+                <Slider {...settings} ref={slider}>
+      <div>
+      <div id='video_sec_11' className="pt-5 video_sec animated opacity_1">
                 <div className='card video_card card_left_top'>
                             <div className='card-body'>
                                 <div className='d-flex align-items-center justify-content-between'>
@@ -433,7 +274,9 @@ const Home = () => {
 
                 </div>
                 </div>
-                <div id="video_sec_1" className={isanim1?"pt-5 video_sec animated opacity_1":"pt-5 video_sec opacity_0"}>
+      </div>
+      <div>
+      <div id='video_sec_12' className="pt-5 video_sec animated opacity_1">
                 <div className='card video_card card_left_top'>
                             <div className='card-body'>
                                 <div className='d-flex align-items-center justify-content-between'>
@@ -570,7 +413,9 @@ const Home = () => {
 
                 </div>
                 </div>
-                <div id="video_sec_2" className={isanim2?"pt-5 video_sec animated opacity_1":"pt-5 video_sec opacity_0"}>
+      </div>
+      <div>
+      <div id='video_sec_13' className="pt-5 video_sec animated opacity_1">
                 <div className='card video_card card_left_top'>
                             <div className='card-body'>
                                 <div className='d-flex align-items-center justify-content-between'>
@@ -707,7 +552,14 @@ const Home = () => {
 
                 </div>
                 </div>
-                </div>
+      </div>
+     
+    </Slider>
+    </div>
+    </ScrollLock>
+              
+             
+             
 
                 <div className='row'>
                     <div className='col-12 col-md-8 col-lg-7 col-xl-5 mx-auto'>

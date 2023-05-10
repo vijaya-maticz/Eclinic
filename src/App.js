@@ -11,6 +11,11 @@ import './Assets/css/stylev.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Home from './Components/Home'
+import Home1 from './Components/Home1'
+import Homepage from './Components/Homepage'
+import Homepage1 from './Components/Homepage1'
+import Homepage2 from './Components/Home_back1'
+import Homepage3 from './Components/Home_back2'
 import Treatments from './Components/Innerpages/Treatments';
 import Treatmentquery from './Components/Innerpages/Treatmentquery';
 
@@ -62,6 +67,12 @@ function App() {
       <div></div></div>}>
        <Routes>
        <Route path="/" element={<Home /> } />
+       <Route path="/home1" element={<Home1 /> } />
+       <Route path="/home" element={<Homepage /> } />
+       <Route path="/homepage" element={<Homepage1 /> } />
+       <Route path="/homepage1" element={<Homepage2 /> } />
+       <Route path="/homepage2" element={<Homepage3 /> } />
+       
           <Route path="/treatments" element={<Treatments />} />
           <Route path="/treatmentquery" element={<Treatmentquery />} />
           <Route path="/dashboard" element={<Dashboard />} />
